@@ -5,7 +5,7 @@
 - **插件名称**: claude-mem
 - **GitHub**: [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 - **Star**: 32k ⭐
-- **状态**: ⚠️ 部分验证（需要 Bun 运行时）
+- **状态**: ✅ 已验证可用
 - **验证日期**: 2026-03-03
 
 ---
@@ -180,8 +180,9 @@ Claude 会自动记住：
 |-------|------|------|
 | 插件安装 | ✅ 成功 | v10.5.2 |
 | 配置生成 | ✅ 成功 | ~/.claude-mem/settings.json |
-| Worker 启动 | ⚠️ 需要 Bun | 需要额外安装 Bun 运行时 |
-| 记忆功能 | 🔄 待验证 | 需要 Worker 运行后才能测试 |
+| Bun 安装 | ✅ 成功 | v1.1.168 |
+| Worker 启动 | ✅ 成功 | PID: 203169, Port: 37777 |
+| API 健康检查 | ✅ 成功 | {"status":"ok"} |
 
 ### 发现的问题
 
@@ -192,16 +193,17 @@ Claude 会自动记住：
 
 2. **Worker 默认不启动**
    - 插件安装后 Worker 不会自动启动
-   - 需要手动启动: `node scripts/worker-cli.js start`
+   - 需要手动启动: `bun scripts/worker-service.cjs`
    - 或者配置自动启动
 
 3. **日志位置**
-   - 日志在 `~/.claude-mem/logs/` 目录
-   - 可用于排查问题
+   - Worker 日志: `~/.claude-mem/logs/worker-YYYY-MM-DD.log`
+   - MCP 日志: `~/.claude-mem/logs/claude-mem-YYYY-MM-DD.log`
 
 ### 待验证
 
-- [ ] Worker 启动后的记忆效果
+- [x] Worker 启动
+- [ ] 实际记忆效果（需要与 Claude Code 集成测试）
 - [ ] Windows 兼容性
 - [ ] 记忆清理机制
 
