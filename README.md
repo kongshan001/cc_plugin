@@ -9,6 +9,7 @@
 | [superpowers](./superpowers/README.md) | Agentic Skills 框架，完整软件工程工作流 | ✅ 已验证可用 |
 | [claude-mem](./claude-mem/README.md) | Claude 长期记忆插件 | ⚠️ 部分验证（需 Bun 运行时） |
 | [shannon](./shannon/README.md) | AI 自动化渗透测试框架，96.15% 基准成功率 | ✅ 已验证可用 |
+| [pi-mono](./pi-mono/README.md) | AI Agent 工具箱，极简终端编程助手，19k⭐ | ✅ 已调研 |
 
 ## 📝 文档规范
 
