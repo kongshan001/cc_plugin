@@ -12,6 +12,9 @@
 | [trailofbits-skills](./trailofbits-skills/README.md) | Trail of Bits 专业安全审计技能集，CodeQL/Semgrep 集成 | ✅ 已调研 |
 | [pi-mono](./pi-mono/README.md) | AI Agent 工具箱，极简终端编程助手，19k⭐ | ✅ 已调研 |
 | [skills](./skills/README.md) | OpenAI Codex 官方技能目录，30+ 精选技能 | ✅ 已调研 |
+| [python-dev](./python-dev/README.md) | Python 开发技能集，PostgreSQL 集成等 | ✅ 已调研 |
+| [game-dev](./game-dev/README.md) | 游戏开发相关技能，开发者工具集 | ✅ 已调研 |
+| [automation-testing](./automation-testing/README.md) | 自动化测试技能，Playwright 浏览器测试 | ✅ 已调研 |
 
 ## 📝 文档规范
 
