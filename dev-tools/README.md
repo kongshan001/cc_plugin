@@ -80,6 +80,46 @@
 - **浏览器 QA**: 基于浏览器的质量保证
 - **防失控协议**: 严格的安全机制
 
+### 1.4 Claude Code Flow
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [ruvnet/claude-code-flow](https://github.com/ruvnet/claude-code-flow) |
+| **特点** | 代码优先编排层 |
+
+### 核心功能
+
+- **递归代理循环**: 自动迭代开发
+- **代码编写/编辑/测试**: 完整开发流程
+- **性能优化**: 自动优化代码
+- **跨语言支持**: 多编程语言
+
+### 1.5 Claude Swarm
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [parruda/claude-swarm](https://github.com/parruda/claude-swarm) |
+| **特点** | 多代理协同工作 |
+
+### 核心功能
+
+- **多代理并行**: 同时运行多个代理
+- **任务分解**: 自动拆分复杂任务
+- **结果聚合**: 合并多代理结果
+
+### 1.6 Claude Squad
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) |
+| **特点** | 多工作区管理 |
+
+### 核心功能
+
+- **工作区管理**: 同时管理多个项目
+- **代理池**: 智能任务分配
+- **状态同步**: 跨工作区状态共享
+
 ---
 
 ## 2. DevOps 工具

@@ -341,8 +341,27 @@ public IEnumerator TestAsync() {
 | **Unity 单元测试** | Unity Test Framework | 专业集成 | 需 Unity 环境 |
 | **Unity 集成测试** | Unity PlayMode | 完整测试 | 性能较慢 |
 | **Web/H5 游戏** | Playwright | 功能强大 | 需 Web 环境 |
+| **iOS 游戏测试** | ios-simulator-skill | 原生模拟器 | macOS only |
+| **Android 游戏测试** | android_ui_verification | ADB 自动化 | 需 Android SDK |
 | **UI 交互测试** | Playwright + 截图 | 直观 | 维护成本高 |
 | **性能测试** | Unity Profiler | 专业 | 学习曲线高 |
+
+### 6.4 移动端游戏测试详解
+
+#### Android 游戏测试
+
+| 工具 | 功能 |
+|-----|------|
+| **android_ui_verification** | ADB 自动化 UI 测试 |
+| **ADB** | 设备控制、截图、日志 |
+| **Unity Profiler** | 性能分析 |
+
+#### iOS 游戏测试
+
+| 工具 | 功能 |
+|-----|------|
+| **ios-simulator-skill** | iOS 模拟器集成 |
+| **Xcode** | 调试和性能分析 |
 
 ---
 

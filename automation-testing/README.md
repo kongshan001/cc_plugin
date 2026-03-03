@@ -341,7 +341,83 @@ async def test_with_mock_api(page):
 
 ---
 
-## 8. 部署指南
+## 8. 移动端游戏测试
+
+### 8.1 Android UI 自动化测试
+
+#### android_ui_verification
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | Antigravity Skills |
+| **功能** | Android 模拟器 UI 测试 |
+| **工具** | ADB (Android Debug Bridge) |
+| **特点** | 端到端 UI 验证 |
+
+#### 核心功能
+
+- **设备校准**: 自动获取屏幕分辨率
+- **UI 检查**: uiautomator dump 获取元素位置
+- **交互命令**: tap、swipe、text input、key events
+- **验证报告**: 截图验证、日志分析
+
+#### 工作流程
+
+```bash
+# 1. 设备校准 - 获取屏幕分辨率
+adb shell wm size
+
+# 2. UI 检查 - 获取元素信息
+adb shell uiautomator dump /sdcard/view.xml
+adb pull /sdcard/view.xml ./artifacts/view.xml
+
+# 3. 交互操作
+adb shell input tap <x> <y>
+adb shell input swipe <x1> <y1> <x2> <y2> <duration_ms>
+adb shell input text "Hello"
+
+# 4. 截图验证
+adb shell screencap -p /sdcard/screen.png
+adb pull /sdcard/screen.png ./artifacts/test_result.png
+```
+
+#### 适用场景
+
+- Android 游戏 UI 测试
+- React Native 应用测试
+- 移动端游戏自动化测试
+- 布局问题调试
+
+### 8.2 iOS 模拟器测试
+
+#### ios-simulator-skill
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) |
+| **Star** | ⭐ 557 |
+| **功能** | iOS 模拟器集成 |
+| **平台** | macOS |
+
+#### 核心功能
+
+- **模拟器控制**: 启动/停止模拟器
+- **应用安装**: 安装 iOS 应用
+- **UI 交互**: 自动化 UI 测试
+- **截图捕获**: 状态记录
+
+### 8.3 移动端游戏测试方案对比
+
+| 平台 | 推荐工具 | 适用场景 |
+|-----|---------|---------|
+| **Android** | android_ui_verification + ADB | Android 游戏测试 |
+| **iOS** | ios-simulator-skill | iOS 游戏测试 |
+| **跨平台** | Appium | Unity/Cocos 游戏 |
+| **WebView** | Playwright | 混合应用测试 |
+
+---
+
+## 9. 部署指南
 
 ### 8.1 安装 Playwright
 
@@ -404,18 +480,22 @@ module.exports = {
 | **Web/E2E 测试** | Playwright Skill | ⭐⭐⭐⭐⭐ |
 | **反检测测试** | Playwright Undetected | ⭐⭐⭐⭐ |
 | **游戏客户端** | Unity Test Framework | ⭐⭐⭐⭐ |
+| **Android UI 测试** | android_ui_verification | ⭐⭐⭐⭐ |
+| **iOS 测试** | ios-simulator-skill | ⭐⭐⭐⭐ |
 | **代码质量** | Claude Skills Marketplace | ⭐⭐⭐⭐ |
 | **TDD 开发** | /tdd, /tdd-implement | ⭐⭐⭐⭐ |
 | **Bug 复现** | /repro-issue | ⭐⭐⭐ |
 
-### 9.2 按游戏引擎选择
+### 9.2 按游戏引擎/平台选择
 
-| 引擎 | 推荐测试方案 |
-|-----|------------|
+| 引擎/平台 | 推荐测试方案 |
+|---------|------------|
 | **Web/H5 游戏** | Playwright + Webapp Testing |
 | **Unity 游戏** | Unity Test Framework |
 | **iOS 游戏** | iOS Simulator Skill |
-| **Android 游戏** | Android Emulator + Playwright |
+| **Android 游戏** | android_ui_verification + ADB |
+| **跨平台移动游戏** | Appium |
+| **原生游戏客户端** | Unity Profiler + 截图对比 |
 
 ---
 

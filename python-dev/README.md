@@ -137,7 +137,65 @@ SELECT * FROM recent_orders;
 
 ---
 
-## 5. 语音转文字集成
+## 5. Python Web 框架测试
+
+### 5.1 Django/Flask/FastAPI 测试技能
+
+| 框架 | 测试工具 | 特点 |
+|-----|---------|------|
+| **Django** | pytest-django | Django 测试客户端 |
+| **Flask** | pytest-flask | Flask 测试客户端 |
+| **FastAPI** | TestClient | 内置测试支持 |
+
+### 核心测试技能
+
+```python
+# FastAPI 测试示例
+from fastapi.testclient import TestClient
+
+def test_api_endpoint():
+    client = TestClient(app)
+    response = client.get("/api/users")
+    assert response.status_code == 200
+    assert len(response.json()) > 0
+
+# Django 测试示例
+from django.test import Client
+
+def test_django_view():
+    client = Client()
+    response = client.get('/home/')
+    assert response.status_code == 200
+```
+
+### 5.2 pytest 最佳实践
+
+| 实践 | 说明 |
+|-----|------|
+| **fixtures** | 复用测试数据 |
+| **parametrize** | 参数化测试 |
+| **markers** | 测试标记和分类 |
+| **coverage** | 代码覆盖率 |
+
+### 常用 pytest 命令
+
+```bash
+# 运行所有测试
+pytest
+
+# 运行特定文件
+pytest tests/test_api.py
+
+# 运行带标记的测试
+pytest -m "unit"
+
+# 生成覆盖率报告
+pytest --cov=src --cov-report=html
+```
+
+---
+
+## 6. 语音转文字集成
 
 ### 5.1 stt-mcp-server-linux
 
