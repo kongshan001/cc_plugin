@@ -1,35 +1,46 @@
-# Claude Code 插件补充调研 - 2026年3月4日 (第四期补充)
+# Claude Code 插件调研报告 - 2026年3月 (补充)
 
-## 📋 调研背景
-
-本期调研继续深入分析 Claude Code 热门插件，基于 Antigravity Awesome Skills (968+ Skills) 和 Awesome Claude Code 社区资源，重点关注：
-1. 游戏客户端开发 (Unity、Web/H5)
-2. Python 开发
-3. 游戏客户端自动化测试
-4. 其他开发者工具
+> 持续跟踪 Claude Code 生态热门插件，聚焦游戏开发、Python 开发、自动化测试、开发者工具方向
 
 ---
 
-## 一、热门插件深度分析
+## 📋 调研概要
 
-### 1.1 游戏开发方向 ⭐
+| 维度 | 统计 |
+|-----|------|
+| **调研时间** | 2026-03-04 |
+| **覆盖方向** | 游戏开发、Python开发、自动化测试、开发者工具 |
+| **技能总数** | 970+ (Antigravity Awesome Skills) |
+| **数据来源** | awesome-claude-code, GitHub trending, Antigravity Skills, Composio |
 
-#### Claude-Code-Game-Studios (重点推荐)
+---
+
+## 一、游戏客户端开发技能 (更新)
+
+### 1.1 Claude Code Game Studios ⭐ NEW
 
 | 项目 | 说明 |
 |-----|------|
 | **GitHub** | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) |
-| **Star** | ⭐ 26+ |
-| **更新** | 3天前活跃 |
-| **特点** | 48个AI代理 + 36个工作流技能 |
+| **Star** | ⭐ 26 |
+| **更新** | 3天前 |
+| **特点** | 48个AI代理 + 36个工作流技能 + 完整协调系统 |
 
-**核心能力:**
-- 48个专业AI代理覆盖游戏开发全流程
-- 36个工作流技能完整游戏开发管线
-- 工作室协调系统模拟真实游戏工作室工作流
-- 多引擎支持: Unity, Unreal, Godot, WebGL
+#### 核心能力
 
-#### Unity 开发技能对比
+- **48个专业AI代理**: 覆盖游戏开发全流程
+- **36个工作流技能**: 完整游戏开发管线
+- **工作室协调系统**: 模拟真实游戏工作室工作流
+- **多引擎支持**: Unity, Unreal, Godot, WebGL
+
+#### 适用场景
+
+- 大型游戏项目开发
+- 游戏工作室工作流自动化
+- 跨团队协作开发
+- 全栈游戏开发
+
+### 1.2 Unity 开发技能 (更新)
 
 | 技能 | GitHub | Star | 特点 |
 |-----|--------|------|------|
@@ -38,7 +49,76 @@
 | **unity-ai-workflow** | David-GD13/unity-ai-workflow | ⭐4 | Unity 6.2+ AI-first工作流 |
 | **solana-game-skill** | solanabr/solana-game-skill | ⭐5 | Solana区块链游戏开发 |
 
-#### 游戏引擎技能汇总
+#### Unity 技能核心分类
+
+| 分类 | 技能 |
+|-----|------|
+| **工具类** | Addressables, MemoryPack, ScriptableObjects, Profiling |
+| **动画/物理** | Animation, Physics, NavMesh, Object Pooling, State Machine |
+| **AI/行为** | Behavior Designer, GAS (Gameplay Ability System) |
+| **音视频** | Wwise音频, Cinemachine相机 |
+| **UI** | UGUI, Mobile Optimization |
+| **测试** | Unity Test Framework |
+| **DI/异步** | VContainer, UniTask |
+
+### 1.3 Unity AI Workflow (2026 新增)
+
+#### 项目地址
+- **GitHub**: [David-GD13/unity-ai-workflow](https://github.com/David-GD13/unity-ai-workflow)
+- **Star**: ⭐ 4
+- **特点**: 专为 Unity 6.2+ 设计的 AI-first 开发工作流
+
+#### 核心特性
+
+```markdown
+### Dev Modes (三种开发模式)
+| 模式 | 角色 | 适用场景 |
+|------|------|---------|
+| Assistant | 你构建，AI 辅助文档和解释 | 学习、创意控制 |
+| Mix (默认) | 协作模式，AI 建议，你确认 | 大多数项目 |
+| Automatic | AI 构建，短的 onboarding Q&A | 快速原型、游戏 jam |
+
+### 核心哲学: Game Feel 不是可选的
+- 每项功能使用 /implement-feature 完整构建
+- AI 在写代码前询问 VFX、SFX、相机反馈和触觉
+- 迭代打磨，不是单独阶段
+
+### 技术架构
+- TCREI Prompting: Task-Context-References-Evaluate-Iterate 方法论
+- 验证系统: 每个 AI 推荐标记 [VERIFIED]/[SYNTHESIZED]/[UNVERIFIED]
+- 专家 Skills: UI Toolkit、ScriptableObject、Netcode、game feel、测试、调试
+```
+
+### 1.4 Web/H5 游戏开发
+
+#### 引擎选择决策树
+
+```
+什么类型的游戏?
+│
+├── 2D 游戏
+│   ├── 需要完整引擎功能? → Phaser 4
+│   └── 需要原始渲染能力? → PixiJS 8
+│
+├── 3D 游戏
+│   ├── 需要完整引擎(物理、XR)? → Babylon.js 7
+│   └── 专注渲染? → Three.js
+│
+└── 混合/Canvas
+    └── 自定义 → 原始 Canvas/WebGL
+```
+
+#### WebGPU 支持情况 (2025)
+
+| 浏览器 | 支持 |
+|--------|------|
+| Chrome | ✅ v113+ |
+| Edge | ✅ v113+ |
+| Firefox | ✅ v131+ |
+| Safari | ✅ 18.0+ |
+| **全球支持率** | **~73%** |
+
+### 1.5 游戏开发技能汇总
 
 | 方向 | 推荐技能 | Star | 特点 |
 |-----|---------|------|------|
@@ -51,24 +131,56 @@
 
 ---
 
-### 1.2 Python 开发方向 ⭐
+## 二、Python 开发技能 (更新)
 
-#### uv - Python 包管理器 (2025最快)
+### 2.1 数据库集成 (更新)
+
+| 技能 | GitHub | 功能 | 安全性 |
+|-----|--------|------|--------|
+| **read-only-postgres** | jawwadfirdousi/agent-skills | PostgreSQL只读查询 | ⭐⭐⭐⭐⭐ |
+| **postgres** | sanjay3290/ai-skills | PostgreSQL完整集成 | ⭐⭐⭐ |
+
+#### read-only-postgres 核心特性
+
+```sql
+-- 支持的查询类型
+SELECT * FROM users WHERE id = 1;
+SHOW max_connections;
+EXPLAIN ANALYZE SELECT * FROM orders;
+WITH recent AS (...) SELECT * FROM recent;
+```
+
+#### 安全特性
+
+| 特性 | 描述 |
+|-----|------|
+| **只读查询** | 仅支持 SELECT/SHOW/EXPLAIN/WITH |
+| **超时限制** | 防止长时间运行查询 |
+| **行数限制** | 防止大数据集返回 |
+| **多连接** | 支持配置多个数据库连接 |
+
+### 2.2 AWS 云服务集成
+
+#### AWS MCP Server
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [astral-sh/uv](https://github.com/astral-sh/uv) |
-| **特点** | 10-100x faster than pip |
+| **GitHub** | [alexei-led/aws-mcp-server](https://github.com/alexei-led/aws-mcp-server) |
+| **Star** | ⭐ 活跃 |
+| **语言** | Python |
+| **特点** | AWS CLI 集成，多环境支持 |
 
-```bash
-# 安装
-curl -LsSf https://astral.sh/uv/install.sh | sh
+#### 支持的服务
 
-# 项目初始化
-uv init my-project
-uv venv
-uv pip install -r requirements.txt
-```
+| 服务类别 | 支持内容 |
+|---------|---------|
+| **计算** | EC2, Lambda, ECS, EKS |
+| **存储** | S3, EBS, EFS |
+| **数据库** | RDS, DynamoDB, ElastiCache |
+| **网络** | VPC, CloudFront, Route53 |
+| **安全** | IAM, Secrets Manager |
+
+### 2.3 Pydantic AI 深度集成
 
 #### pydantic-ai-skills
 
@@ -76,243 +188,223 @@ uv pip install -r requirements.txt
 |-----|------|
 | **GitHub** | [DougTrajano/pydantic-ai-skills](https://github.com/DougTrajano/pydantic-ai-skills) |
 | **Star** | ⭐ 136 |
+| **语言** | Python |
+| **特点** | Agent Skills 支持 Pydantic AI |
 
-**核心能力:**
-- Pydantic AI 深度集成
-- 类型安全强制类型检查
-- 渐进式提示按需披露信息
-- 与主流 LLM 无缝集成
+#### 核心功能
 
-#### 数据库技能
+- **类型安全**: Pydantic 模型强制类型检查
+- **渐进式提示**: 按需披露信息
+- **AI 集成**: 与主流 LLM 无缝集成
+- **验证系统**: 内置强大的数据验证
 
-| 技能 | GitHub | 功能 | 安全性 |
-|-----|--------|------|--------|
-| **read-only-postgres** | jawwadfirdousi/agent-skills | PostgreSQL只读查询 | ⭐⭐⭐⭐⭐ |
-| **postgres** | sanjay3290/ai-skills | PostgreSQL完整集成 | ⭐⭐⭐ |
+### 2.4 Python 开发技能汇总
 
-#### Python 测试技能
-
-| 技能 | 功能 | 适用场景 |
-|-----|------|---------|
-| **pytest** | 单元测试/集成测试 | Python项目测试 |
-| **pytest-cov** | 覆盖率报告 | 代码覆盖率分析 |
-| **pytest-asyncio** | 异步测试 | 异步代码测试 |
+| 方向 | 推荐技能 | Star | 特点 |
+|-----|---------|------|------|
+| **数据库** | read-only-postgres | ⭐10 | 安全只读查询 |
+| **云服务** | AWS MCP Server | ⭐活跃 | AWS 全服务支持 |
+| **AI 框架** | pydantic-ai-skills | ⭐136 | 类型安全 AI 开发 |
+| **Web 框架** | Django/Flask/FastAPI 技能 | - | 完整 Web 开发栈 |
 
 ---
 
-### 1.3 游戏客户端自动化测试 ⭐
+## 三、游戏客户端自动化测试 (更新)
 
-#### Playwright 技能
+### 3.1 浏览器自动化测试
 
-| 技能 | GitHub | Star | 功能 |
-|-----|--------|------|------|
-| **playwright-skill** | lackeyjb/playwright-skill | ⭐1.8k | Playwright浏览器自动化 |
-| **playwright-undetected-skill** | dalbit-mir/playwright-undetected-skill | ⭐4 | Bot检测绕过 |
-
-#### Unity 测试方案
-
-| 测试类型 | 方案 | 适用场景 |
-|---------|------|---------|
-| **Web/H5游戏** | Playwright | 功能测试、回归测试 |
-| **Unity游戏** | Unity Test Framework | 单元测试、集成测试 |
-| **性能测试** | Unity Profiler | 帧率、内存测试 |
-| **Android游戏** | ADB + uiautomator | UI自动化 |
-| **iOS游戏** | ios-simulator-skill | 模拟器测试 |
-
-#### 移动端游戏测试
-
-##### Android UI 测试
-
-```bash
-# 设备校准 - 获取屏幕分辨率
-adb shell wm size
-
-# UI 检查 - 获取元素信息
-adb shell uiautomator dump /sdcard/view.xml
-
-# 交互操作
-adb shell input tap <x> <y>
-adb shell input swipe <x1> <y1> <x2> <y2> <duration_ms>
-```
-
-##### iOS 模拟器测试
+#### Playwright Skill (核心)
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) |
-| **Star** | ⭐ 557 |
-| **平台** | macOS |
+| **GitHub** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) |
+| **Star** | ⭐ 1.8k |
+| **功能** | Playwright 浏览器自动化 |
+| **特点** | 模型调用的 Playwright 自动化 |
 
----
+#### 核心功能
 
-### 1.4 开发者工具方向 ⭐
+- **Web 应用测试**: 自动化测试 Web 应用功能
+- **UI 验证**: 验证前端功能和行为
+- **截图捕获**: 自动截图记录测试状态
+- **调试支持**: 辅助调试 UI 行为
+- **Bot 检测绕过**: Patchright 支持反检测
 
-#### 编排工具
-
-| 技能 | GitHub | 特点 |
-|-----|--------|------|
-| **agentsys** | avifenesh/agentsys | 生产级工作流自动化 |
-| **superpowers** | obra/superpowers | 核心工程技能集 |
-| **claude-code-agents** | undeadlist/claude-code-agents | E2E开发工作流 |
-| **sudocode** | sudocode-ai/sudocode | 轻量级agent编排工具 |
-
-#### 安全审计
-
-| 技能 | GitHub | 特点 |
-|-----|--------|------|
-| **trailofbits-skills** | trailofbits/skills | CodeQL/Semgrep集成 |
-| **parry** | vaporif/parry | 提示注入扫描器 |
-| **Dippy** | ldayton/Dippy | AST自动批准安全命令 |
-
-#### Claude Code Pro
-
-| 技能 | GitHub | 特点 |
-|-----|--------|------|
-| **Claude CodePro** | maxritter/claude-codepro | TDD强制执行，质量挂钩 |
-
-#### DevOps 工具
-
-| 技能 | GitHub | 特点 |
-|-----|--------|------|
-| **cc-devops-skills** | akin-ozer/cc-devops-skills | IaC代码生成 |
-| **ContextKit** | FlineDev/ContextKit | 4阶段规划方法论 |
-
-#### Hooks 生态系统
-
-| 技能 | GitHub | 功能 |
-|-----|--------|------|
-| **claude-hooks** | johnlindquist/claude-hooks | TypeScript Hook 系统 |
-| **cchooks** | GowayLee/cchooks | Python Hook SDK |
-| **claude-code-hooks-sdk** | beyondcode/claude-hooks-sdk | PHP Hook SDK |
-
-#### 会话管理
-
-| 技能 | GitHub | 功能 |
-|-----|--------|------|
-| **claude-tmux** | nielsgroen/claude-tmux | tmux会话管理 |
-| **claude-esp** | phiat/claude-esp | 隐藏输出流式传输 |
-| **ralph-claude-code** | frankbria/ralph-claude-code | 自主开发框架，75+测试 |
-
----
-
-## 二、Skills 统计汇总
-
-| 类别 | Skills 数量 | 热门 Skills |
-|------|------------|------------|
-| 游戏开发 | 15+ | game-development, unity-developer, multiplayer, unity-ecs-patterns |
-| Python 开发 | 18+ | python-pro, async-python-patterns, fastapi, uv-package-manager |
-| 自动化测试 | 20+ | playwright-skill, e2e-testing, test-automator, python-testing-patterns |
-| 开发者工具 | 25+ | github-automation, browser-automation, cicd-automation, docker-expert |
-
----
-
-## 三、补充技能推荐
-
-### 3.1 按场景推荐
-
-| 场景 | 首推技能 | 安装命令 |
-|-----|---------|---------|
-| **Unity游戏开发** | Claude-Code-Game-Studios | gh-Donchitos-Claude-Code-Game-Studios |
-| **Unity AI工作流** | unity-ai-workflow | gh-David-GD13-unity-ai-workflow |
-| **Web游戏测试** | playwright-skill | gh-lackeyjb-playwright-skill |
-| **反检测测试** | playwright-undetected-skill | gh-dalbit-mir-playwright-undetected-skill |
-| **Python AI开发** | pydantic-ai-skills | gh-DougTrajano-pydantic-ai-skills |
-| **数据库查询** | read-only-postgres | gh-jawwadfirdousi-read-only-postgres |
-| **安全审计** | trailofbits-skills | gh-trailofbits-skills |
-| **包管理** | uv | gh-astral-sh-uv |
-| **自主开发** | ralph-claude-code | gh-frankbria-ralph-claude-code |
-| **工作流编排** | agentsys | gh-avifenesh-agentsys |
-
-### 3.2 技能组合推荐
+#### 技术架构
 
 ```
-游戏开发组合:
-Claude-Code-Game-Studios + Unity Test Framework + playwright-skill
-
-Python开发组合:
-uv + pydantic-ai-skills + read-only-postgres + pytest + aws-mcp-server
-
-测试自动化组合:
-playwright-skill + fieldwork-skills + claude-skills-marketplace
-
-游戏帧同步测试:
-Unity Test Framework + 网络延迟模拟 + 帧同步确定性验证
+用户请求 → Claude Code → Playwright Skill → 浏览器自动化
+                                        ↓
+                              测试结果/截图 → 返回 Claude
 ```
+
+#### 适用场景
+
+- Web 游戏测试
+- H5 游戏测试
+- 前端功能验证
+- UI 自动化测试
+- 回归测试
+
+### 3.2 Playwright Undetected Skill
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [dalbit-mir/playwright-undetected-skill](https://github.com/dalbit-mir/playwright-undetected-skill) |
+| **Star** | ⭐ 4 |
+| **特点** | Bot 检测绕过 |
+
+#### 核心功能
+
+- **本地主机测试**: Localhost 测试
+- **截图捕获**: UI 交互截图
+- **UI 交互**: 模拟真实用户操作
+- **反检测**: Patchright 绕过检测
+
+### 3.3 Unity 测试
+
+#### Unity Test Framework Skill
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | cc-plugin-unity-gamedev |
+| **功能** | Unity 单元测试 |
+
+#### 测试类型
+
+| 类型 | 说明 | 适用场景 |
+|-----|------|---------|
+| **单元测试** | 测试单个类/方法 | 游戏逻辑验证 |
+| **集成测试** | 测试多个组件交互 | 系统功能验证 |
+| **UI 测试** | 测试 UI 交互 | 界面功能验证 |
+| **性能测试** | 测试性能指标 | 性能优化验证 |
+
+### 3.4 游戏自动化测试技能汇总
+
+| 方向 | 推荐技能 | Star | 特点 |
+|-----|---------|------|------|
+| **Web 测试** | playwright-skill | ⭐1.8k | 主流浏览器自动化 |
+| **反检测** | playwright-undetected | ⭐4 | Bot 绕过测试 |
+| **Unity 测试** | Unity Test Framework | - | 单元/集成测试 |
+| **E2E 测试** | Claude Code Agents | ⭐10 | 端到端测试 |
 
 ---
 
-## 四、趋势分析
+## 四、其他开发者工具 (更新)
 
-### 4.1 热门方向
+### 4.1 Composio 插件集合 (⭐ 推荐)
 
-| 方向 | 趋势 | 说明 |
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [ComposioHQ/awesome-claude-plugins](https://github.com/ComposioHQ/awesome-claude-plugins) |
+| **特点** | 50+ 生产级插件 |
+| **覆盖** | 前端、设计、Git、测试、后端、DevOps |
+
+#### 核心插件列表
+
+| 插件 | 功能 | 场景 |
 |-----|------|------|
-| **Agent工作流** | ⬆️ 上升 | agentsys, claude-code-agents, Claude Code Flow |
-| **安全审计** | ⬆️ 上升 | trailofbits-skills, parry, Dippy |
-| **游戏开发** | ⬆️ 上升 | Claude-Code-Game-Studio 全栈覆盖 |
-| **测试自动化** | ⬆️ 上升 | Playwright主导，TDD命令丰富 |
-| **Hook 生态** | ⬆️ 上升 | 多语言 SDK (Python, PHP, TypeScript) |
+| **connect-apps** | 连接 500+ 应用 | 跨平台自动化 |
+| **frontend-design** | 专业前端设计 | UI/UX 创建 |
+| **test-writer-fixer** | 自动测试编写 | Jest/Vitest/Pytest |
+| **code-review** | 代码审查 | 质量改进 |
+| **debugger** | 高级调试 | Bug 追踪 |
+| **security-guidance** | 安全指导 | OWASP 合规 |
+| **changelog-generator** | 更新日志生成 | 版本发布 |
+| **ship** | 完整发布流程 | CI/CD |
 
-### 4.2 技术栈分布
+### 4.2 Antigravity Awesome Skills (⭐⭐⭐⭐⭐)
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) |
+| **Star** | ⭐ 活跃 |
+| **技能数量** | 970+ |
+| **覆盖** | 全栈开发、安全、测试、运维 |
+
+#### 技能分类
+
+| 分类 | 技能数量 | 示例 |
+|-----|---------|------|
+| **Architecture** | 20+ | architecture, c4-context, senior-architect |
+| **Business** | 30+ | copywriting, pricing-strategy, seo-audit |
+| **Data & AI** | 50+ | rag-engineer, prompt-engineer, langgraph |
+| **Development** | 100+ | typescript-expert, python-patterns |
+| **Security** | 40+ | api-security, sql-injection-testing |
+| **Testing** | 30+ | test-driven-development, testing-patterns |
+| **Infrastructure** | 50+ | docker-expert, aws-serverless |
+
+#### 安装方式
+
+```bash
+# 默认安装 (Antigravity)
+npx antigravity-awesome-skills
+
+# Claude Code
+npx antigravity-awesome-skills --claude
+
+# Gemini CLI
+npx antigravity-awesome-skills --gemini
+
+# Codex CLI
+npx antigravity-awesome-skills --codex
+```
+
+### 4.3 开发者工具技能汇总
+
+| 方向 | 推荐技能 | Star | 特点 |
+|-----|---------|------|------|
+| **全能** | Antigravity Awesome Skills | 970+ | 全栈覆盖 |
+| **插件集合** | Composio Plugins | 50+ | 生产级 |
+| **代码审查** | code-review | - | 质量保证 |
+| **测试** | test-writer-fixer | - | 自动测试 |
+| **安全** | security-guidance | - | OWASP |
+
+---
+
+## 五、推荐技能组合
+
+### 5.1 游戏开发推荐
 
 ```
-编程语言:
-├── TypeScript: 35+ 技能
-├── Python: 25+ 技能
-├── Go: 5+ 技能 (cc-tools, ccexp)
-└── PHP: 2+ 技能 (claude-hooks-sdk)
+Claude Code Game Studios + Unity 技能集 + Playwright
+```
 
-测试框架:
-├── Playwright: 主导
-├── Unity Test Framework: 游戏
-├── pytest: Python
-└── Vitest: 前端
+### 5.2 Python 开发推荐
+
+```
+Python Patterns + Pydantic AI + read-only-postgres + AWS
+```
+
+### 5.3 自动化测试推荐
+
+```
+Playwright + test-writer-fixer + Claude Code Agents
+```
+
+### 5.4 全栈开发推荐
+
+```
+Antigravity (970+ 技能) + Composio Plugins
 ```
 
 ---
 
-## 五、安装指南
+## 六、总结
 
-### 5.1 快速安装
+本期调研新增以下亮点：
 
-```bash
-# 克隆技能仓库
-git clone https://github.com/用户名/技能名.git
-
-# 复制到 Claude Code 技能目录
-cp -r 技能名 ~/.claude/skills/
-
-# 或使用技能安装命令
-claude --install-skill gh-用户名-技能名
-```
-
-### 5.2 验证安装
-
-```bash
-# 列出已安装技能
-claude --list-skills
-
-# 或在 Claude Code 中输入
-/skill list
-```
+1. **游戏开发**: Claude Code Game Studios (48 代理) + Unity AI Workflow
+2. **Python Pydantic AI**: 集成 + AWS MCP Server
+3. **测试**: Playwright 反检测 + Unity Test Framework
+4. **工具**: Antigravity 970+ 技能全面更新
 
 ---
 
-## 📎 相关资源
+## 📚 参考链接
 
-- [Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
-- [unity-ai-workflow](https://github.com/David-GD13/unity-ai-workflow)
-- [playwright-skill](https://github.com/lackeyjb/playwright-skill)
-- [playwright-undetected-skill](https://github.com/dalbit-mir/playwright-undetected-skill)
-- [pydantic-ai-skills](https://github.com/DougTrajano/pydantic-ai-skills)
-- [read-only-postgres](https://github.com/jawwadfirdousi/agent-skills)
-- [uv](https://github.com/astral-sh/uv)
-- [ralph-claude-code](https://github.com/frankbria/ralph-claude-code)
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
-- [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
-- [Claude Code Handbook](https://nikiforovall.blog/claude-code-rules/)
-- [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
-
----
-
-*补充调研完成 - 2026年3月4日*
+- [Antigravity Awesome Skills](https://github.com/sickn33/antigravity-awesome-skills)
+- [Composio Plugins](https://github.com/ComposioHQ/awesome-claude-plugins)
+- [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+- [Unity AI Workflow](https://github.com/David-GD13/unity-ai-workflow)
