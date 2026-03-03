@@ -32,4 +32,10 @@
 
 ---
 
+## 🔗 相关项目
+
+- **[cc_skills](https://github.com/kongshan001/cc_skills)** - Claude Code Skills 实践指南
+
+---
+
 *让 AI 助手真正记住你*
