@@ -1,318 +1,539 @@
-# Claude Code 插件调研补充 - 2026年3月
+# Claude Code 插件调研补充 - 2026年3月 (第二期)
 
 ## 📋 文档信息
 
 - **调研日期**: 2026-03-03
 - **分类**: 补充调研 / 最新插件
 - **状态**: 🆕 持续更新
+- **本版重点**: 游戏客户端开发、Python开发、游戏客户端自动化测试、开发者工具
 
 ---
 
-## 一、最新热门插件 (2026年3月)
+## 一、游戏客户端开发技能 (重点补充)
 
-### 1.1 Claude Scientific Skills
+### 1.1 Unity 开发 ( Antigravity 全覆盖)
+
+#### unity-developer 技能 (推荐)
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) |
-| **Star** | ⭐ 活跃 |
-| **许可** | MIT |
-| **特点** | 科研/工程/分析/金融/写作技能集 |
+| **来源** | Antigravity Skills |
+| **技能ID** | unity-developer |
+| **特点** | Unity 6 LTS + URP/HDRP + 跨平台部署 |
 
-### 核心功能
+**核心能力：**
 
-- **科研技能**: 文献综述、实验设计、数据分析
-- **工程技能**: 软件工程、系统设计、代码审查
-- **分析技能**: 数据分析、统计分析、机器学习
-- **金融技能**: 财务分析、投资组合、风险评估
-- **写作技能**: 技术文档、论文撰写、报告生成
+| 类别 | 覆盖内容 |
+|-----|---------|
+| **渲染管线** | URP优化、HDRP高保真图形、Shader Graph |
+| **性能优化** | Profiler、Frame Debugger、Memory Profiler、LOD、Occlusion Culling |
+| **C# 高级** | Job System、Burst Compiler、DOTS/ECS、async/await |
+| **架构模式** | MVC、Observer、State Machine、Object Pooling、DI |
+| **资源管理** | Addressables、Asset Bundles、ScriptableObjects |
+| **UI系统** | UI Toolkit、uGUI、响应式设计、本地化 |
 
-### 适用场景
+#### unity-ecs-patterns 技能
 
-- 学术研究
-- 工程开发
-- 数据分析
-- 金融建模
-- 技术写作
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | unity-ecs-patterns |
+| **特点** | DOTS/ECS 架构模式 |
+
+**覆盖内容：**
+- Entity Component System 设计模式
+- 数据导向架构
+- Burst Compiler 优化
+- Job System 并行处理
+
+#### 独立游戏开发技能
+
+| 技能目录 | 说明 |
+|---------|------|
+| **2d-games** | 2D游戏开发原理：精灵动画、Tilemap、物理、相机 |
+| **3d-games** | 3D游戏开发原理：渲染、着色器、物理、相机 |
+| **pc-games** | PC和主机游戏开发原理 |
+| **mobile-games** | 移动端游戏开发，iOS/Android平台适配 |
+| **web-games** | H5/Web游戏开发 |
+| **vr-ar** | VR/AR游戏开发 |
+
+### 1.2 Godot 开发
+
+#### godot-4-migration 技能
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | godot-4-migration |
+| **特点** | Godot 4 迁移指南 |
+
+#### godot-gdscript-patterns 技能
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | godot-gdscript-patterns |
+| **特点** | GDScript 最佳实践和模式 |
+
+### 1.3 Unreal Engine 开发
+
+#### unreal-engine-cpp-pro 技能
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | unreal-engine-cpp-pro |
+| **特点** | Unreal Engine C++ 开发专业技能 |
+
+**覆盖内容：**
+- C++ 游戏逻辑编写
+- Blueprint 集成
+- UMG UI 开发
+- 性能优化
+
+### 1.4 Web 游戏开发
+
+#### web-games 技能
+
+| 框架 | 类型 | 最佳场景 |
+|------|------|---------|
+| **Phaser 4** | 2D | 完整游戏引擎功能 |
+| **PixiJS 8** | 2D | 渲染、UI |
+| **Three.js** | 3D | 可视化、轻量级 |
+| **Babylon.js 7** | 3D | 完整引擎、XR |
+
+#### 3d-web-experience 技能
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | 3d-web-experience |
+| **特点** | 3D Web 体验开发 |
+
+### 1.5 游戏美术与音频
+
+| 技能目录 | 说明 |
+|---------|------|
+| **game-art** | 游戏美术、材质、动画 |
+| **game-audio** | 游戏音频设计，Wwise/FMOD |
+| **game-design** | 游戏设计、原型、玩家体验 |
+
+### 1.6 网络游戏开发
+
+#### multiplayer 技能
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | multiplayer |
+| **特点** | 网络 multiplayer 游戏开发 |
+
+**核心内容：**
+- 网络同步策略
+- 延迟补偿
+- 服务器架构
+- 客户端预测
 
 ---
 
-### 1.2 parry - 提示注入扫描器
+## 二、Python 开发技能 (重点补充)
+
+### 2.1 Python 专业开发 (python-pro)
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [vaporif/parry](https://github.com/vaporif/parry) |
-| **Star** | 🆕 新兴 |
-| **类型** | 安全工具 / Hook |
-| **特点** | 检测提示注入攻击 |
+| **来源** | Antigravity Skills |
+| **技能ID** | python-pro |
+| **Python版本** | 3.12+ |
+| **特点** | 现代Python特性、async编程、性能优化 |
 
-### 核心功能
+**核心能力：**
 
-- **注入检测**: 扫描工具输入/输出中的注入攻击
-- **密钥检测**: 识别敏感信息泄露
-- **数据外泄防护**: 防止数据外泄尝试
-- **Hook 集成**: 作为 Claude Code Hook 运行
+| 类别 | 覆盖内容 |
+|-----|---------|
+| **现代特性** | 3.12+新特性、async/await、Pattern Matching、Type Hints |
+| **现代工具链** | uv (包管理)、ruff (格式化/lint)、mypy/pyright (类型检查) |
+| **测试** | pytest、Hypothesis、pytest-cov、CI集成 |
+| **性能** | cProfile、py-spy、async优化、多进程 |
+| **Web框架** | FastAPI、Django、Flask、Pydantic |
 
-### 安全特性
+### 2.2 Python Web 开发
 
-```
-输入验证 → 模式匹配 → 风险评估 → 拦截/警告
-```
+#### python-fastapi-development
 
-### 适用场景
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | python-fastapi-development |
+| **特点** | FastAPI 高性能API开发 |
 
-- 安全敏感项目
-- 防止提示注入攻击
-- 保护敏感数据
-- 代码审查安全检查
+#### python-development-python-scaffold
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | python-development-python-scaffold |
+| **特点** | 生产级 Python 项目脚手架生成 |
+
+### 2.3 Python 模式与性能
+
+#### python-patterns
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | python-patterns |
+| **特点** | Python 设计模式 |
+
+#### python-performance-optimization
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | python-performance-optimization |
+| **特点** | Python 性能优化 |
+
+### 2.4 Python 异步编程
+
+#### async-python-patterns
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | async-python-patterns |
+| **特点** | Python 异步编程模式 |
+
+### 2.5 Python 测试
+
+#### python-testing-patterns
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | python-testing-patterns |
+| **特点** | Python 测试模式 |
+
+#### temporal-python-testing
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | temporal-python-testing |
+| **特点** | Temporal 工作流测试 |
+
+### 2.6 Python 打包与发布
+
+#### python-packaging
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | python-packaging |
+| **特点** | Python 包发布最佳实践 |
 
 ---
 
-### 1.3 Dippy - AST 安全命令批准
+## 三、游戏客户端自动化测试 (重点补充)
+
+### 3.1 Playwright 浏览器自动化
+
+#### playwright-skill (核心推荐)
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [ldayton/Dippy](https://github.com/ldayton/Dippy) |
-| **Star** | 🆕 新兴 |
-| **支持** | Claude Code / Gemini CLI / Cursor |
-| **特点** | AST 自动批准安全命令 |
+| **GitHub** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) |
+| **Star** | ⭐ 1.8k |
+| **来源** | awesome-claude-code + Antigravity |
+| **特点** | 完整浏览器自动化，auto-detect dev servers |
 
-### 核心功能
+**核心功能：**
+- Web 应用自动化测试
+- 自动检测开发服务器
+- 脚本写入 /tmp，不污染项目
+- 默认可见浏览器
+- 截图、填表、响应式测试
 
-- **AST 解析**: 使用抽象语法树分析命令
-- **自动批准**: 对安全操作自动批准
-- **交互确认**: 对危险操作提示确认
-- **权限疲劳解决**: 无需禁用安全设置
-
-### 技术原理
-
-```typescript
-// 命令分析流程
-命令输入 → AST 解析 → 风险评估 → 决策(批准/确认)
+**工作流程：**
+```
+1. Auto-detect dev servers (localhost)
+2. Write scripts to /tmp/playwright-test-*.js
+3. Execute via node run.js
+4. Results in real-time
 ```
 
-### 适用场景
+#### go-playwright (Go 语言绑定)
 
-- 减少权限确认提示
-- 平衡安全性与效率
-- 团队统一安全策略
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | go-playwright |
+| **特点** | Go 语言 Playwright 绑定 |
+
+### 3.2 E2E 测试模式
+
+#### e2e-testing-patterns
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | e2e-testing-patterns |
+| **特点** | 端到端测试最佳实践 |
+
+**覆盖内容：**
+- Playwright 和 Cypress
+- 稳定的选择器策略
+- 测试数据管理
+- 重试、追踪、隔离
+- CI 并行化
+
+#### e2e-testing
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | e2e-testing |
+| **特点** | 端到端测试基础 |
+
+### 3.3 浏览器自动化
+
+#### browser-automation
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | browser-automation |
+| **特点** | 通用浏览器自动化 |
+
+### 3.4 API 测试
+
+#### api-testing-observability-api-mock
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | api-testing-observability-api-mock |
+| **特点** | API 测试和可观测性 |
+
+### 3.5 游戏客户端测试方案
+
+| 测试类型 | 工具 | 适用场景 |
+|---------|------|---------|
+| **单元测试** | Unity Test Framework, pytest | 游戏逻辑验证 |
+| **集成测试** | Playwright, Selenium | 客户端与服务端交互 |
+| **UI测试** | Playwright, Appium | 游戏UI交互 |
+| **性能测试** | Unity Profiler, RenderDoc | 帧率、内存测试 |
+| **回归测试** | CI/CD + Playwright | 版本发布验证 |
+
+### 3.6 自动化测试命令
+
+| 技能 | GitHub | 功能 |
+|-----|--------|------|
+| **/tdd** | zscott/pane | TDD 开发流程 |
+| **/tdd-implement** | jerseycheese/Narraitor | TDD 实现 |
+| **/repro-issue** | rzykov/metabase | 可复现测试用例 |
+| **/run-ci** | hackdays-io/toban-contribution-viewer | CI 检查运行 |
 
 ---
 
-### 1.4 sudocode - 轻量级代理编排
+## 四、开发者工具技能 (补充)
+
+### 4.1 DevOps 工具
+
+#### docker-expert
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [sudocode-ai/sudocode](https://github.com/sudocode-ai/sudocode) |
-| **Star** | 🆕 新兴 |
-| **类型** | 编排工具 |
-| **特点** | 集成 Jira 的轻量级代理编排 |
+| **来源** | Antigravity Skills |
+| **技能ID** | docker-expert |
+| **特点** | Docker 专家技能 |
 
-### 核心功能
+#### k8s-manifest-generator
 
-- **代理编排**: 多代理协作工作流
-- **Jira 集成**: 与项目管理工具无缝集成
-- **规范框架**: 支持多种规范框架
-- **轻量级**: 最小化依赖
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | k8s-manifest-generator |
+| **特点** | Kubernetes Manifest 生成 |
 
-### 与 Jira 集成
+#### terraform-aws-modules
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | terraform-aws-modules |
+| **特点** | AWS Terraform 模块 |
+
+#### cloud-devops
+
+| 项目 |说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **技能ID** | cloud-devops |
+| **特点** | 云端 DevOps |
+
+### 4.2 云服务集成
+
+#### AWS 服务
+
+| 技能目录 | 说明 |
+|---------|------|
+| **aws-skills** | AWS 全面技能 |
+| **aws-serverless** | AWS 无服务器架构 |
+| **aws-cost-optimizer** | AWS 成本优化 |
+
+#### Azure 服务
+
+| 技能目录 | 说明 |
+|---------|------|
+| **azure-ai-projects-py** | Azure AI 项目 (Python) |
+| **azure-functions** | Azure Functions |
+| **azure-cosmos-db-py** | Azure Cosmos DB |
+
+#### GCP 服务
+
+| 技能目录 | 说明 |
+|---------|------|
+| **gcp-cloud-run** | GCP Cloud Run |
+
+### 4.3 安全测试
+
+| 技能目录 | 说明 |
+|---------|------|
+| **pentest-checklist** | 渗透测试检查清单 |
+| **pentest-commands** | 渗透测试命令 |
+| **aws-penetration-testing** | AWS 渗透测试 |
+| **cloud-penetration-testing** | 云渗透测试 |
+| **api-security-testing** | API 安全测试 |
+
+### 4.4 自动化工作流
+
+#### 自动化技能集合
+
+| 技能目录 | 说明 |
+|---------|------|
+| **github-automation** | GitHub 自动化 |
+| **gitlab-automation** | GitLab 自动化 |
+| **jira-automation** | Jira 自动化 |
+| **cicd-automation-workflow-automate** | CI/CD 自动化 |
+
+---
+
+## 五、推荐技能组合
+
+### 5.1 游戏开发组合
+
+| 用途 | 首推技能 | 备选 |
+|-----|---------|------|
+| **Unity 开发** | Antigravity unity-developer | cc-plugin-unity-gamedev |
+| **Godot 开发** | Antigravity godot-gdscript-patterns | - |
+| **Unreal 开发** | Antigravity unreal-engine-cpp-pro | - |
+| **Web 游戏** | Antigravity web-games + playwright-skill | - |
+| **游戏测试** | playwright-skill + Unity Test Framework | - |
+
+### 5.2 Python 开发组合
+
+| 用途 | 首推技能 | 备选 |
+|-----|---------|------|
+| **Web API** | python-fastapi-development | pydantic-ai-skills |
+| **生产项目** | python-pro | - |
+| **测试** | python-testing-patterns | pytest |
+| **性能优化** | python-performance-optimization | - |
+
+### 5.3 自动化测试组合
+
+| 用途 | 首推技能 | 备选 |
+|-----|---------|------|
+| **Web 测试** | playwright-skill | e2e-testing-patterns |
+| **E2E 测试** | e2e-testing-patterns | - |
+| **API 测试** | api-testing-observability-api-mock | - |
+| **TDD 开发** | /tdd-implement | - |
+
+### 5.4 DevOps 组合
+
+| 用途 | 首推技能 | 备选 |
+|-----|---------|------|
+| **容器化** | docker-expert | cc-devops-skills |
+| **Kubernetes** | k8s-manifest-generator | - |
+| **云架构** | terraform-aws-modules | cloud-devops |
+| **安全测试** | pentest-checklist | trailofbits-skills |
+
+---
+
+## 六、技能选择决策树
+
+### 6.1 游戏开发选择
 
 ```
-sudocode → Jira Issue → 任务分解 → 代理执行 → 状态更新
+游戏客户端开发?
+├─ Unity → Antigravity unity-developer
+├─ Godot → godot-gdscript-patterns
+├─ Unreal → unreal-engine-cpp-pro
+├─ Web/H5 → web-games + playwright-skill
+└─ 通用 → game-development (2d/3d/mobile/pc)
+
+需要测试?
+├─ 浏览器测试 → playwright-skill
+├─ 单元测试 → Unity Test Framework
+└─ 性能测试 → Unity Profiler
+```
+
+### 6.2 Python 开发选择
+
+```
+Python 开发?
+├─ Web API → python-fastapi-development
+├─ 生产项目 → python-pro
+├─ 异步编程 → async-python-patterns
+├─ 性能优化 → python-performance-optimization
+└─ 测试 → python-testing-patterns
+
+需要数据库?
+├─ PostgreSQL → read-only-postgres
+├─ 云数据库 → azure-cosmos-db-py
+└─ ORM → SQLAlchemy (via python-pro)
+```
+
+### 6.3 测试自动化选择
+
+```
+测试自动化?
+├─ 浏览器 → playwright-skill
+├─ E2E → e2e-testing-patterns
+├─ API → api-testing-observability-api-mock
+├─ TDD → /tdd-implement
+└─ 安全 → pentest-checklist
 ```
 
 ---
 
-### 1.5 claude-tmux - tmux 会话管理
+## 七、安装指南
 
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [nielsgroen/claude-tmux](https://github.com/nielsgroen/claude-tmux) |
-| **Star** | 🆕 新兴 |
-| **类型** | 会话管理工具 |
-| **平台** | Linux/macOS |
-
-### 核心功能
-
-- **tmux 集成**: 在 tmux 中管理 Claude Code
-- **弹出菜单**: tmux popup 显示所有实例
-- **快速切换**: 实例间快速切换
-- **状态监控**: 实时监控会话状态
-- **生命周期**: 完整的会话管理
-- **PR 支持**: Git worktree 和 PR 支持
-
-### 使用方式
+### 7.1 Antigravity Skills 安装
 
 ```bash
-# 启动 claude-tmux
-claude-tmux
+# 克隆 Antigravity Skills
+git clone https://github.com/AntigravityDesign/antigravity-awesome-skills.git
 
-# 在 tmux 中使用
-Prefix + ?  # 打开弹出菜单
+# 安装特定技能
+cd antigravity-awesome-skills
+cp -r skills/unity-developer ~/.claude/skills/
+
+# 或复制所有技能
+cp -r skills/* ~/.claude/skills/
 ```
 
----
-
-### 1.6 claude-esp - 隐藏输出流式传输
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [phiat/claude-esp](https://github.com/phiat/claude-esp) |
-| **Star** | 🆕 新兴 |
-| **技术栈** | Go / TUI |
-| **特点** | 流式传输 Claude Code 隐藏输出 |
-
-### 核心功能
-
-- **隐藏输出**: 监控 thinking、tool calls、subagents
-- **多会话**: 同时监控多个会话
-- **内容过滤**: 按内容类型过滤
-- **后台任务**: 跟踪后台任务
-- **调试友好**: 理解 Claude 内部工作原理
-
-### 使用场景
-
-- 调试代理行为
-- 理解 Claude 决策过程
-- 监控多个会话
-- 学习 Claude 提示技术
-
----
-
-## 二、安全相关插件
-
-### 2.1 安全技能对比
-
-| 插件 | 功能 | 适用场景 |
-|-----|------|---------|
-| **parry** | 提示注入扫描 | 输入安全检查 |
-| **Dippy** | AST 命令批准 | 权限管理 |
-| **trailofbits-skills** | CodeQL/Semgrep | 代码审计 |
-
-### 2.2 安全插件选择建议
-
-```
-安全需求?
-├─ 提示注入防护 → parry
-├─ 命令权限管理 → Dippy
-├─ 代码漏洞扫描 → trailofbits-skills
-└─ 全面安全审计 → 组合使用
-```
-
----
-
-## 三、开发者效率插件
-
-### 3.1 会话管理
-
-| 插件 | 功能 | 特点 |
-|-----|------|------|
-| **claude-tmux** | tmux 集成 | 弹出菜单、快速切换 |
-| **Claude Session Restore** | 跨会话恢复 | ZENG3LD/claude-session-restore |
-| **recall** | 全文搜索 | zippoxer/recall 会话历史 |
-
-### 3.2 工作流编排
-
-| 插件 | 功能 | 特点 |
-|-----|------|------|
-| **sudocode** | 轻量编排 | Jira 集成 |
-| **Claude Squad** | 多工作区 | smtg-ai/claude-squad |
-| **Claude Swarm** | 多代理协同 | parruda/claude-swarm |
-
-### 3.3 使用监控
-
-| 插件 | 功能 | 平台 |
-|-----|------|------|
-| **CC Usage** | CLI 分析 | ryoppippi/ccusage |
-| **ccflare** | Web 仪表板 | snipeship/ccflare |
-| **Claudex** | 历史浏览器 | kunwar-shah/claudex |
-
----
-
-## 四、新兴插件趋势
-
-### 4.1 2026年3月趋势分析
-
-| 方向 | 趋势 | 说明 |
-|-----|------|------|
-| **安全增强** | ⬆️ 上升 | parry、Dippy 等安全工具涌现 |
-| **会话管理** | ⬆️ 上升 | tmux、session restore |
-| **多代理协作** | ⬆️ 上升 | Swarm、Squad |
-| **调试/监控** | ➡️ 稳定 | claude-esp、usage monitors |
-
-### 4.2 值得关注的新插件
-
-- **Claude Code Flow**: 代码优先编排层
-- **Claude Swarm**: 多代理协同工作
-- **Context Engineering Kit**: 上下文工程
-- **Everything Claude Code**: 全方位资源库
-- **Book Factory**: 自动化出版工作流
-
----
-
-## 五、安装指南
-
-### 5.1 安装新插件
+### 7.2 GitHub 插件安装
 
 ```bash
 # 克隆插件仓库
 git clone https://github.com/用户名/插件名.git
 
 # 复制到 Claude Code
-cp -r 插件名 ~/.claude/
+cp -r 插件名 ~/.claude/skills/
 
-# 或使用技能安装
-claude --install-skill gh-用户名-插件名
+# 验证安装
+claude --list-skills
 ```
-
-### 5.2 配置安全插件
-
-```bash
-# 配置 parry (提示注入扫描)
-cd parry
-./install.sh
-
-# 配置 Dippy (命令批准)
-cd Dippy
-./setup.sh
-```
-
----
-
-## 六、推荐插件组合
-
-### 6.1 基础开发套件
-
-| 插件 | 用途 |
-|-----|------|
-| **fullstack-dev-skills** | 全栈开发 |
-| **playwright-skill** | 自动化测试 |
-| **cc-devops-skills** | DevOps |
-
-### 6.2 安全增强套件
-
-| 插件 | 用途 |
-|-----|------|
-| **parry** | 注入防护 |
-| **Dippy** | 权限管理 |
-| **trailofbits-skills** | 代码审计 |
-
-### 6.3 效率提升套件
-
-| 插件 | 用途 |
-|-----|------|
-| **claude-tmux** | 会话管理 |
-| **Claude Code Tools** | 上下文保持 |
-| **claude-esp** | 调试监控 |
-
-### 6.4 新兴客户端工具
-
-| 插件 | 用途 | 特点 |
-|-----|------|------|
-| **Cherry Studio** | AI 生产力工作室 | 300+ 助手 |
-| **Get Shit Done (GSD)** | 元提示系统 | 轻量级 |
-| **claude-mem** | 会话记忆 | 自动捕获上下文 |
-| **Ruflo** | 代理编排 | 企业级平台 |
 
 ---
 
@@ -320,6 +541,7 @@ cd Dippy
 
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
 - [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
+- [Antigravity Skills](https://github.com/AntigravityDesign/antigravity-awesome-skills)
 - [Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)
 
 ---
