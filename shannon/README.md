@@ -5,7 +5,7 @@
 - **插件名称**: Shannon
 - **GitHub**: [KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)
 - **Star**: 26k ⭐
-- **状态**: ✅ 已调研
+- **状态**: ✅ 已验证可用
 - **调研日期**: 2026-03-03
 - **分类**: 安全测试 / AI 渗透测试
 
