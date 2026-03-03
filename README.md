@@ -11,6 +11,11 @@
 | [shannon](./shannon/README.md) | AI 自动化渗透测试框架，96.15% 基准成功率 | ✅ 已验证可用 |
 | [pi-mono](./pi-mono/README.md) | AI Agent 工具箱，极简终端编程助手，19k⭐ | ✅ 已调研 |
 | [skills](./skills/README.md) | OpenAI Codex 官方技能目录，30+ 精选技能 | ✅ 已调研 |
+| [agentsys](./agentsys/README.md) | Claude Code 工作流自动化系统，多代理代码审查 | ✅ 已调研 |
+| [rulesync](./rulesync/README.md) | Claude Code 配置同步工具，跨平台配置转换 | ✅ 已调研 |
+| [claude-starter-kit](./claude-starter-kit/README.md) | Claude Code 开发环境模板，MCP 服务器预配置 | ✅ 已调研 |
+| [aws-mcp-server](./aws-mcp-server/README.md) | AWS 云服务 MCP 集成，自然语言管理 AWS 资源 | ✅ 已调研 |
+| [playwright-mcp](./playwright-mcp/README.md) | 浏览器自动化 MCP 服务器，E2E 测试和网页抓取 | ✅ 已调研 |
 
 ## 📝 文档规范
 
