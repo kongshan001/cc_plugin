@@ -1,4 +1,4 @@
-# Claude Code 插件调研报告 - 2026年3月 (第三期)
+# Claude Code 插件调研报告 - 2026年3月 (第四期)
 
 > 持续跟踪 Claude Code 生态热门插件，聚焦游戏开发、Python 开发、自动化测试、开发者工具方向
 
@@ -8,7 +8,7 @@
 
 | 维度 | 统计 |
 |-----|------|
-| **调研时间** | 2026-03-03 |
+| **调研时间** | 2026-03-04 |
 | **覆盖方向** | 游戏开发、Python开发、自动化测试、开发者工具 |
 | **技能总数** | 150+ |
 | **数据来源** | awesome-claude-code, GitHub trending, Antigravity Skills |
@@ -428,6 +428,7 @@ claude --list-skills
 - [Claude Code Handbook](https://nikiforovall.blog/claude-code-rules/)
 - [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
 - [补充调研文档](./supplement-2026-03-03/README.md)
+- [第四期补充调研](./supplement-2026-03-04/README.md)
 
 ---
 
