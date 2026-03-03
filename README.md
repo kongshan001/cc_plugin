@@ -13,6 +13,11 @@
 | **技能总数** | 150+ |
 | **数据来源** | awesome-claude-code, GitHub trending, Antigravity Skills |
 
+## 📂 补充调研文档
+
+- [补充调研-第五期](./supplement-2026-03-04-v3/README.md) (2026-03-04)
+- [补充调研-第六期](./supplement-2026-03-04-v4/README.md) (2026-03-04 最新)
+
 ---
 
 ## 一、游戏客户端开发技能 (新增)
