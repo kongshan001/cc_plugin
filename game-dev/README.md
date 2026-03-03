@@ -1,248 +1,326 @@
-# Claude Code 开发者工具技能调研
+# Claude Code 游戏客户端开发插件调研
 
 ## 📋 文档信息
 
 - **调研日期**: 2026-03-03
-- **分类**: 开发者工具 / 效率提升
+- **分类**: 游戏开发 / 客户端开发 / Unity / Godot / GameMaker
 - **状态**: ✅ 已调研
 
 ---
 
-## 1. Claude Code Templates - 开发者模板大全
+## 1. Unity 游戏开发技能
 
-### 插件概述
+### 1.1 OH-Unity-GameDev-Skills
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) |
-| **特点**: | 超全面的资源集合 |
-| **功能**: | Slash commands + Hooks + Agents |
-| **Star**: | ⭐⭐⭐⭐⭐ |
+| **GitHub** | [OstrichHermit/OH-Unity-GameDev-Skills](https://github.com/OstrichHermit/OH-Unity-GameDev-Skills) |
+| **Star** | ⭐ 6 |
+| **语言** | Python |
+| **特点** | 符合 Claude Code Skills 规范的 Unity 游戏开发技能集 |
 
-### 核心功能
+### 技能列表
 
-- **使用仪表盘**: 追踪 Claude Code 使用情况
-- **分析功能**: 使用数据分析
-- **命令集**: 丰富的 Slash 命令
-- **Hooks**: 多种自动化钩子
-- **子代理**: 专业化的子代理配置
+| 技能名称 | 功能描述 |
+|---------|---------|
+| **claude_skill_unity** | Unity 基础开发技能 |
+| **doTween-unity** | DoTween 动画库集成 |
+| **media-pipe-unity-skill** | MediaPipe 机器视觉集成 |
+| **prime-tween-unity** | PrimeTween 高性能动画 |
+| **skill-creator** | 技能创建辅助工具 |
 
 ### 适用场景
 
-- 开发者效率提升
-- 团队协作标准化
-- 项目快速启动
+- Unity 游戏原型开发
+- 动画系统实现
+- 机器视觉游戏应用
+- 性能优化
 
 ---
 
-## 2. Fullstack Dev Skills - 全栈开发技能集
-
-### 插件概述
+### 1.2 cc-plugin-unity-gamedev
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills) |
-| **技能数量**: | 65+ 专业化技能 |
-| **覆盖范围**: | 全栈开发 |
-
-### 核心功能
-
-- **9 个项目工作流命令**: 覆盖完整开发流程
-- **Jira/Confluence 集成**: 项目管理无缝衔接
-- **上下文工程**: `/common-ground` 命令揭示 Claude 假设
-- **框架覆盖**: 多种前端/后端框架
+| **GitHub** | [tjboudreaux/cc-plugin-unity-gamedev](https://github.com/tjboudreaux/cc-plugin-unity-gamedev) |
+| **Star** | ⭐ 1 |
+| **技能数量** | 21 个专业化技能 |
+| **覆盖范围** | Unity 完整开发栈 |
 
 ### 技能分类
 
-| 类别 | 技能数量 |
-|-----|---------|
-| 前端框架 | 15+ |
-| 后端服务 | 12+ |
-| 数据库 | 8+ |
-| DevOps | 10+ |
-| 测试 | 8+ |
-| 其他 | 12+ |
+| 类别 | 技能数量 | 包含内容 |
+|-----|---------|---------|
+| **工具类** | 8 | Addressables, MemoryPack, ScriptableObjects, Profiling 等 |
+| **动画/物理** | 5 | Animation, Physics, NavMesh, Object Pooling, State Machine |
+| **AI/行为** | 2 | Behavior Designer, Gameplay Ability System |
+| **音视频** | 2 | Wwise 音频, Cinemachine 相机 |
+| **UI** | 2 | UGUI, Mobile Optimization |
+| **测试** | 1 | Test Framework |
+| **DI/异步** | 1 | VContainer, UniTask |
+
+### 核心技能详解
+
+#### Addressables (资源管理系统)
+```
+- 异步资源加载
+- 内存管理
+- 引用计数
+- 远程内容分发
+```
+
+#### Gameplay Ability System (GAS)
+```
+- Ability 技能系统
+- Effect 效果系统
+- Attributes 属性系统
+- Tags 标签系统
+```
+
+#### PrimeTween (高性能动画)
+```
+- 动画序列
+- UI 动画
+- 性能优化
+- 协程集成
+```
 
 ---
 
-## 3. cc-devops-skills - DevOps 工程师技能集
-
-### 插件概述
+### 1.3 unity-ai-workflow
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [akin-ozer/cc-devops-skills](https://github.com/akin-ozer/cc-devops-skills) |
-| **目标用户**: | DevOps 工程师 |
-| **特点**: | 超详细 IaC 代码生成 |
+| **GitHub** | [David-GD13/unity-ai-workflow](https://github.com/David-GD13/unity-ai-workflow) |
+| **Star** | ⭐ 4 |
+| **特点** | AI-first Unity 6.2+ 游戏开发工作流 |
 
-### 核心功能
+### 包含内容
 
-- **多平台支持**: AWS/Azure/GCP 等
-- **验证工具**: 内置代码验证
-- **生成器**: 自动化代码生成
-- **Shell 脚本**: 运维脚本集成
+- **Rules**: 项目规则配置
+- **Agents**: AI 代理配置
+- **Skills**: Claude Code 技能集
+- **Slash Commands**: 快捷命令
 
-### 支持平台
+### 适用版本
 
-| 云平台 | 状态 |
-|-------|------|
-| AWS | ✅ 完整支持 |
-| Azure | ✅ 完整支持 |
-| GCP | ✅ 完整支持 |
-| Kubernetes | ✅ 完整支持 |
-| Docker | ✅ 完整支持 |
+- Unity 6.2+
+- Claude Code
+- Antigravity
 
 ---
 
-## 4. Claude Code Agents - E2E 开发工作流
-
-### 插件概述
+### 1.4 Claude-Code-Skills-For-Unity-Game-Development
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [undeadlist/claude-code-agents](https://github.com/undeadlist/claude-code-agents) |
-| **特点**: | 全面的端到端开发 |
+| **GitHub** | [flashwade03/Claude-Code-Skills-For-Unity-Game-Development](https://github.com/flashwade03/Claude-Code-Skills-For-Unity-Game-Development) |
+| **特点** | 知名 Unity 资产开发技能 |
 
-### 核心功能
+---
 
-- **多个审计代理**: 并行运行代码审计
-- **自动化修复**: 微检查点协议
-- **浏览器 QA**: 基于浏览器的质量保证
-- **防失控协议**: 严格的安全机制
+## 2. Godot 游戏开发技能
+
+### 2.1 Claude Resources for Godot
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [kwhitejr/claude-resources](https://github.com/kwhitejr/claude-resources) |
+| **Star** | ⭐ 3 |
+| **特点** | Godot 游戏开发自定义代理和技能 |
 
 ### 适用场景
 
-- 大型项目开发
-- 代码质量保证
-- 自动化测试
-- 持续集成
+- Godot 4.x 项目开发
+- GDScript 脚本编写
+- 游戏工作流自动化
 
 ---
 
-## 5. Superpowers - 核心工程技能
+## 3. GameMaker Studio 开发技能
 
-### 插件概述
+### 3.1 GameMaker Skills
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [obra/superpowers](https://github.com/obra/superpowers) |
-| **Star**: | ⭐ 热门 |
-| **状态**: | ✅ 已验证可用 |
+| **GitHub** | [leihaht/gamemaker-skills](https://github.com/leihaht/gamemaker-skills) |
+| **Star** | ⭐ 2 |
+| **语言** | GML |
 
 ### 核心功能
 
-- **SDLC 全覆盖**: 从规划到发布
-- **代码审查**: 专业化审查技能
-- **测试驱动**: TDD 开发流程
-- **调试技能**: 问题追踪定位
+- **对象创建**: GameMaker 对象创建和管理
+- **GML 语法**: GML 语言专家
+- **Shaders**: 着色器开发
+- **网络功能**:多人游戏网络编程
 
-### 包含技能列表
+### 适用场景
 
-| 技能名称 | 功能 |
-|---------|------|
-| brainstorming | 结构化头脑风暴 |
-| test-driven-development | TDD 开发流程 |
-| finishing-a-development-branch | 分支完成工作流 |
-| root-cause-tracing | 根因追踪 |
-| using-git-worktrees | Git Worktree 使用 |
+- 2D 游戏开发
+- 游戏原型快速开发
+- 独立游戏制作
 
 ---
 
-## 6. AgentSys - 工作流自动化系统
+## 4. 其他游戏开发技能
 
-### 插件概述
+### 4.1 Space Engineers 插件开发
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [avifenesh/agentsys](https://github.com/avifenesh/agentsys) |
-| **特点**: | 生产级工作流系统 |
+| **GitHub** | [viktor-ferenczi/se-dev-skills](https://github.com/viktor-ferenczi/se-dev-skills) |
+| **Star** | ⭐ 2 |
+| **语言** | Python |
+| **用途** | Space Engineers 插件/Mod/游戏脚本开发 |
 
-### 核心功能
+### 适用平台
 
-- **插件系统**: 灵活的插件机制
-- **代理集成**: 多代理协作
-- **任务自动化**: 端到端自动化
-- **PR 管理**: 自动化的 PR 处理
-- **代码清理**: 自动代码优化
-- **性能调查**: 性能问题诊断
-
-### 技术特点
-
-- **确定检测**: 使用正则和 AST
-- **LLM 判断**: 智能决策
-- **生产验证**: 经过生产环境测试
-- **全面测试**: 数千行代码 + 数千测试
+- Space Engineers 游戏
+- 插件开发
+- 游戏内脚本编写
 
 ---
 
-## 7. 开发者工具技能汇总
+### 4.2 Game Opus - 终极游戏开发元技能
 
-### 按用途分类
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [nightbs8/game-opus](https://github.com/nightbs8/game-opus) |
+| **Star** | ⭐ 0 |
+| **特点** | 激活 14 个游戏开发 + 3D 技能 |
+
+### 技能数量
+
+- **游戏开发技能**: 14 个
+- **3D 技能**: 3 个
+
+---
+
+### 4.3 Cowork Skills
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [GrizzwaldHouse/cowork-skills](https://github.com/GrizzwaldHouse/cowork-skills) |
+| **Star** | ⭐ 0 |
+| **语言** | Python |
+
+### 包含内容
+
+- 设计技能
+- 文档技能
+- AI 工作流
+- 游戏开发
+
+---
+
+## 5. 游戏客户端测试方案
+
+### 5.1 Playwright 浏览器测试
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) |
+| **Star** | ⭐ 1.8k |
+| **特点** | 模型调用的 Playwright 自动化 |
+
+### 适用场景
+
+- Web/H5 游戏测试
+- UI 自动化验证
+- 回归测试
+
+### 5.2 Unity Test Framework
+
+```
+- EditMode 测试
+- PlayMode 测试
+- 异步测试
+- Mocking 支持
+```
+
+---
+
+## 6. 部署指南
+
+### 安装 Unity 技能
+
+```bash
+# 克隆 Unity 游戏开发技能
+git clone https://github.com/tjboudreaux/cc-plugin-unity-gamedev.git
+
+# 安装到 Claude Code
+cp -r cc-plugin-unity-gamedev ~/.claude/
+
+# 或使用技能安装命令
+claude --install-skill gh-tjboudreaux-cc-plugin-unity-gamedev
+```
+
+### 安装 Godot 技能
+
+```bash
+# 克隆 Godot 开发资源
+git clone https://github.com/kwhitejr/claude-resources.git
+
+# 复制到技能目录
+cp -r claude-resources/godot ~/.claude/skills/
+```
+
+### 安装 GameMaker 技能
+
+```bash
+# 克隆 GameMaker 技能
+git clone https://github.com/leihaht/gamemaker-skills.git
+
+# 复制到技能目录
+cp -r gamemaker-skills ~/.claude/skills/
+```
+
+---
+
+## 7. 技能选择建议
+
+### 按游戏引擎选择
+
+| 引擎 | 推荐技能 | 优先级 |
+|-----|---------|-------|
+| **Unity** | cc-plugin-unity-gamedev | ⭐⭐⭐⭐⭐ |
+| **Unity** | OH-Unity-GameDev-Skills | ⭐⭐⭐⭐ |
+| **Godot** | claude-resources | ⭐⭐⭐⭐ |
+| **GameMaker** | gamemaker-skills | ⭐⭐⭐ |
+| **Space Engineers** | se-dev-skills | ⭐⭐ |
+
+### 按用途选择
 
 | 用途 | 推荐技能 |
 |-----|---------|
-| **全栈开发** | Fullstack Dev Skills (65+ 技能) |
-| **DevOps** | cc-devops-skills |
-| **测试** | test-driven-development |
-| **代码审查** | AgentSys, Claude Code Agents |
-| **效率提升** | Claude Code Templates |
-| **安全审计** | Trail of Bits Security Skills |
-
-### 按复杂度分类
-
-| 级别 | 技能 |
-|-----|------|
-| **入门级** | Claude Code Templates |
-| **进阶级** | Superpowers |
-| **专业级** | cc-devops-skills |
-| **企业级** | AgentSys |
+| **大型 Unity 项目** | cc-plugin-unity-gamedev (21 技能) |
+| **快速原型** | OH-Unity-GameDev-Skills |
+| **独立游戏** | gamemaker-skills |
+| **Mod 开发** | se-dev-skills |
+| **AI/机器学习** | media-pipe-unity-skill |
 
 ---
 
-## 8. 部署指南
-
-### 快速安装
-
-```bash
-# 克隆资源库
-git clone https://github.com/davila7/claude-code-templates.git
-git clone https://github.com/jeffallan/claude-skills.git
-
-# 安装到 Claude Code
-cp -r claude-code-templates/* ~/.claude/
-cp -r claude-skills/skills ~/.claude/
-```
-
-### 选择性安装
-
-```bash
-# 只安装特定技能
-cp -r superpowers/skills/test-driven-development ~/.claude/skills/
-cp -r superpowers/skills/brainstorming ~/.claude/skills/
-```
-
----
-
-## 9. 优缺点分析
+## 8. 优缺点分析
 
 ### ✅ 优点
 
 | 优点 | 说明 |
 |-----|------|
-| **功能全面** | 覆盖开发全流程 |
+| **引擎覆盖全面** | 支持 Unity/Godot/GameMaker 等主流引擎 |
+| **技能专业化** | 针对不同 Unity 系统有专门技能 |
 | **开箱即用** | 安装配置简单 |
-| **社区活跃** | 持续更新维护 |
-| **文档完善** | 学习资源丰富 |
-| **可扩展** | 灵活定制 |
+| **持续更新** | 社区活跃维护 |
+| **文档完善** | 大部分有详细说明 |
 
 ### ❌ 缺点
 
 | 缺点 | 说明 |
 |-----|------|
-| **配置复杂** | 部分技能需要配置 |
-| **学习成本** | 需要时间熟悉 |
-| **资源占用** | 技能数量多占用空间 |
-| **版本兼容** | 需跟进更新 |
+| **Star 普遍较低** | 社区生态仍在早期 |
+| **部分技能较新** | 稳定性有待验证 |
+| **Unity 偏重** | 其他引擎技能较少 |
+| **中文资料少** | 需要英文阅读能力 |
 
 ---
 
@@ -250,9 +328,10 @@ cp -r superpowers/skills/brainstorming ~/.claude/skills/
 
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
 - [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
-- [Claude Code Handbook](https://nikiforovall.blog/claude-code-rules/)
-- [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
+- [Unity 官方文档](https://docs.unity3d.com/)
+- [Godot 官方文档](https://docs.godotengine.org/)
+- [GameMaker 文档](https://manual.yoyogames.com/)
 
 ---
 
-*选择合适的开发者工具技能可以显著提升开发效率，建议根据项目需求选择性安装。*
+*游戏开发技能集正在快速发展，建议关注社区更新。*
