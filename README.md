@@ -7,6 +7,7 @@
 | 插件名称 | 描述 | 状态 |
 |---------|------|------|
 | [claude-mem](./claude-mem/README.md) | Claude 长期记忆插件 | ✅ 已验证 |
+| [superpowers](./superpowers/README.md) | Agentic Skills 框架，完整软件工程工作流 | ✅ 已调研 |
 
 ## 📝 文档规范
 
