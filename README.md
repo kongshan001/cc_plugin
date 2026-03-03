@@ -528,7 +528,7 @@ claude --list-skills
 - [Claude Code Handbook](https://nikiforovall.blog/claude-code-rules/)
 - [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
 - [补充调研文档](./supplement-2026-03-03/README.md)
-- [第四期补充调研](./supplement-2026-03-04/README.md)
+- [第四期补充调研](./supplement-2026-03-04/README.md) (最新)
 
 ---
 
