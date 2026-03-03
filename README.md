@@ -1,4 +1,4 @@
-# Claude Code 插件调研报告 - 2026年3月
+# Claude Code 插件调研报告 - 2026年3月 (第二期)
 
 > 持续跟踪 Claude Code 生态热门插件，聚焦游戏开发、Python 开发、自动化测试、开发者工具方向
 
@@ -10,8 +10,8 @@
 |-----|------|
 | **调研时间** | 2026-03-03 |
 | **覆盖方向** | 游戏开发、Python开发、自动化测试、开发者工具 |
-| **技能总数** | 100+ |
-| **数据来源** | awesome-claude-code, GitHub trending |
+| **技能总数** | 120+ |
+| **数据来源** | awesome-claude-code, GitHub trending, Antigravity Skills |
 
 ---
 
@@ -41,6 +41,41 @@
 |-----|--------|------|
 | **claude-resources** | kwhitejr/claude-resources | ⭐3 |
 
+### 1.2.1 Antigravity 游戏开发技能 (全面覆盖)
+
+| 分类 | 技能目录 | 说明 |
+|-----|---------|------|
+| **PC/Console Games** | `pc-games` | PC和主机游戏开发原理，引擎选择策略 |
+| **Web Games** | `web-games` | H5/Web游戏开发，JavaScript/TypeScript |
+| **Mobile Games** | `mobile-games` | 移动端游戏，iOS/Android平台适配 |
+| **2D Games** | `2d-games` | 2D游戏开发，精灵动画，Tilemap |
+| **3D Games** | `3d-games` | 3D游戏开发，模型，光照，渲染 |
+| **Multiplayer** | `multiplayer` | 网络 multiplayer 游戏开发 |
+| **VR/AR** | `vr-ar` | 虚拟现实/增强现实游戏 |
+| **Game Audio** | `game-audio` | 游戏音频设计，Wwise/FMOD |
+| **Game Art** | `game-art` | 游戏美术，材质，动画 |
+| **Game Design** | `game-design` | 游戏设计，原型，玩家体验 |
+
+### 引擎选择决策树
+
+```
+What are you building?
+│
+├── 2D Game
+│   ├── Open source important? → Godot
+│   └── Large team/assets? → Unity
+│
+├── 3D Game
+│   ├── AAA visual quality? → Unreal
+│   ├── Cross-platform priority? → Unity
+│   └── Indie/open source? → Godot 4
+│
+└── Specific Needs
+    ├── DOTS performance? → Unity
+    ├── Nanite/Lumen? → Unreal
+    └── Lightweight? → Godot
+```
+
 ### 1.3 GameMaker Studio
 
 | 技能 | GitHub | Star |
@@ -53,6 +88,32 @@
 |-----|--------|------|
 | **se-dev-skills** | viktor-ferenczi/se-dev-skills | Space Engineers插件开发 |
 | **game-opus** | nightbs8/game-opus | 14个游戏开发+3D技能 |
+
+### 1.5 游戏客户端自动化测试方案
+
+#### 1.5.1 Unity 测试
+
+| 技能 | 来源 | 功能 |
+|-----|------|------|
+| **Unity Test Framework** | cc-plugin-unity-gamedev | 单元测试、集成测试 |
+| **Unity Profiling** | Unity Profiler | 性能测试 |
+
+#### 1.5.2 H5/Web 游戏测试
+
+| 技能 | GitHub | Star | 功能 |
+|-----|--------|------|------|
+| **playwright-skill** | lackeyjb/playwright-skill | ⭐1.8k | Web游戏自动化测试 |
+| **playwright-undetected** | dalbit-mir/playwright-undetected-skill | ⭐4 | Bot检测绕过测试 |
+
+#### 1.5.3 游戏客户端测试类型
+
+| 类型 | 工具 | 适用场景 |
+|-----|------|---------|
+| **单元测试** | Unity Test Framework, pytest | 游戏逻辑验证 |
+| **集成测试** | Playwright, Selenium | 客户端与服务端交互 |
+| **UI测试** | Playwright, Appium | 游戏UI交互 |
+| **性能测试** | Unity Profiler, RenderDoc | 帧率、内存测试 |
+| **回归测试** | CI/CD + Playwright | 版本发布验证 |
 
 ---
 
@@ -109,6 +170,48 @@
 | **claude-skills-marketplace** | mhattingpete/claude-skills-marketplace | ⭐427 | Git/测试/代码审查 |
 | **fieldwork-skills** | buildoak/fieldwork-skills | ⭐12 | 端到端测试/Bug修复 |
 
+### 2.5 AWS 云服务
+
+| 技能 | GitHub | 功能 |
+|-----|--------|------|
+| **aws-mcp-server** | alexei-led/aws-mcp-server | AWS CLI集成 |
+
+### 2.6 Python 测试框架集成
+
+| 技能 | 来源 | 功能 |
+|-----|------|------|
+| **pytest** | Python 标准 | 单元测试框架 |
+| **Black + mypy** | EDSL 项目 | 代码格式化 + 类型检查 |
+| **Vitest** | Giselle 项目 | 前端测试 |
+
+### 2.7 TypeScript/JavaScript 开发
+
+| 技能 | GitHub | 功能 |
+|-----|--------|------|
+| **TypeScript Quality Hooks** | bartolli/claude-code-typescript-hooks | TypeScript 质量检查 |
+| **Inkline CLAUDE.md** | inkline/inkline | Vue 3 + TypeScript 项目 |
+| **LangGraphJS** | langchain-ai/langgraphjs | TypeScript monorepo |
+
+---
+
+## 三、自动化测试技能
+
+### 3.1 浏览器自动化
+
+| 技能 | GitHub | Star | 功能 |
+|-----|--------|------|------|
+| **playwright-skill** | lackeyjb/playwright-skill | ⭐1.8k | Playwright浏览器自动化 |
+| **playwright-undetected-skill** | dalbit-mir/playwright-undetected-skill | ⭐4 | Bot检测绕过 |
+| **Cursor Tools** | eastlondoner/cursor-tools | 浏览器自动化 (Stagehand) |
+
+### 3.2 软件工程测试
+
+| 技能 | GitHub | Star | 功能 |
+|-----|--------|------|------|
+| **claude-skills-marketplace** | mhattingpete/claude-skills-marketplace | ⭐427 | Git/测试/代码审查 |
+| **fieldwork-skills** | buildoak/fieldwork-skills | ⭐12 | 端到端测试/Bug修复 |
+| **cc-tools** | Veraticus/cc-tools | Go 实现的质量工具 |
+
 ### 3.3 测试命令 (Slash Commands)
 
 | 命令 | 来源 | 功能 |
@@ -118,6 +221,17 @@
 | **/repro-issue** | rzykov/metabase | 可复现测试用例 |
 | **/check** | rygwdn/slack-tools | 代码质量检查 |
 | **/clean** | Graphlet-AI/eridu | 代码格式化 |
+| **/fix-issue** | metabase/metabase | GitHub Issue 修复 |
+| **/fix-github-issue** | jeremymailen/kotlinter-gradle | Gradle 项目 Issue 修复 |
+| **/code_analysis** | kingler/n8n_agent | 高级代码分析 |
+| **/optimize** | to4iki/ai-project-rules | 性能优化建议 |
+| **/run-ci** | hackdays-io/toban-contribution-viewer | CI 检查运行 |
+
+### 3.4 Claude Code Pro 测试功能
+
+| 技能 | GitHub | 特点 |
+|-----|--------|------|
+| **Claude CodePro** | maxritter/claude-codepro | TDD 强制执行，质量挂钩 |
 
 ---
 
@@ -168,6 +282,26 @@
 |-----|--------|------|
 | **stt-mcp-server-linux** | marcindulak/stt-mcp-server-linux | 语音转文字 |
 | **Codex Skill** | klaudworks/skill-codex | Codex CLI集成 |
+| **aws-mcp-server** | alexei-led/aws-mcp-server | AWS 服务集成 |
+
+### 4.8 代码质量与安全
+
+| 技能 | GitHub | 特点 |
+|-----|--------|------|
+| **Trail of Bits Skills** | trailofbits/skills | CodeQL/Semgrep 安全审计 |
+| **parry** | vaporif/parry | 提示注入扫描器 |
+| **Dippy** | ldayton/Dippy | AST 自动批准安全命令 |
+| **TDD Guard** | nizos/tdd-guard | TDD 原则监控 Hook |
+
+### 4.9 Hooks 生态系统
+
+| 技能 | GitHub | 功能 |
+|-----|--------|------|
+| **claude-hooks** | johnlindquist/claude-hooks | TypeScript Hook 系统 |
+| **cchooks** | GowayLee/cchooks | Python Hook SDK |
+| **claude-code-hooks-sdk** | beyondcode/claude-hooks-sdk | PHP Hook SDK |
+| **Britfix** | Taleisin/britfix | 英式英语转换 |
+| **CC Notify** | dazhuiba/CCNotify | 桌面通知 |
 
 ---
 
@@ -178,12 +312,15 @@
 | 用途 | 首推技能 | 备选 |
 |-----|---------|------|
 | **游戏开发 (Unity)** | cc-plugin-unity-gamedev | OH-Unity-GameDev-Skills |
+| **游戏开发 (通用)** | Antigravity pc-games/mobile-games | game-opus |
 | **Python 后端** | pydantic-ai-skills | read-only-postgres |
+| **Python 测试** | EDSL (Black + mypy) | pytest |
 | **Web/H5游戏测试** | playwright-skill | playwright-undetected |
 | **全栈开发** | fullstack-dev-skills (65+) | claude-code-templates |
 | **DevOps** | cc-devops-skills | superpowers |
 | **代码审查** | agentsys | claude-code-agents |
-| **安全审计** | trailofbits-skills | - |
+| **安全审计** | trailofbits-skills | parry |
+| **质量保证** | Claude CodePro | TypeScript Quality Hooks |
 
 ### 5.2 技能选择决策树
 
@@ -192,21 +329,25 @@
 ├─ Unity → cc-plugin-unity-gamedev
 ├─ Godot → claude-resources
 ├─ GameMaker → gamemaker-skills
-└─ Web/H5 → playwright-skill
+├─ Web/H5 → playwright-skill
+└─ 通用 → Antigravity Skills (pc/mobile/web/2d/3d)
 
 Python 开发?
 ├─ Web框架 → pydantic-ai-skills
 ├─ 数据库 → read-only-postgres
-└─ 云服务 → aws-mcp-server
+├─ 云服务 → aws-mcp-server
+└─ 测试 → Black + mypy
 
 自动化测试?
 ├─ 浏览器 → playwright-skill
+├─ 单元测试 → Unity Test Framework
 ├─ 代码质量 → /check, /clean
 └─ TDD → /tdd-implement
 
 开发者效率?
 ├─ 全栈 → fullstack-dev-skills
 ├─ DevOps → cc-devops-skills
+├─ 安全 → trailofbits-skills
 └─ 专业 → claude-codepro
 ```
 
@@ -245,21 +386,47 @@ claude --list-skills
 
 | 方向 | 趋势 | 说明 |
 |-----|------|------|
-| **Agent工作流** | ⬆️ 上升 | agentsys, claude-code-agents |
-| **安全审计** | ⬆️ 上升 | trailofbits-skills |
-| **多云集成** | ➡️ 稳定 | AWS/Azure/GCP |
-| **游戏开发** | ➡️ 稳定 | Unity技能集增加 |
-| **测试自动化** | ⬆️ 上升 | Playwright主导 |
+| **Agent工作流** | ⬆️ 上升 | agentsys, claude-code-agents, Claude Code Flow |
+| **安全审计** | ⬆️ 上升 | trailofbits-skills, parry, Dippy |
+| **多云集成** | ➡️ 稳定 | AWS/Azure/GCP MCP |
+| **游戏开发** | ⬆️ 上升 | Antigravity Skills 全覆盖 |
+| **测试自动化** | ⬆️ 上升 | Playwright主导，TDD命令丰富 |
+| **Hook 生态** | ⬆️ 上升 | 多语言 SDK (Python, PHP, TypeScript) |
+| **上下文工程** | ⬆️ 上升 | Context Engineering Kit |
 
 ### 7.2 值得关注的新兴技能
 
-- **Claude Scientific Skills**: 科研/工程/分析技能集
-- **Context Engineering Kit**: 上下文工程
-- **Everything Claude Code**: 全方位资源库
-- **Book Factory**: 自动化出版工作流
-- **parry**: 提示注入扫描器，用于检测注入攻击
-- **Dippy**: 基于AST的安全命令自动批准工具
-- **Claude Scientific Skills**: 2026年3月新增，MIT许可
+| 技能 | 方向 | 特点 |
+|-----|------|------|
+| **Claude Scientific Skills** | 科研 | MIT许可，2026年3月新增 |
+| **Context Engineering Kit** | 工程 | 最小token占用 |
+| **Everything Claude Code** | 全栈 | 全面资源库 |
+| **Book Factory** | 出版 | 自动化出版工作流 |
+| **parry** | 安全 | 提示注入扫描器 |
+| **Dippy** | 安全 | AST自动批准安全命令 |
+| **Ralph Wiggum** | 开发方法 | 自主循环开发框架 |
+| **ContextKit** | 开发框架 | 4阶段规划方法论 |
+
+### 7.3 技术栈分布
+
+```
+编程语言:
+├── TypeScript: 35+ 技能
+├── Python: 25+ 技能
+├── Go: 5+ 技能 (cc-tools, ccexp)
+└── PHP: 2+ 技能 (claude-hooks-sdk)
+
+测试框架:
+├── Playwright: 主导
+├── Unity Test Framework: 游戏
+├── pytest: Python
+└── Vitest: 前端
+
+云服务:
+├── AWS: aws-mcp-server
+├── Azure: claude-codex-settings
+└── GCP: 集成中
+```
 
 ---
 
