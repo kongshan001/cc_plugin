@@ -56,6 +56,42 @@
 | **Game Art** | `game-art` | 游戏美术，材质，动画 |
 | **Game Design** | `game-design` | 游戏设计，原型，玩家体验 |
 
+#### Web Games 技能详解 (来自 Antigravity)
+
+| 框架 | 类型 | 最佳场景 |
+|------|------|---------|
+| **Phaser 4** | 2D | 完整游戏引擎功能 |
+| **PixiJS 8** | 2D | 渲染、UI |
+| **Three.js** | 3D | 可视化、轻量级 |
+| **Babylon.js 7** | 3D | 完整引擎、XR |
+
+#### WebGPU 支持情况 (2025)
+
+| 浏览器 | 支持 |
+|--------|------|
+| Chrome | ✅ v113+ |
+| Edge | ✅ v113+ |
+| Firefox | ✅ v131+ |
+| Safari | ✅ 18.0+ |
+| **全球支持率** | **~73%** |
+
+#### 游戏引擎选择决策树
+
+```
+什么类型的游戏?
+│
+├── 2D 游戏
+│   ├── 需要完整引擎功能? → Phaser
+│   └── 需要原始渲染能力? → PixiJS
+│
+├── 3D 游戏
+│   ├── 需要完整引擎(物理、XR)? → Babylon.js
+│   └── 专注渲染? → Three.js
+│
+└── 混合/Canvas
+    └── 自定义 → 原始 Canvas/WebGL
+```
+
 ### 引擎选择决策树
 
 ```
@@ -152,6 +188,92 @@ What are you building?
 |-----|--------|------|
 | **aws-mcp-server** | alexei-led/aws-mcp-server | AWS CLI集成 |
 
+### 2.6 Antigravity Python 开发技能
+
+#### Python 项目脚手架 (python-development-python-scaffold)
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **功能** | 生产级 Python 项目脚手架生成 |
+
+**支持的项目类型：**
+
+| 类型 | 框架 | 特点 |
+|------|------|------|
+| **FastAPI** | REST APIs, 微服务 | 异步应用 |
+| **Django** | 全栈Web应用 | 管理面板、ORM |
+| **Library** | 可复用包 | 工具类 |
+| **CLI** | 命令行工具 | 自动化脚本 |
+| **Generic** | 标准应用 | 通用项目 |
+
+**现代化工具链：**
+- `uv` - 快速包管理
+- 类型提示 (Type Hints)
+- 测试设置 (pytest)
+- 现代配置管理
+
+#### Python 测试模式 (python-testing-patterns)
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **功能** | 全面测试策略与最佳实践 |
+
+**核心能力：**
+
+| 能力 | 说明 |
+|------|------|
+| **pytest** | 单元测试框架 |
+| **Fixtures** | 测试数据管理 |
+| **Mocking** | 依赖模拟 |
+| **参数化** | 测试参数化 |
+| **TDD** | 测试驱动开发 |
+| **Async测试** | 异步代码测试 |
+| **CI/CD集成** | 持续测试集成 |
+| **属性测试** | 属性-based 测试 |
+
+#### Python 异步模式 (async-python-patterns)
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **功能** | 异步编程模式与最佳实践 |
+
+#### Python 性能优化 (python-performance-optimization)
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **功能** | Python 性能分析与优化 |
+
+#### Python Pro 技能
+
+| 技能 | 说明 |
+|------|------|
+| **python-pro** | 高级 Python 开发模式 |
+| **dbos-python** | Python 工作流编排 |
+| **temporal-python-pro** | Temporal 工作流 |
+| **python-patterns** | 设计模式 |
+
+### 2.7 Python 项目快速启动
+
+```bash
+# 使用 uv 初始化项目
+uv init <project-name>
+cd <project-name>
+
+# 创建虚拟环境
+uv venv
+source .venv/bin/activate
+
+# 安装依赖
+uv add fastapi pytest
+
+# 运行测试
+uv run pytest
+```
+
 ---
 
 ## 三、自动化测试技能
@@ -204,7 +326,64 @@ What are you building?
 | **playwright-undetected-skill** | dalbit-mir/playwright-undetected-skill | ⭐4 | Bot检测绕过 |
 | **Cursor Tools** | eastlondoner/cursor-tools | 浏览器自动化 (Stagehand) |
 
-### 3.2 软件工程测试
+### 3.2 Antigravity 浏览器自动化 (browser-automation)
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **功能** | 浏览器自动化专家技能 |
+| **核心框架** | Playwright, Puppeteer, Selenium |
+
+#### 核心能力
+
+| 能力 | 说明 |
+|------|------|
+| **测试隔离** | 每个测试在完全隔离的环境中运行 |
+| **用户定位器** | 按用户视角选择元素 |
+| **自动等待** | Playwright 自动等待机制 |
+
+#### 常见问题与解决方案
+
+| 问题 | 严重性 | 解决方案 |
+|------|--------|---------|
+| 手动等待 | 关键 | 移除所有 waitForTimeout |
+| 选择器不稳定 | 高 | 使用用户定位器 |
+| 检测拦截 | 高 | 使用 stealth 插件 |
+| 状态污染 | 高 | 每个测试完全隔离 |
+
+### 3.3 E2E 测试 (e2e-testing)
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **功能** | 端到端测试工作流 |
+| **框架** | Playwright |
+
+#### 测试阶段
+
+| 阶段 | 技能 | 关键活动 |
+|------|------|---------|
+| **Phase 1** | playwright-skill | Playwright 安装、配置 |
+| **Phase 2** | e2e-testing-patterns | 测试策略设计 |
+| **Phase 3** | playwright-skill | 测试脚本编写 |
+
+### 3.4 测试自动化 (test-automator)
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Antigravity Skills |
+| **功能** | AI 驱动的测试自动化 |
+
+#### 核心能力
+
+| 能力 | 说明 |
+|------|------|
+| **TDD 卓越** | 红-绿-重构循环自动化 |
+| **AI 测试框架** | Self-healing 测试 |
+| **现代框架** | Playwright, Appium, K6 |
+| **CI/CD 集成** | Jenkins, GitLab CI, GitHub Actions |
+
+### 3.5 软件工程测试
 
 | 技能 | GitHub | Star | 功能 |
 |-----|--------|------|------|
@@ -255,6 +434,19 @@ What are you building?
 | 技能 | GitHub | 特点 |
 |-----|--------|------|
 | **cc-devops-skills** | akin-ozer/cc-devops-skills | IaC代码生成 |
+
+### 4.3.1 Antigravity DevOps 技能
+
+| 技能目录 | 说明 |
+|---------|------|
+| **docker-expert** | Docker 专家技能 |
+| **cloud-devops** | 云端 DevOps |
+| **git-advanced-workflows** | 高级 Git 工作流 |
+| **github-actions-templates** | GitHub Actions 模板 |
+| **github-automation** | GitHub 自动化 |
+| **gitlab-automation** | GitLab 自动化 |
+| **terraform-aws-modules** | AWS Terraform 模块 |
+| **k8s-manifest-generator** | Kubernetes Manifest 生成 |
 
 ### 4.4 工作流系统
 
