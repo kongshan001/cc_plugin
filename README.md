@@ -43,7 +43,8 @@
 - [补充调研-第三十期](./supplement-2026-03-04-v30/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
 - [补充调研-第三十一期](./supplement-2026-03-04-v31/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
 - [补充调研-第三十二期](./supplement-2026-03-04-v32/README.md) (2026-03-04 游戏/Python/测试/开发者工具补充调研)
-- [补充调研-第三十三期](./supplement-2026-03-04-v33/README.md) (2026-03-04 Claude Code 热门插件调研) ✨最新
+- [补充调研-第三十三期](./supplement-2026-03-04-v33/README.md) (2026-03-04 Claude Code 热门插件调研)
+- [补充调研-第三十四期](./supplement-2026-03-04-v34/README.md) (2026-03-04 Claude Code 热门插件调研) ✨最新
 
 ---
 
