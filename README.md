@@ -8,6 +8,7 @@
 |---------|------|------|
 | [claude-mem](./claude-mem/README.md) | Claude 长期记忆插件 | ✅ 已验证 |
 | [superpowers](./superpowers/README.md) | Agentic Skills 框架，完整软件工程工作流 | ✅ 已调研 |
+| [shannon](./shannon/README.md) | AI 自动化渗透测试框架，96.15% 基准成功率 | ✅ 已调研 |
 
 ## 📝 文档规范
 
