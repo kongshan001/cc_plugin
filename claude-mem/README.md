@@ -5,7 +5,7 @@
 - **插件名称**: claude-mem
 - **GitHub**: [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 - **Star**: 32k ⭐
-- **状态**: ✅ 已验证
+- **状态**: ⚠️ 部分验证（需要 Bun 运行时）
 - **验证日期**: 2026-03-03
 
 ---
@@ -148,23 +148,60 @@ Claude 会自动记住：
 
 1. **安装插件**
    ```bash
-   /plugin marketplace add thedotmack/claude-mem
-   /plugin install claude-mem
+   claude plugin marketplace add thedotmack/claude-mem
+   claude plugin install claude-mem
    ```
 
-2. **重启 Claude Code**
+2. **检查安装状态**
+   ```bash
+   claude plugin list
+   # 结果: claude-mem@thedotmack ✔ enabled
+   ```
 
-3. **正常使用一段时间**
+3. **启动 Worker 服务** ⚠️ **关键步骤**
+   ```bash
+   # 需要先安装 Bun 运行时
+   curl -fsSL https://bun.sh/install | bash
+   
+   # 启动 Worker
+   cd ~/.claude/plugins/marketplaces/thedotmack/plugin
+   node scripts/worker-cli.js start
+   ```
 
-4. **开启新会话，观察是否加载历史上下文**
+4. **验证 Worker 状态**
+   ```bash
+   # 检查日志
+   cat ~/.claude-mem/logs/claude-mem-*.log
+   ```
 
 ### 验证结果
 
-✅ 插件安装成功，配置简单
+| 验证项 | 结果 | 说明 |
+|-------|------|------|
+| 插件安装 | ✅ 成功 | v10.5.2 |
+| 配置生成 | ✅ 成功 | ~/.claude-mem/settings.json |
+| Worker 启动 | ⚠️ 需要 Bun | 需要额外安装 Bun 运行时 |
+| 记忆功能 | 🔄 待验证 | 需要 Worker 运行后才能测试 |
+
+### 发现的问题
+
+1. **依赖 Bun 运行时**
+   - Worker 服务需要 Bun 才能运行
+   - 文档中未明确说明此依赖
+   - 安装命令: `curl -fsSL https://bun.sh/install | bash`
+
+2. **Worker 默认不启动**
+   - 插件安装后 Worker 不会自动启动
+   - 需要手动启动: `node scripts/worker-cli.js start`
+   - 或者配置自动启动
+
+3. **日志位置**
+   - 日志在 `~/.claude-mem/logs/` 目录
+   - 可用于排查问题
 
 ### 待验证
 
-- [ ] 长期记忆效果
+- [ ] Worker 启动后的记忆效果
 - [ ] Windows 兼容性
 - [ ] 记忆清理机制
 
@@ -176,10 +213,16 @@ Claude 会自动记住：
 A: 需要**完全退出并重启** Claude Code，不是断开重连。
 
 ### Q: 记忆可以手动删除吗？
-A: 可以，删除 `~/.claude/claude-mem/` 目录即可。
+A: 可以，删除 `~/.claude-mem/` 目录即可。
+
+### Q: Worker 启动失败？
+A: 确保已安装 Bun 运行时: `curl -fsSL https://bun.sh/install | bash`
 
 ### Q: 支持自定义记忆范围吗？
 A: 暂不支持自动捕获，需要手动记忆可用 `memory` 插件。
+
+### Q: 日志在哪里？
+A: `~/.claude-mem/logs/claude-mem-YYYY-MM-DD.log`
 
 ---
 
@@ -188,3 +231,4 @@ A: 暂不支持自动捕获，需要手动记忆可用 `memory` 插件。
 - [GitHub](https://github.com/thedotmack/claude-mem)
 - [NPM](https://www.npmjs.com/package/claude-mem)
 - [awesome-claude-code](https://github.com/thedotmack/awesome-claude-code)
+- [Bun 官网](https://bun.sh)
