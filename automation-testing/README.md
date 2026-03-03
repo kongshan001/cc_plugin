@@ -1,16 +1,16 @@
-# Claude Code 游戏客户端自动化测试技能调研
+# Claude Code 自动化测试技能补充调研
 
 ## 📋 文档信息
 
 - **调研日期**: 2026-03-03
-- **分类**: 游戏测试 / 自动化测试 / Web 开发 / Playwright
-- **状态**: ✅ 已调研
+- **分类**: 自动化测试 / 游戏客户端测试 / Web 测试 / CI/CD
+- **状态**: ✅ 补充调研
 
 ---
 
 ## 1. 浏览器自动化测试
 
-### 1.1 Playwright Skill
+### 1.1 Playwright Skill (核心)
 
 | 项目 | 说明 |
 |-----|------|
@@ -35,6 +35,15 @@
                               测试结果/截图 → 返回 Claude
 ```
 
+### 基本用法
+
+```python
+# 使用技能进行测试
+"测试登录页面功能"
+"验证用户下单流程"
+"检查首页加载时间"
+```
+
 ### 适用场景
 
 - Web 游戏测试
@@ -42,8 +51,6 @@
 - 前端功能验证
 - UI 自动化测试
 - 回归测试
-
----
 
 ### 1.2 Playwright Undetected Skill
 
@@ -66,8 +73,6 @@
 - 复杂 Web 应用测试
 - 登录流程测试
 
----
-
 ### 1.3 Webapp Testing
 
 | 项目 | 说明 |
@@ -77,32 +82,170 @@
 | **依赖** | Playwright |
 | **特点** | 端到端测试能力 |
 
-### 核心功能
+---
 
-- **本地测试**: 测试本地运行的 Web 应用
-- **功能验证**: 验证前端功能正常
-- **UI 调试**: 调试 UI 行为问题
-- **截图记录**: 捕获测试截图
+## 2. 游戏客户端测试方案
 
-### 使用示例
+### 2.1 Unity 测试
 
-```bash
-# 触发技能
-"测试一下本地 Web 应用的用户登录功能"
-```
+#### Unity Test Framework Skill
 
-Claude Code 会：
-1. 启动 Playwright
-2. 导航到目标页面
-3. 执行测试操作
-4. 验证结果
-5. 报告测试状态
+| 项目 | 说明 |
+|-----|------|
+| **来源** | cc-plugin-unity-gamedev |
+| **功能** | Unity 单元测试 |
+
+### 测试类型
+
+| 类型 | 说明 | 适用场景 |
+|-----|------|---------|
+| **EditMode** | 编辑器环境测试 | 工具类、辅助功能 |
+| **PlayMode** | 运行时测试 | 游戏逻辑、UI |
+| **Performance** | 性能测试 | 性能优化 |
+
+### 2.2 Web/H5 游戏测试
+
+| 方案 | 工具 | 优点 |
+|-----|------|------|
+| **Playwright** | 浏览器自动化 | 功能全面、生态好 |
+| **Puppeteer** | 浏览器自动化 | 轻量级 |
+| **Selenium** | 浏览器自动化 | 多浏览器支持 |
+
+### 2.3 原生游戏客户端测试
+
+| 测试类型 | 方案 | 说明 |
+|---------|------|------|
+| **UI 测试** | 截图对比 + OCR | 视觉回归测试 |
+| **API 测试** | Mock Server | 模拟后端响应 |
+| **性能测试** | Unity Profiler | 性能分析 |
+| **内存测试** | Memory Profiler | 内存泄漏检测 |
 
 ---
 
-## 2. 软件工程测试技能
+## 3. 测试开发技能 (TDD/BDD)
 
-### 2.1 Claude Skills Marketplace
+### 3.1 Test-Driven Development
+
+| 命令 | 来源 | 功能 |
+|-----|------|------|
+| **/tdd** | zscott/pane | TDD 开发流程 |
+| **/tdd-implement** | jerseycheese/Narraitor | TDD 实现 |
+| **testing_plan_integration** | buster-so/buster | 测试计划集成 |
+
+### TDD 流程
+
+```
+红色 (Red)     → 编写失败的测试
+       ↓
+绿色 (Green)   → 实现最小代码通过测试
+       ↓
+重构 (Refactor)→ 重构代码保持测试通过
+```
+
+### 3.2 测试编写技能
+
+| 技能 | 功能 |
+|-----|------|
+| **test-fixing** | 测试修复 |
+| **test-writing** | 测试编写 |
+| **test-running** | 测试运行 |
+| **bug-finding** | Bug 查找 |
+
+### 3.3 测试修复工作流
+
+```
+发现问题 → 编写复现测试 → 修复代码 → 验证测试通过
+```
+
+---
+
+## 4. 代码质量检查
+
+### 4.1 /check 命令
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | rygwdn/slack-tools |
+| **功能** | 代码质量和安全检查 |
+
+### 检查内容
+
+- **静态分析**: 代码结构检查
+- **安全扫描**: 漏洞扫描
+- **代码风格**: 格式规范
+- **详细报告**: 问题汇总
+
+### 4.2 /clean 命令
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | Graphlet-AI/eridu |
+| **功能** | 代码格式化 |
+
+### 自动修复
+
+- **Black**: Python 格式化
+- **isort**: import 整理
+- **Flake8**: Lint 问题
+- **Mypy**: 类型错误
+
+### 4.3 /repro-issue 命令
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | rzykov/metabase |
+| **功能** | 可复现测试用例 |
+
+### 用法
+
+```bash
+/repro-issue #123
+```
+
+自动创建：
+- 复现步骤文档
+- 最小化测试用例
+- 失败测试代码
+
+---
+
+## 5. CI/CD 集成
+
+### 5.1 /run-ci 命令
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | hackdays-io/toban-contribution-viewer |
+| **功能** | CI 兼容检查 |
+
+### 工作流
+
+```
+激活虚拟环境 → 运行检查脚本 → 迭代修复错误 → 验证全部通过
+```
+
+### 5.2 自动化部署测试
+
+```yaml
+# GitHub Actions 示例
+name: Test Suite
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        run: |
+          pip install -r requirements.txt
+          pytest tests/
+```
+
+---
+
+## 6. E2E 测试框架
+
+### 6.1 Claude Skills Marketplace
 
 | 项目 | 说明 |
 |-----|------|
@@ -110,13 +253,7 @@ Claude Code 会：
 | **Star** | ⭐ 427 |
 | **功能** | 软件工程工作流技能 |
 
-### 核心功能
-
-- **Git 自动化**: Git 操作自动化
-- **测试技能**: 多种测试技能
-- **代码审查**: 自动化代码审查
-
-### 测试相关技能
+### 测试技能
 
 | 技能名称 | 功能 |
 |---------|------|
@@ -124,10 +261,9 @@ Claude Code 会：
 | **test-writing** | 测试编写 |
 | **test-running** | 测试运行 |
 | **bug-finding** | Bug 查找 |
+| **code-review** | 代码审查 |
 
----
-
-### 2.2 Fieldwork Skills
+### 6.2 Fieldwork Skills
 
 | 项目 | 说明 |
 |-----|------|
@@ -143,99 +279,71 @@ Claude Code 会：
 
 ---
 
-## 3. Unity 测试技能
+## 7. 游戏客户端测试扩展
 
-### 3.1 Unity Test Framework Skill
+### 7.1 测试策略
 
-| 项目 | 说明 |
-|-----|------|
-| **来源** | cc-plugin-unity-gamedev |
-| **功能** | Unity 单元测试 |
-
-### 核心功能
-
-- **EditMode 测试**: 编辑器模式测试
-- **PlayMode 测试**: 运行时测试
-- **异步测试**: 异步代码测试
-- **Mocking**: 测试模拟
-
-### 技术特点
-
+#### 单元测试
 ```csharp
-// EditMode 测试
+// Unity 单元测试
 [Test]
-public void TestEditMode() { }
+public void TestPlayerHealth() {
+    var player = new Player();
+    Assert.AreEqual(100, player.Health);
+    
+    player.TakeDamage(30);
+    Assert.AreEqual(70, player.Health);
+}
+```
 
-// PlayMode 测试
+#### 集成测试
+```csharp
+// Unity 集成测试
 [UnityTest]
-public IEnumerator TestPlayMode() { }
+public IEnumerator TestPlayerMovement() {
+    var player = new GameObject("Player");
+    var movement = player.AddComponent<PlayerMovement>();
+    
+    movement.Move(Vector2.right);
+    yield return new WaitForSeconds(0.1f);
+    
+    Assert.IsTrue(player.transform.position.x > 0);
+}
+```
 
-// 异步测试
-[UnityTest]
-public IEnumerator TestAsync() { }
+### 7.2 视觉回归测试
+
+```python
+# Playwright 截图对比
+from playwright.sync_api import sync_playwright
+
+def test_visual_regression(page):
+    page.goto("http://localhost:3000")
+    page.screenshot(path="baseline.png")
+    
+    # 比较截图
+    assert compare_images("screenshot.png", "baseline.png")
+```
+
+### 7.3 API Mock 测试
+
+```python
+# 使用 Playwright Mock
+async def test_with_mock_api(page):
+    await page.route("**/api/user", lambda route: route.fulfill(
+        json={"id": 1, "name": "Test User"}
+    ))
+    
+    page.goto("/profile")
+    await page.wait_for_selector(".user-name")
+    assert await page.text_content(".user-name") == "Test User"
 ```
 
 ---
 
-## 4. 游戏客户端测试方案
+## 8. 部署指南
 
-### 现有技能对比
-
-| 技能 | 适用场景 | 优点 | 局限 |
-|-----|---------|------|------|
-| **Playwright** | Web 游戏/H5 游戏 | 功能强大生态好 | 需 Web 环境 |
-| **Webapp Testing** | Web 应用测试 | 集成度高 | 依赖 Playwright |
-| **iOS Simulator** | iOS 游戏测试 | 原生集成 | 仅限 iOS |
-| **Unity Test** | Unity 游戏测试 | 专业集成 | 需 Unity |
-
-### 游戏测试扩展方案
-
-针对游戏客户端测试，可以结合以下技能：
-
-1. **截图对比**: 使用 Playwright 的截图功能
-2. **UI 交互**: Playwright 模拟用户操作
-3. **API 验证**: 结合 API 测试技能验证后端
-4. **性能监控**: 配合性能分析技能
-
----
-
-## 5. 自动化开发技能
-
-### 5.1 Claude Auto Dev
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [djnsty23/claude-auto-dev](https://github.com/djnsty23/claude-auto-dev) |
-| **Star** | ⭐ 2 |
-| **特点** | 自主开发技能 |
-
-### 核心功能
-
-- **任务循环**: 自动化任务处理
-- **测试自动化**: 自动化测试
-- **部署自动化**: CI/CD 集成
-
----
-
-### 5.2 My Claude Skills
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [brody-0125/my-claude-skills](https://github.com/brody-0125/my-claude-skills) |
-| **Star** | ⭐ 2 |
-
-### 核心功能
-
-- **实现工作流**: 开发实现流程
-- **测试自动化**: 测试相关技能
-- **架构路由**: 架构决策辅助
-- **数值验证**: 数值计算验证
-
----
-
-## 6. 部署指南
-
-### 安装 Playwright
+### 8.1 安装 Playwright
 
 ```bash
 # 安装 Playwright
@@ -247,7 +355,7 @@ pip install playwright
 playwright install
 ```
 
-### 安装 Playwright Skill
+### 8.2 安装 Playwright Skill
 
 ```bash
 # 克隆技能仓库
@@ -257,7 +365,7 @@ git clone https://github.com/lackeyjb/playwright-skill.git
 cp -r playwright-skill ~/.claude/skills/
 ```
 
-### 安装反检测版本
+### 8.3 安装反检测版本
 
 ```bash
 # 克隆反检测版本
@@ -270,7 +378,7 @@ npm install -g @anthropic-ai/patchright
 cp -r playwright-undetected-skill ~/.claude/skills/
 ```
 
-### 配置测试环境
+### 8.4 配置测试环境
 
 ```javascript
 // playwright.config.js
@@ -280,15 +388,16 @@ module.exports = {
   use: {
     baseURL: 'http://localhost:3000',
     screenshot: 'only-on-failure',
+    video: 'on-first-retry',
   },
 };
 ```
 
 ---
 
-## 7. 技能选择建议
+## 9. 技能选择建议
 
-### 按测试类型选择
+### 9.1 按测试类型选择
 
 | 测试类型 | 推荐技能 | 优先级 |
 |---------|---------|-------|
@@ -296,9 +405,10 @@ module.exports = {
 | **反检测测试** | Playwright Undetected | ⭐⭐⭐⭐ |
 | **游戏客户端** | Unity Test Framework | ⭐⭐⭐⭐ |
 | **代码质量** | Claude Skills Marketplace | ⭐⭐⭐⭐ |
-| **自动化开发** | Claude Auto Dev | ⭐⭐⭐ |
+| **TDD 开发** | /tdd, /tdd-implement | ⭐⭐⭐⭐ |
+| **Bug 复现** | /repro-issue | ⭐⭐⭐ |
 
-### 按游戏引擎选择
+### 9.2 按游戏引擎选择
 
 | 引擎 | 推荐测试方案 |
 |-----|------------|
@@ -309,7 +419,7 @@ module.exports = {
 
 ---
 
-## 8. 优缺点分析
+## 10. 优缺点分析
 
 ### ✅ 优点
 
@@ -334,27 +444,33 @@ module.exports = {
 
 ---
 
-## 9. 游戏客户端测试扩展
+## 11. 测试最佳实践
 
-### 原生游戏测试方案
+### 11.1 测试金字塔
 
-对于非 Web 游戏客户端，可以考虑：
+```
+        /\
+       /  \      E2E 测试 (少量)
+      /----\    
+     /      \   集成测试 (中量)
+    /--------\  
+   /          \ 单元测试 (大量)
+  --------------
+```
 
-1. **截图识别**: 使用 OCR/图像识别进行验证
-2. **API Mock**: 模拟游戏服务器响应
-3. **内存检测**: 辅助调试内存问题
-4. **日志分析**: 解析游戏日志
+### 11.2 命名规范
 
-### 推荐技能组合
+```
+test_<模块>_<行为>.py
+test_player_take_damage.py
+test_user_login_success.py
+```
 
-| 用途 | 技能组合 |
-|-----|---------|
-| **Web/H5 游戏** | Playwright + Webapp Testing |
-| **API 测试** | API 集成技能 + 日志分析 |
-| **性能测试** | 监控系统集成 |
-| **截图比对** | 图像处理技能 |
-| **Unity 游戏** | Unity Test Framework + Profiling |
-| **iOS 游戏** | iOS Simulator Skill |
+### 11.3 测试数据
+
+- 使用工厂模式创建测试数据
+- 每个测试独立数据
+- 清理测试副作用
 
 ---
 
@@ -368,15 +484,11 @@ module.exports = {
 - [Claude Skills Marketplace](https://github.com/mhattingpete/claude-skills-marketplace)
 - [test-driven-development](https://github.com/obra/superpowers)
 
-### iOS/Unity 相关
+### 游戏测试
 
-- [iOS Simulator Skill](https://github.com/conorluddy/ios-simulator-skill)
-- [Unity GameDev Skills](https://github.com/tjboudreaux/cc-plugin-unity-gamedev)
-
-### 开发者工具
-
-- [Claude Code Templates](https://github.com/davila7/claude-code-templates)
-- [Fullstack Dev Skills](https://github.com/jeffallan/claude-skills)
+- [Unity Test Framework](https://docs.unity3d.com/Manual/testing.html)
+- [Playwright 文档](https://playwright.dev/)
+- [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 
 ---
 

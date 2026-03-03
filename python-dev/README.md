@@ -1,16 +1,98 @@
-# Claude Code Python 开发插件调研
+# Claude Code Python 开发技能补充调研
 
 ## 📋 文档信息
 
 - **调研日期**: 2026-03-03
-- **分类**: Python 开发 / 数据库 / AI 集成
-- **状态**: ✅ 已调研
+- **分类**: Python 开发 / 云服务 / AI 框架
+- **状态**: ✅ 补充调研
 
 ---
 
-## 1. 数据库相关技能
+## 1. Python Web 框架技能
 
-### 1.1 read-only-postgres
+### 1.1 Django/Flask/FastAPI
+
+| 项目 | 说明 |
+|-----|------|
+| **来源** | awesome-claude-code 技能库 |
+| **特点** | Python Web 开发完整支持 |
+
+### 核心功能
+
+- **项目初始化**: Django/Flask/FastAPI 项目创建
+- **ORM 操作**: 数据库模型定义和查询
+- **API 开发**: RESTful API 设计
+- **认证系统**: 用户认证和授权
+- **测试支持**: 单元测试和集成测试
+
+### 适用场景
+
+- Web 应用开发
+- API 服务开发
+- 微服务架构
+
+---
+
+## 2. AWS 云服务集成
+
+### 2.1 AWS MCP Server
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [alexei-led/aws-mcp-server](https://github.com/alexei-led/aws-mcp-server) |
+| **Star** | ⭐ 活跃 |
+| **语言** | Python |
+| **特点** | AWS CLI 集成，多环境支持 |
+
+### 核心功能
+
+- **多环境配置**: 多种 Python 环境选项
+- **代码规范**: 详细的代码风格指南
+- **错误处理**: 全面的错误处理建议
+- **安全考虑**: AWS CLI 安全最佳实践
+
+### 支持的服务
+
+| 服务类别 | 支持内容 |
+|---------|---------|
+| **计算** | EC2, Lambda, ECS, EKS |
+| **存储** | S3, EBS, EFS |
+| **数据库** | RDS, DynamoDB, ElastiCache |
+| **网络** | VPC, CloudFront, Route53 |
+| **安全** | IAM, Secrets Manager |
+
+---
+
+## 3. Pydantic AI 深度集成
+
+### 3.1 pydantic-ai-skills
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [DougTrajano/pydantic-ai-skills](https://github.com/DougTrajano/pydantic-ai-skills) |
+| **Star** | ⭐ 136 |
+| **语言** | Python |
+| **特点** | Agent Skills 支持 Pydantic AI |
+
+### 核心功能
+
+- **类型安全**: Pydantic 模型强制类型检查
+- **渐进式提示**: 按需披露信息
+- **AI 集成**: 与主流 LLM 无缝集成
+- **验证系统**: 内置强大的数据验证
+
+### 适用场景
+
+- AI 应用开发
+- 类型安全 API 构建
+- LLM 应用集成
+- 数据验证管道
+
+---
+
+## 4. PostgreSQL 数据库技能
+
+### 4.1 read-only-postgres
 
 | 项目 | 说明 |
 |-----|------|
@@ -20,30 +102,32 @@
 
 ### 核心功能
 
-- **只读查询**: 仅支持 SELECT/SHOW/EXPLAIN/WITH 查询
-- **多连接支持**: 配置多个数据库连接，带描述说明
-- **安全验证**: 严格的验证机制、超时控制、行数限制
-- **防御性设计**: 多层安全保护
+- **只读查询**: 仅支持 SELECT/SHOW/EXPLAIN/WITH
+- **多连接支持**: 配置多个数据库连接
+- **安全验证**: 严格的验证机制
+- **超时控制**: 防止长时间查询
+- **行数限制**: 防止大规模数据泄露
 
-### 技术特点
+### 支持的查询类型
 
-```python
-# 支持的查询类型
-- SELECT 查询
-- SHOW 命令
-- EXPLAIN 分析
-- WITH 公共表表达式
+```sql
+-- SELECT 查询
+SELECT * FROM users WHERE id = 1;
+
+-- SHOW 命令
+SHOW max_connections;
+
+-- EXPLAIN 分析
+EXPLAIN ANALYZE SELECT * FROM orders;
+
+-- WITH 公共表表达式
+WITH recent_orders AS (
+    SELECT * FROM orders WHERE created_at > NOW() - INTERVAL '7 days'
+)
+SELECT * FROM recent_orders;
 ```
 
-### 适用场景
-
-- 数据分析
-- 数据库调试
-- 快速数据探索
-
----
-
-### 1.2 postgres
+### 4.2 postgres
 
 | 项目 | 说明 |
 |-----|------|
@@ -51,50 +135,42 @@
 | **功能** | PostgreSQL 完整集成 |
 | **特点** | 多连接支持 + 防御性安全 |
 
-### 核心功能
-
-- 安全只读 SQL 查询
-- 多数据库连接管理
-- 防御性安全设计
-- 完善的错误处理
-
 ---
 
-## 2. Pydantic AI 集成
+## 5. 语音转文字集成
 
-### 2.1 Pydantic AI Skills
+### 5.1 stt-mcp-server-linux
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | [DougTrajano/pydantic-ai-skills](https://github.com/DougTrajano/pydantic-ai-skills) |
-| **Star** | ⭐ 136 |
+| **GitHub** | [marcindulak/stt-mcp-server-linux](https://github.com/marcindulak/stt-mcp-server-linux) |
 | **语言** | Python |
-| **特点** | Agent Skills 支持 Pydantic AI，渐进式提示 |
+| **特点** | 本地语音转文字，无需外部 API |
 
 ### 核心功能
 
-- **文件系统支持**: 文件操作技能
-- **Web 搜索**: 网络搜索能力
-- **渐进式提示**: 按需披露信息
-- **类型安全**: Pydantic 模型集成
+- **本地运行**: 完全本地化的语音识别
+- **Docker 部署**: 容器化部署
+- **Tmux 集成**: 与 Claude Code 无缝集成
+- **隐私保护**: 语音数据不离开本地
 
-### 适用场景
+### 技术架构
 
-- AI 应用开发
-- 类型安全 API 构建
-- LLM 应用集成
+```
+麦克风 → 语音录制 → STT MCP Server → 文本 → Claude Code
+```
 
 ---
 
-## 3. Python 测试开发
+## 6. Python 测试开发
 
-### 3.1 test-driven-development
+### 6.1 test-driven-development
 
 | 项目 | 说明 |
 |-----|------|
 | **来源** | superpowers 技能集 |
 | **功能** | TDD 开发流程 |
-| **特点** | 测试先行，红色-绿色-重构 |
+| **特点** | 红色-绿色-重构 |
 
 ### 核心流程
 
@@ -110,27 +186,20 @@
 - 回归测试保证
 - 代码质量提升
 
----
+### 6.2 测试修复技能
 
-### 3.2 pypict-claude-skill
-
-| 项目 | 说明 |
+| 技能 | 功能 |
 |-----|------|
-| **功能** | PICT 测试用例生成 |
-| **用途** | 组合测试 |
-| **场景** | 参数组合测试 |
-
-### 核心功能
-
-- Pairwise 测试生成
-- 参数组合优化
-- 测试用例精简
+| **test-fixing** | 测试修复 |
+| **test-writing** | 测试编写 |
+| **test-running** | 测试运行 |
+| **bug-finding** | Bug 查找 |
 
 ---
 
-## 4. 开发者工具包
+## 7. 开发者工具包
 
-### 4.1 Developer Kit
+### 7.1 Developer Kit
 
 | 项目 | 说明 |
 |-----|------|
@@ -144,17 +213,9 @@
 - **Skills**: 可复用技能
 - **Agents**: 自动化代理
 - **Commands**: 快捷命令
-- **自动化**: 开发工作流自动化 |
+- **自动化**: 开发工作流自动化
 
-### 适用场景
-
-- 项目快速启动
-- 团队协作标准化
-- 开发流程自动化
-
----
-
-### 4.2 Claude Code Tools
+### 7.2 Claude Code Tools
 
 | 项目 | 说明 |
 |-----|------|
@@ -169,30 +230,13 @@
 - **全文搜索**: Rust/Tantivy 全文索引
 - **TMux 集成**: 终端会话管理
 
-### 技术特点
-
-```
-- Rust + Tantivy 全文搜索
-- TUI 界面
-- 快速检索
-- 零配置
-```
-
----
-
-### 4.3 Claudekit
+### 7.3 Claudekit
 
 | 项目 | 说明 |
 |-----|------|
 | **GitHub** | [carlrannaberg/claudekit](https://github.com/carlrannaberg/claudekit) |
 | **功能** | CLI 工具包 |
-
-### 核心功能
-
-- **自动保存**: Checkpointing
-- **代码质量**: Quality hooks
-- **规范生成**: Specification generation
-- **20+ 子代理**: 专业代理配置
+| **子代理数量** | 20+ |
 
 ### 子代理列表
 
@@ -205,47 +249,22 @@
 
 ---
 
-## 5. iOS 开发 (Python 工具链)
-
-### 5.1 iOS Simulator Skill
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) |
-| **Star** | ⭐ 557 |
-| **语言** | Python |
-| **功能** | iOS 模拟器集成 |
-
-### 核心功能
-
-- 构建 iOS 应用
-- 运行模拟器
-- 应用交互
-- 零配置使用
-
-### 适用场景
-
-- iOS 应用开发
-- 移动端测试
-- Swift 项目开发
-
----
-
-## 6. Python 开发技能汇总
+## 8. Python 开发技能汇总
 
 | 技能名称 | 功能 | 适用场景 |
 |---------|------|---------|
 | **read-only-postgres** | PostgreSQL 只读查询 | 数据库调试/分析 |
 | **postgres** | PostgreSQL 完整集成 | 生产数据库操作 |
 | **pydantic-ai-skills** | Pydantic AI 集成 | AI 应用开发 |
+| **aws-mcp-server** | AWS 云服务集成 | 云端开发部署 |
+| **stt-mcp-server-linux** | 语音转文字 | 语音交互 |
 | **developer-kit** | 开发者工具包 | 项目快速启动 |
 | **claude-code-tools** | 会话连续性 | 复杂项目开发 |
 | **test-driven-development** | TDD 开发流程 | 规范开发 |
-| **ios-simulator-skill** | iOS 模拟器 | iOS 开发 |
 
 ---
 
-## 7. 部署指南
+## 9. 部署指南
 
 ### 安装 PostgreSQL 技能
 
@@ -283,20 +302,33 @@ pip install -r requirements.txt
 cp -r pydantic-ai-skills ~/.claude/skills/
 ```
 
-### 安装 iOS Simulator 技能
+### 安装 AWS MCP Server
 
 ```bash
-# 安装技能
-claude --install-skill gh-conorluddy-ios-simulator-skill
+# 克隆仓库
+git clone https://github.com/alexei-led/aws-mcp-server.git
 
-# 或手动安装
-git clone https://github.com/conorluddy/ios-simulator-skill.git
-cp -r ios-simulator-skill ~/.claude/skills/
+# 安装依赖
+pip install -r requirements.txt
+
+# 配置 AWS 凭证
+aws configure
+```
+
+### 安装语音转文字服务
+
+```bash
+# 克隆仓库
+git clone https://github.com/marcindulak/stt-mcp-server-linux.git
+
+# 使用 Docker 运行
+cd stt-mcp-server-linux
+docker-compose up -d
 ```
 
 ---
 
-## 8. 优缺点分析
+## 10. 优缺点分析
 
 ### ✅ 优点
 
@@ -304,9 +336,10 @@ cp -r ios-simulator-skill ~/.claude/skills/
 |-----|------|
 | **数据库安全** | 只读查询防止意外修改 |
 | **类型安全** | Pydantic 集成保证类型正确 |
-| **多平台支持** | 覆盖 Python/iOS/数据库 |
+| **多平台支持** | 覆盖 Python/AWS/数据库 |
 | **工具链完整** | 从开发到测试全覆盖 |
-| **社区活跃** | 部分技能 Star 较高 |
+| **云服务集成** | AWS 完整支持 |
+| **语音支持** | 本地语音转文字 |
 
 ### ❌ 缺点
 
@@ -319,13 +352,13 @@ cp -r ios-simulator-skill ~/.claude/skills/
 
 ---
 
-## 9. 相关技能推荐
+## 11. 相关技能推荐
 
 ### 测试开发
 
 - **test-driven-development** (superpowers) - TDD 开发流程
 - **test-fixing** - 测试修复技能
-- **pypict-claude-skill** - PICT 组合测试
+- **test-writing** - 测试编写
 
 ### 代码质量
 
@@ -345,7 +378,8 @@ cp -r ios-simulator-skill ~/.claude/skills/
 - [read-only-postgres GitHub](https://github.com/jawwadfirdousi/agent-skills)
 - [postgres 技能](https://github.com/sanjay3290/ai-skills)
 - [Pydantic AI Skills](https://github.com/DougTrajano/pydantic-ai-skills)
-- [iOS Simulator Skill](https://github.com/conorluddy/ios-simulator-skill)
+- [AWS MCP Server](https://github.com/alexei-led/aws-mcp-server)
+- [stt-mcp-server-linux](https://github.com/marcindulak/stt-mcp-server-linux)
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
 - [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
 

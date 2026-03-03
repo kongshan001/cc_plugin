@@ -1,24 +1,121 @@
-# Claude Code 开发者工具技能调研
+# Claude Code 开发者工具技能补充调研
 
 ## 📋 文档信息
 
 - **调研日期**: 2026-03-03
-- **分类**: 开发者工具 / 效率提升 / 生产力
-- **状态**: ✅ 已调研
+- **分类**: 开发者工具 / 效率提升 / 生产力 / DevOps / 云服务
+- **状态**: ✅ 补充调研
 
 ---
 
-## 1. 模板与资源集合
+## 1. 工作流自动化系统
 
-### 1.1 Claude Code Templates
+### 1.1 AgentSys (推荐)
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [avifenesh/agentsys](https://github.com/avifenesh/agentsys) |
+| **Star** | ⭐ 活跃 (v5.3.7) |
+| **特点** | 生产级工作流系统 |
+
+### 核心功能
+
+- **插件系统**: 灵活的插件机制
+- **代理集成**: 多代理协作
+- **任务自动化**: 端到端自动化
+- **PR 管理**: 自动化的 PR 处理
+- **代码清理**: 自动代码优化
+- **性能调查**: 性能问题诊断
+
+### 技术特点
+
+- **确定检测**: 使用正则和 AST
+- **LLM 判断**: 智能决策
+- **生产验证**: 经过生产环境测试
+- **全面测试**: 数千行代码 + 数千测试
+
+### 适用场景
+
+- 大型项目管理
+- 团队协作流程
+- 自动化代码审查
+- CI/CD 集成
+
+### 1.2 Superpowers
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [obra/superpowers](https://github.com/obra/superpowers) |
+| **Star** | ⭐ 热门 (v4.1.1) |
+| **状态** | ✅ 已验证可用 |
+
+### 核心功能
+
+- **SDLC 全覆盖**: 从规划到发布
+- **代码审查**: 专业化审查技能
+- **测试驱动**: TDD 开发流程
+- **调试技能**: 问题追踪定位
+
+### 包含技能列表
+
+| 技能名称 | 功能 |
+|---------|------|
+| brainstorming | 结构化头脑风暴 |
+| test-driven-development | TDD 开发流程 |
+| finishing-a-development-branch | 分支完成工作流 |
+| root-cause-tracing | 根因追踪 |
+| using-git-worktrees | Git Worktree 使用 |
+
+### 1.3 Claude Code Agents
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [undeadlist/claude-code-agents](https://github.com/undeadlist/claude-code-agents) |
+| **特点** | 全面的端到端开发 |
+
+### 核心功能
+
+- **多个审计代理**: 并行运行代码审计
+- **自动化修复**: 微检查点协议
+- **浏览器 QA**: 基于浏览器的质量保证
+- **防失控协议**: 严格的安全机制
+
+---
+
+## 2. DevOps 工具
+
+### 2.1 cc-devops-skills (推荐)
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [akin-ozer/cc-devops-skills](https://github.com/akin-ozer/cc-devops-skills) |
+| **目标用户** | DevOps 工程师 |
+| **特点** | 超详细 IaC 代码生成 |
+
+### 核心功能
+
+- **多平台支持**: AWS/Azure/GCP 等
+- **验证工具**: 内置代码验证
+- **生成器**: 自动化代码生成
+- **Shell 脚本**: 运维脚本集成
+
+### 支持平台
+
+| 云平台 | 状态 |
+|-------|------|
+| AWS | ✅ 完整支持 |
+| Azure | ✅ 完整支持 |
+| GCP | ✅ 完整支持 |
+| Kubernetes | ✅ 完整支持 |
+| Docker | ✅ 完整支持 |
+| Terraform | ✅ 完整支持 |
+
+### 2.2 Claude Code Templates
 
 | 项目 | 说明 |
 |-----|------|
 | **GitHub** | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) |
-| **Star** | ⭐ 热门 |
-| **特点**: | 超全面的资源集合 |
-| **功能**: | Slash commands + Hooks + Agents |
-| **评价**: | ⭐⭐⭐⭐⭐ |
+| **特点** | 超全面的资源集合 |
 
 ### 核心功能
 
@@ -28,24 +125,51 @@
 - **Hooks**: 多种自动化钩子
 - **子代理**: 专业化的子代理配置
 
-### 适用场景
+---
 
-- 开发者效率提升
-- 团队协作标准化
-- 项目快速启动
+## 3. 云服务集成
+
+### 3.1 Claude Codex Settings
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [fcakyon/claude-codex-settings](https://github.com/fcakyon/claude-codex-settings) |
+| **版本** | v2.1.0 |
+| **特点** | 组织良好的插件集 |
+
+### 核心功能
+
+- **云平台集成**: GitHub, Azure, MongoDB
+- **服务集成**: Tavily, Playwright
+- **清晰结构**: 不过度复杂
+- **多提供商兼容**: 支持多个 AI 提供商
+
+### 3.2 AWS MCP Server
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [alexei-led/aws-mcp-server](https://github.com/alexei-led/aws-mcp-server) |
+| **版本** | v1.7.0 |
+| **特点** | AWS CLI 集成 |
+
+### 支持服务
+
+- EC2, Lambda, ECS, EKS
+- S3, RDS, DynamoDB
+- VPC, CloudFront
+- IAM, Secrets Manager
 
 ---
 
-## 2. 全栈开发技能
+## 4. 全栈开发
 
-### 2.1 Fullstack Dev Skills
+### 4.1 Fullstack Dev Skills
 
 | 项目 | 说明 |
 |-----|------|
 | **GitHub** | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills) |
-| **技能数量**: | 65+ 专业化技能 |
-| **覆盖范围**: | 全栈开发 |
-| **Star**: | ⭐ 热门 |
+| **技能数量** | 65+ 专业化技能 |
+| **版本** | v0.4.9 |
 
 ### 核心功能
 
@@ -67,142 +191,15 @@
 
 ---
 
-## 3. DevOps 工程师技能
+## 5. 专业开发环境
 
-### 3.1 cc-devops-skills
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [akin-ozer/cc-devops-skills](https://github.com/akin-ozer/cc-devops-skills) |
-| **目标用户**: | DevOps 工程师 |
-| **特点**: | 超详细 IaC 代码生成 |
-
-### 核心功能
-
-- **多平台支持**: AWS/Azure/GCP 等
-- **验证工具**: 内置代码验证
-- **生成器**: 自动化代码生成
-- **Shell 脚本**: 运维脚本集成
-
-### 支持平台
-
-| 云平台 | 状态 |
-|-------|------|
-| AWS | ✅ 完整支持 |
-| Azure | ✅ 完整支持 |
-| GCP | ✅ 完整支持 |
-| Kubernetes | ✅ 完整支持 |
-| Docker | ✅ 完整支持 |
-
----
-
-## 4. E2E 开发工作流
-
-### 4.1 Claude Code Agents
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [undeadlist/claude-code-agents](https://github.com/undeadlist/claude-code-agents) |
-| **特点**: | 全面的端到端开发 |
-
-### 核心功能
-
-- **多个审计代理**: 并行运行代码审计
-- **自动化修复**: 微检查点协议
-- **浏览器 QA**: 基于浏览器的质量保证
-- **防失控协议**: 严格的安全机制
-
-### 适用场景
-
-- 大型项目开发
-- 代码质量保证
-- 自动化测试
-- 持续集成
-
----
-
-## 5. 核心工程技能
-
-### 5.1 Superpowers
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [obra/superpowers](https://github.com/obra/superpowers) |
-| **Star**: | ⭐ 热门 |
-| **状态**: | ✅ 已验证可用 |
-
-### 核心功能
-
-- **SDLC 全覆盖**: 从规划到发布
-- **代码审查**: 专业化审查技能
-- **测试驱动**: TDD 开发流程
-- **调试技能**: 问题追踪定位
-
-### 包含技能列表
-
-| 技能名称 | 功能 |
-|---------|------|
-| brainstorming | 结构化头脑风暴 |
-| test-driven-development | TDD 开发流程 |
-| finishing-a-development-branch | 分支完成工作流 |
-| root-cause-tracing | 根因追踪 |
-| using-git-worktrees | Git Worktree 使用 |
-
----
-
-## 6. 工作流自动化系统
-
-### 6.1 AgentSys
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [avifenesh/agentsys](https://github.com/avifenesh/agentsys) |
-| **特点**: | 生产级工作流系统 |
-
-### 核心功能
-
-- **插件系统**: 灵活的插件机制
-- **代理集成**: 多代理协作
-- **任务自动化**: 端到端自动化
-- **PR 管理**: 自动化的 PR 处理
-- **代码清理**: 自动代码优化
-- **性能调查**: 性能问题诊断
-
-### 技术特点
-
-- **确定检测**: 使用正则和 AST
-- **LLM 判断**: 智能决策
-- **生产验证**: 经过生产环境测试
-- **全面测试**: 数千行代码 + 数千测试
-
----
-
-## 7. Claude Codex Settings
-
-### 7.1 核心开发者插件集
-
-| 项目 | 说明 |
-|-----|------|
-| **GitHub** | [fcakyon/claude-codex-settings](https://github.com/fcakyon/claude-codex-settings) |
-| **特点**: | 组织良好的插件集 |
-
-### 核心功能
-
-- **云平台集成**: GitHub, Azure, MongoDB
-- **服务集成**: Tavily, Playwright
-- **清晰结构**: 不过度复杂
-- **多提供商兼容**: 支持多个 AI 提供商
-
----
-
-## 8. Claude Code Pro
-
-### 8.1 专业开发环境
+### 5.1 Claude Code Pro
 
 | 项目 | 说明 |
 |-----|------|
 | **GitHub** | [maxritter/claude-codepro](https://github.com/maxritter/claude-codepro) |
-| **特点**: | 专业级开发环境 |
+| **版本** | v7.1.3 |
+| **特点** | 专业级开发环境 |
 
 ### 核心功能
 
@@ -213,23 +210,145 @@
 - **质量钩子**: 代码质量检查
 - **模块化规则**: 可组合规则
 
+### 5.2 Claude Scientific Skills
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) |
+| **版本** | v2.25.0 |
+| **特点** | 科研/工程/分析技能集 |
+
+### 适用领域
+
+- 研究
+- 科学计算
+- 工程分析
+- 金融
+- 写作
+
 ---
 
-## 9. Everything Claude Code
+## 6. 项目管理与协作
 
-### 9.1 全方位资源库
+### 6.1 Claude Code PM
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [automazeio/ccpm](https://github.com/automazeio/ccpm) |
+| **功能** | 项目管理 |
+
+### 核心功能
+
+- 任务管理
+- 进度跟踪
+- 团队协作
+- 报告生成
+
+### 6.2 Simone
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [Helmi/claude-simone](https://github.com/Helmi/claude-simone) |
+| **版本** | simone-mcp/v0.4.0 |
+
+### 核心功能
+
+- 项目规划
+- 任务分配
+- 进度追踪
+- 文档管理
+
+---
+
+## 7. 安全与审计
+
+### 7.1 Trail of Bits Security Skills
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [trailofbits/skills](https://github.com/trailofbits/skills) |
+| **许可证** | CC-BY-SA-4.0 |
+| **特点** | 专业安全审计 |
+
+### 核心功能
+
+- **静态分析**: CodeQL 集成
+- **代码扫描**: Sem- **变体grep 集成
+分析**: 漏洞变体追踪
+- **修复验证**: 修复确认
+- **差异审查**: 代码变更审查
+
+### 技能列表
+
+| 技能 | 功能 |
+|-----|------|
+| code-audit | 代码审计 |
+| vulnerability-detection | 漏洞检测 |
+| fix-verification | 修复验证 |
+| semgrep-scan | Semgrep 扫描 |
+| codeql-analysis | CodeQL 分析 |
+
+---
+
+## 8. MCP 服务器
+
+### 8.1 Codex Skill
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [klaudworks/skill-codex](https://github.com/skills-directory/skill-codex) |
+| **功能** | Codex CLI 集成 |
+
+### 核心功能
+
+- 从 Claude Code 调用 Codex
+- 自动参数推断
+- 会话连续性
+
+### 8.2 STT MCP Server
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [marcindulak/stt-mcp-server-linux](https://github.com/marcindulak/stt-mcp-server-linux) |
+| **功能** | 语音转文字 |
+
+### 8.3 Claude Code MCP Enhanced
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [grahama1970/claude-code-mcp-enhanced](https://github.com/grahama1970/claude-code-mcp-enhanced) |
+| **功能** | MCP 增强 |
+
+---
+
+## 9. 上下文工程
+
+### 9.1 Context Engineering Kit
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) |
+| **版本** | v2.1.1 |
+| **许可证** | GPL-3.0 |
+
+### 核心功能
+
+- 高级上下文工程技术
+- 最少 token 消耗
+- 提高 agent 结果质量
+
+### 9.2 Everything Claude Code
 
 | 项目 | 说明 |
 |-----|------|
 | **GitHub** | [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) |
-| **特点**: | 核心工程域资源全覆盖 |
+| **版本** | v1.7.0 |
 
 ### 核心功能
 
-- **独立价值**: 每个资源都有独立价值
-- **Claude Code 特性**: 覆盖所有功能特性
-- **工作流模式**: 可选的工作流模式
-- **最佳实践**: 各领域的最佳实践
+- 核心工程域资源全覆盖
+- 每个资源独立价值
+- 可选工作流模式
 
 ---
 
@@ -246,6 +365,7 @@
 | **效率提升** | Claude Code Templates |
 | **安全审计** | Trail of Bits Security Skills |
 | **专业开发** | Claude CodePro |
+| **云服务** | Claude Codex Settings |
 
 ### 按复杂度分类
 
@@ -303,6 +423,7 @@ claude --install-skill gh-davila7-claude-code-templates
 | **社区活跃** | 持续更新维护 |
 | **文档完善** | 学习资源丰富 |
 | **可扩展** | 灵活定制 |
+| **多云支持** | AWS/Azure/GCP |
 
 ### ❌ 缺点
 
@@ -312,6 +433,25 @@ claude --install-skill gh-davila7-claude-code-templates
 | **学习成本** | 需要时间熟悉 |
 | **资源占用** | 技能数量多占用空间 |
 | **版本兼容** | 需跟进更新 |
+
+---
+
+## 13. 发展趋势
+
+### 13.1 当前趋势
+
+| 方向 | 说明 |
+|-----|------|
+| **Agent 工作流** | 越来越多人使用 agent 系统 |
+| **安全审计** | 安全技能需求增加 |
+| **多云集成** | 云服务集成更完善 |
+| **上下文工程** | 优化提示和上下文 |
+
+### 13.2 值得关注
+
+- Claude Scientific Skills - 科研领域
+- Context Engineering Kit - 上下文优化
+- Everything Claude Code - 全方位资源
 
 ---
 
