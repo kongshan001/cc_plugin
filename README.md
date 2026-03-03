@@ -441,18 +441,34 @@ claude --list-skills
 | **Dippy** | ldayton/Dippy | 新兴 | AST自动批准安全命令 |
 | **Claude Code Flow** | ruvnet/claude-code-flow | ⭐活跃 | 代码优先编排层 |
 | **Claude Swarm** | parruda/claude-swarm | 新兴 | 多代理协同工作 |
+| **Everything Claude Code** | affaan-m/everything-claude-code | ⭐活跃 | Agent性能优化系统 |
+| **Get Shit Done (GSD)** | gsd-build/get-shit-done | 新兴 | 轻量级元提示系统 |
+| **claude-mem** | thedotmack/claude-mem | 新兴 | 自动捕获会话上下文 |
+| **agents** | wshobson/agents | 新兴 | 多代理编排 |
 
 ### 8.2 生产力工具
 
 | 技能 | GitHub | 功能 |
 |-----|--------|------|
 | **Claude Session Restore** | ZENG3LD/claude-session-restore | 跨会话上下文恢复 |
+| **cc-switch** | farion1231/cc-switch | 跨平台桌面助手 |
+| **Serena** | oraios/serena | 语义检索和编辑工具包 |
+| **Ruflo** | ruvnet/ruflo | 企业级代理编排平台 |
+| **Beads** | steveyegge/beads | 记忆升级工具 |
 | **recall** | zippoxer/recall | 全文搜索会话历史 |
 | **claude-tmux** | nielsgroen/claude-tmux | tmux会话管理 |
 | **claude-esp** | phiat/claude-esp | 隐藏输出流式传输到独立终端 |
 | **VoiceMode MCP** | mbailey/voicemode | 语音交互支持 |
 
-### 8.3 Claude Code + Codex 集成
+### 8.3 客户端/IDE 工具
+
+| 技能 | GitHub | 功能 | 特点 |
+|-----|--------|------|------|
+| **Cherry Studio** | CherryHQ/cherry-studio | AI 生产力工作室 | 300+ 助手，统一访问前沿 LLM |
+| **OpenCode** | code-yeongyu/oh-my-opencode | Agent Harness | 最佳 agent harness 系统 |
+| **nanoclaw** | qwibitai/nanoclaw | 轻量级 OpenClaw 替代 | 容器化运行，安全性高 |
+
+### 8.4 Claude Code + Codex 集成
 
 | 技能 | GitHub | 功能 |
 |-----|--------|------|
