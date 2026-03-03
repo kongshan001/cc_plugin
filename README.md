@@ -28,7 +28,8 @@
 - [补充调研-第十五期](./supplement-2026-03-04-v14/README.md) (2026-03-04 热门插件补充)
 - [补充调研-第十六期](./supplement-2026-03-04-v15/README.md) (2026-03-04 GitHub热门趋势分析)
 - [补充调研-第十七期](./supplement-2026-03-04-v17/README.md) (2026-03-04 完整调研更新)
-- [补充调研-第十八期](./supplement-2026-03-04-v18/README.md) (2026-03-04 Unity-MCP + Game Studios 深度调研) ✨最新
+- [补充调研-第十八期](./supplement-2026-03-04-v18/README.md) (2026-03-04 Unity-MCP + Game Studios 深度调研)
+- [补充调研-第十九期](./supplement-2026-03-04-v19/README.md) (2026-03-04 Python开发/游戏客户端测试/MCP服务器调研) ✨最新
 
 ---
 
