@@ -257,6 +257,70 @@ claude --list-skills
 - **Context Engineering Kit**: 上下文工程
 - **Everything Claude Code**: 全方位资源库
 - **Book Factory**: 自动化出版工作流
+- **parry**: 提示注入扫描器，用于检测注入攻击
+- **Dippy**: 基于AST的安全命令自动批准工具
+- **Claude Scientific Skills**: 2026年3月新增，MIT许可
+
+---
+
+## 八、2026年3月新增插件
+
+### 8.1 最新热门技能
+
+| 技能 | GitHub | Star | 特点 |
+|-----|--------|------|------|
+| **Claude Scientific Skills** | K-Dense-AI/claude-scientific-skills | ⭐活跃 | 科研/工程/分析/金融/写作技能集 |
+| **parry** | vaporif/parry | 新兴 | 提示注入扫描器，检测安全威胁 |
+| **Dippy** | ldayton/Dippy | 新兴 | AST自动批准安全命令 |
+| **Claude Code Flow** | ruvnet/claude-code-flow | ⭐活跃 | 代码优先编排层 |
+| **Claude Swarm** | parruda/claude-swarm | 新兴 | 多代理协同工作 |
+
+### 8.2 生产力工具
+
+| 技能 | GitHub | 功能 |
+|-----|--------|------|
+| **Claude Session Restore** | ZENG3LD/claude-session-restore | 跨会话上下文恢复 |
+| **recall** | zippoxer/recall | 全文搜索会话历史 |
+| **claude-tmux** | nielsgroen/claude-tmux | tmux会话管理 |
+| **claude-esp** | phiat/claude-esp | 隐藏输出流式传输到独立终端 |
+| **VoiceMode MCP** | mbailey/voicemode | 语音交互支持 |
+
+### 8.3 Claude Code + Codex 集成
+
+| 技能 | GitHub | 功能 |
+|-----|--------|------|
+| **Codex Skill** | skills-directory/skill-codex | 从Claude Code调用Codex CLI |
+| **Claude Code Tools** | pchalasani/claude-code-tools | 会话连续性 + Rust全文索引 |
+
+---
+
+## 九、CLI/开发环境增强
+
+### 9.1 编排工具
+
+| 工具 | GitHub | 特点 |
+|-----|--------|------|
+| **Claude Squad** | smtg-ai/claude-squad | 多工作区管理 |
+| **Claude Swarm** | parruda/claude-swarm | 多代理协同 |
+| **Auto-Claude** | AndyMik90/Auto-Claude | 自主多代理框架 |
+
+### 9.2 使用监控
+
+| 工具 | GitHub | 特点 |
+|-----|--------|------|
+| **CC Usage** | ryoppippi/ccusage | CLI使用分析 |
+| **ccflare** | snipeship/ccflare | Web仪表板 |
+| **better-ccflare** | tombii/better-ccflare | ccflare增强版 |
+| **Claudex** | kunwar-shah/claudex | 会话历史浏览器 |
+
+### 9.3 IDE集成
+
+| 工具 | 平台 | 功能 |
+|-----|------|------|
+| **Claude Code Chat** | VS Code | 聊天界面 |
+| **claude-code.nvim** | Neovim | 无缝集成 |
+| **claude-code.el** | Emacs | Emacs接口 |
+| **Claudix** | VS Code | 交互式聊天 |
 
 ---
 
