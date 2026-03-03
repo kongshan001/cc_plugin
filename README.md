@@ -330,6 +330,7 @@ claude --list-skills
 - [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
 - [Claude Code Handbook](https://nikiforovall.blog/claude-code-rules/)
 - [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
+- [补充调研文档](./supplement-2026-03/README.md)
 
 ---
 
