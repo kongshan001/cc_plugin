@@ -13,7 +13,6 @@
 | [aws-mcp-server](./aws-mcp-server.md) | AWS 云服务 MCP，⭐ 1350+ | ✅ |
 | [agentsys](./agentsys.md) | 工作流自动化系统 | ✅ |
 | [superpowers](./superpowers.md) | 核心工程技能集，⭐ 4.1k+ | ✅ |
-| [rulesync](./rulesync.md) | 跨平台配置同步 | ✅ |
 | [claude-mem](./claude-mem.md) | 智能记忆系统 | ✅ |
 | [agentsys](./agentsys/README.md) | 模块化编排系统 | ✅ |
 | [superpowers](./superpowers/README.md) | 核心工程技能集 | ✅ |
@@ -71,6 +70,11 @@
 | [supplement-2026-03-05-v77](./supplement-2026-03-05-v77/) | 补充调研 v77 - 游戏客户端/Python/自动化测试/开发者工具最新热门插件完整调研 | 🆕最新 |
 | [supplement-2026-03-05-v78](./supplement-2026-03-05-v78/) | 补充调研 v78 - 游戏客户端/Python/自动化测试/开发者工具热门插件完整调研 | 🆕最新 |
 | [supplement-2026-03-05-v79](./supplement-2026-03-05-v79/) | 补充调研 v79 - 游戏客户端/Python/自动化测试/开发者工具最新热门插件完整调研 | 🆕最新 |
+| [supplement-2026-03-05-v80](./supplement-2026-03-05-v80/) | 补充调研 v80 - 官方插件深度分析 (PR Review/Security/Frontend/Feature Dev) | 🆕最新 |
+| [pr-review-toolkit](./pr-review-toolkit.md) | 官方 PR 审查工具包，6 专业代理 | 🆕 |
+| [security-guidance](./security-guidance.md) | 官方安全提醒钩子，9 种安全模式 | 🆕 |
+| [frontend-design-plugin](./frontend-design-plugin.md) | 官方前端设计插件 | 🆕 |
+| [feature-dev-plugin](./feature-dev-plugin.md) | 官方功能开发工作流，7 阶段 | 🆕 |
 
 ---
 
