@@ -6,15 +6,17 @@
 
 | 插件名称 | 描述 | 状态 |
 |-----------|------|------|
-| [claude-code-game-studios](./claude-code-game-studios.md) | 48 AI 代理游戏工作室 | ✅ |
+| [claude-code-game-studios](./claude-code-game-studios.md) | 48 AI 代理游戏工作室，⭐ 26-30 | ✅ |
 | [cc-plugin-unity-gamedev](./cc-plugin-unity-gamedev.md) | 21 个专业 Unity 技能 | ✅ |
 | [pydantic-ai-skills](./pydantic-ai-skills.md) | Pydantic AI 开发技能，⭐ 136 | ✅ |
+| [playwright-mcp](./playwright-mcp.md) | Playwright MCP 服务器，评分 3.581 | ✅ |
+| [aws-mcp-server](./aws-mcp-server.md) | AWS 云服务 MCP，⭐ 1350+ | ✅ |
+| [agentsys](./agentsys.md) | 工作流自动化系统 | ✅ |
+| [superpowers](./superpowers.md) | 核心工程技能集，⭐ 4.1k+ | ✅ |
+| [rulesync](./rulesync.md) | 跨平台配置同步 | ✅ |
+| [claude-mem](./claude-mem.md) | 智能记忆系统 | ✅ |
 | [agentsys](./agentsys/README.md) | 模块化编排系统 | ✅ |
 | [superpowers](./superpowers/README.md) | 核心工程技能集 | ✅ |
-| [claude-mem](./claude-mem/README.md) | 智能记忆系统 | ✅ |
-| [aws-mcp-server](./aws-mcp-server/README.md) | AWS 云服务 MCP | ✅ |
-| [playwright-mcp](./playwright-mcp/README.md) | Playwright MCP 服务器 | ✅ |
-| [rulesync](./rulesync/README.md) | 跨平台配置同步 | ✅ |
 | [trailofbits-skills](./trailofbits-skills/README.md) | 安全审计技能 | ✅ |
 | [supplement-2026-03-04-v39](./supplement-2026-03-04-v39/) | 补充调研 v39 | 🆕 |
 
