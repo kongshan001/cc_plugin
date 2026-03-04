@@ -1,56 +1,43 @@
-# cc_plugin - Claude Code 插件调研
+# Claude Code 插件实践指南
 
-> Claude Code 热门插件独立文档
+> 记录每个插件的落地实践过程
 
-## 📋 目录
+## 📚 插件列表
 
-### 游戏开发
-
-- [cc-plugin-unity-gamedev.md](./game-dev/cc-plugin-unity-gamedev.md) - Unity 21 个专业技能 ⭐ 1
-
-### Python 开发
-
-- [pydantic-ai-skills.md](./python-dev/pydantic-ai-skills.md) - Pydantic AI 集成 ⭐ 136
-
-### 自动化测试
-
-- [playwright-mcp.md](./automation-testing/playwright-mcp.md) - Playwright MCP 服务器 ⭐ 1.8k
-
-### 开发者工具
-
-- [agentsys.md](./dev-tools/agentsys.md) - 生产级工作流自动化
+| 插件名称 | 描述 | 状态 |
+|-----------|------|------|
+| [claude-code-game-studios](./claude-code-game-studios.md) | 48 AI 代理游戏工作室 | ✅ |
+| [cc-plugin-unity-gamedev](./cc-plugin-unity-gamedev.md) | 21 个专业 Unity 技能 | ✅ |
+| [pydantic-ai-skills](./pydantic-ai-skills.md) | Pydantic AI 开发技能，⭐ 136 | ✅ |
+| [agentsys](./agentsys/README.md) | 模块化编排系统 | ✅ |
+| [superpowers](./superpowers/README.md) | 核心工程技能集 | ✅ |
+| [claude-mem](./claude-mem/README.md) | 智能记忆系统 | ✅ |
+| [aws-mcp-server](./aws-mcp-server/README.md) | AWS 云服务 MCP | ✅ |
+| [playwright-mcp](./playwright-mcp/README.md) | Playwright MCP 服务器 | ✅ |
+| [rulesync](./rulesync/README.md) | 跨平台配置同步 | ✅ |
+| [trailofbits-skills](./trailofbits-skills/README.md) | 安全审计技能 | ✅ |
+| [supplement-2026-03-04-v39](./supplement-2026-03-04-v39/) | 补充调研 v39 | 🆕 |
 
 ---
 
-## 更多插件
+## 📝 文档规范
 
-> 详见各分类目录和补充调研文档
+每个插件文档包含 8 部分：
 
----
-
-## 调研规范
-
-每个插件文档包含 8 个部分：
-
-1. **背景需求** - 问题背景和目标用户
-2. **目标** - 核心目标和预期效果
-3. **设计方案** - 技术架构和核心功能
-4. **本地部署** - 安装方式和依赖要求
-5. **效果展示** - 使用示例和评分
-6. **优缺点分析** - 优点和缺点
-7. **平替对比** - 与同类工具对比
-8. **落地过程** - 适用场景、实施步骤、效果评估
+1. **背景需求** - 为什么需要这个插件
+2. **目标** - 插件要解决什么问题
+3. **设计方案** - 插件的技术架构
+4. **本地部署** - 安装和使用指南
+5. **效果展示** - 评分和实际效果
+6. **优缺点分析** - 优势与不足
+7. **平替对比** - 类似插件对比
+8. **落地过程** - 实践验证的完整记录
 
 ---
 
-## 数据来源
+## 🔧 如何贡献
 
-- awesome-claude-code
-- Antigravity Skills (970+)
-- GitHub Topics
-
----
-
-## 最新更新
-
-- 2026-03-04: 添加独立插件文档格式
+1. 在根目录创建插件 Markdown 文件
+2. 按照上述规范编写内容
+3. 在 README.md 表格中添加链接
+4. 提交 PR
