@@ -26,7 +26,8 @@
 | [supplement-2026-03-04-v45](./supplement-2026-03-04-v45/) | 补充调研 v45 - 新增热门插件科学研究/安全/开发者工具 | ✅ |
 | [supplement-2026-03-04-v46](./supplement-2026-03-04-v46/) | 补充调研 v46 - 游戏/Python/测试/开发者工具热门插件 | ✅ |
 | [supplement-2026-03-04-v47](./supplement-2026-03-04-v47/) | 补充调研 v47 - 游戏/Python/测试/开发者工具热门插件深度调研 | ✅ |
-| [supplement-2026-03-04-v48](./supplement-2026-03-04-v48/) | 补充调研 v48 - 新增热门插件 Sudocode/Parry/Dippy/开发者工具 | 🆕 |
+| [supplement-2026-03-04-v48](./supplement-2026-03-04-v48/) | 补充调研 v48 - 新增热门插件 Sudocode/Parry/Dippy/开发者工具 | ✅ |
+| [supplement-2026-03-04-v49](./supplement-2026-03-04-v49/) | 补充调研 v49 - Unreal-MCP/FastAPI-MCP/MCPJam/Snyk 安全扫描 | 🆕 |
 
 ---
 
