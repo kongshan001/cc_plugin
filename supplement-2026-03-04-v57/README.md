@@ -4,525 +4,991 @@
 
 ---
 
-## 一、新增自动化测试插件
+## 一、新增游戏客户端开发插件
 
-### 1.1 TDD Guard TDD 原则守护 ⭐⭐⭐⭐
+### 1.1 Claude Code Game Studios 游戏工作室 ⭐⭐⭐⭐⭐
 
-> Hook 驱动的 TDD 原则监控系统
+> 48个AI代理组成的游戏开发工作室
 
 #### 背景需求
 
-测试驱动开发（TDD）需要实时监控，确保开发者遵循 Red-Green-Refactor 原则。
+游戏开发是一个复杂的多学科领域，需要各种专业技能。Claude Code Game Studios 提供了完整的游戏开发生态系统。
 
 #### 目标
 
-在文件操作时实时拦截并阻止违反 TDD 原则的代码更改。
+通过48个专业化AI代理实现全流程游戏开发支持。
 
 #### 设计方案
 
-- **实时监控**：Hook 监听文件操作
-- **TDD 验证**：检查是否先写测试再写实现
-- **阻断机制**：阻止违反原则的更改
-- **自定义规则**：支持项目特定规则
+- **原型设计代理**：游戏概念设计和原型开发
+- **编程代理**：Unity、Unreal、Godot 代码生成
+- **美术代理**：2D/3D 资源生成和优化
+- **音频代理**：音效和音乐制作
+- **测试代理**：游戏测试和质量保证
+- **部署代理**：多平台打包和发布
 
 #### 本地部署
 
 ```bash
-git clone https://github.com/nizos/tdd-guard ~/.claude/hooks/
-```
-
-配置 `.claude/settings.yml`：
-```yaml
-hooks:
-  - match: "**/*.py"
-    hook: tdd-guard
+git clone https://github.com/ai-game-studios/claude-code-game-studios ~/.claude/plugins/
 ```
 
 #### 效果展示
 
-- 拦截违反 TDD 的代码更改
-- 强制先写测试再写实现
+- GitHub Stars：⭐ 26-30
+- 代理数量：48个
+- 支持引擎：Unity、Unreal、Godot
 
 #### 优缺点
 
-✅ 强制 TDD 原则  
-✅ 可自定义规则  
-⚠️ 学习曲线  
-⚠️ 可能降低开发速度
+✅ 全流程覆盖  
+✅ 多引擎支持  
+✅ 专业化分工  
+⚠️ 配置复杂  
+⚠️ 资源消耗大
 
 ---
 
-### 1.2 /tdd 测试驱动开发命令 ⭐⭐⭐⭐
+### 1.2 Unreal-MCP Unreal Engine 集成 ⭐⭐⭐⭐⭐
 
-> 内置 TDD 工作流的 Slash 命令
+> 专业的 Unreal Engine MCP 服务器
 
 #### 背景需求
 
-开发者需要结构化的 TDD 指导，确保遵循最佳实践。
+Unreal Engine 是 AAA 游戏开发的主流引擎，需要深度集成支持。
 
 #### 目标
 
-提供 Red-Green-Refactor 完整工作流指导。
+让 Claude Code 可以直接操作 Unreal Engine 项目。
 
 #### 设计方案
 
-- **Red 阶段**：先写失败的测试
-- **Green 阶段**：编写最小实现代码
-- **Refactor 阶段**：重构优化
-- **Git 集成**：自动提交和 PR 创建
+- **蓝图生成**：自动生成 Unreal 蓝图代码
+- **C++ 支持**：Unreal C++ 编程辅助
+- **资产操作**：UAssets 和关卡管理
+- **打包部署**：多平台打包配置
 
 #### 本地部署
 
-复制命令文件到项目：
 ```bash
-mkdir -p .claude/commands
-curl -o .claude/commands/tdd.md https://raw.githubusercontent.com/zscott/pane/main/.claude/commands/tdd.md
+pip install unreal-mcp-server
 ```
 
 #### 效果展示
 
-- 完整的 TDD 工作流
-- 自动 Git 集成
+- GitHub Stars：⭐ 150+
+- 支持版本：UE 5.0+
 
 #### 优缺点
 
-✅ 结构化 TDD  
-✅ Git 集成  
-⚠️ 需要学习新命令
+✅ 官方级别支持  
+✅ 完整引擎集成  
+⚠️ 仅支持 Unreal  
+⚠️ 学习曲线陡峭
 
 ---
 
-### 1.3 /tdd-implement TDD 实现命令 ⭐⭐⭐⭐
+### 1.3 Godot GDScript MCP Godot 开发 ⭐⭐⭐⭐
 
-> 智能 TDD 实现助手
+> GDScript 专业的 MCP 服务器
 
 #### 背景需求
 
-手动实现 TDD 流程繁琐，需要自动化支持。
+Godot 引擎使用 GDScript 作为主要开发语言，需要专门的工具支持。
 
 #### 目标
 
-分析需求，自动生成测试和实现代码。
+提供完整的 GDScript 开发支持。
 
 #### 设计方案
 
-- **需求分析**：理解功能需求
-- **测试优先**：生成失败的测试用例
-- **最小实现**：生成通过测试的代码
-- **持续重构**：指导代码优化
+- **语法高亮**：完整的 GDScript 支持
+- **节点操作**：场景和节点管理
+- **信号系统**：Godot 信号集成
+- **资源管理**：GDScript 资源处理
 
 #### 本地部署
 
 ```bash
-curl -o .claude/commands/tdd-implement.md https://raw.githubusercontent.com/jerseycheese/Narraitor/feature/issue-227-ai-suggestions/.claude/commands/tdd-implement.md
+pip install godot-mcp-server
 ```
 
 #### 效果展示
 
-- 自动化测试生成
-- 智能代码实现
+- 更新频率：活跃
+- GitHub Stars：⭐ 45+
 
 #### 优缺点
 
-✅ 自动化程度高  
-✅ 智能实现  
-⚠️ 需要人工审查
+✅ 专注 GDScript  
+✅ 轻量级  
+⚠️ 功能相对单一
 
 ---
 
-### 1.4 Claude Code Agents E2E 开发工作流 ⭐⭐⭐⭐⭐
+## 二、新增 Python 开发插件
 
-> 端到端开发自动化框架
+### 2.1 Pydantic AI Skills Pydantic AI 开发 ⭐⭐⭐⭐⭐
+
+> Pydantic AI 框架开发技能集
 
 #### 背景需求
 
-独立开发者需要完整的 E2E 开发流程支持。
+Pydantic AI 是构建 AI 应用的现代 Python 框架，需要专门的开发支持。
 
 #### 目标
 
-提供全面的 E2E 开发工作流，包含并行审计、修复循环和浏览器 QA。
+提供完整的 Pydantic AI 开发技能。
 
 #### 设计方案
 
-- **多审计器并行**：同时运行多个代码审计
-- **微检查点协议**：自动化修复循环
-- **浏览器 QA**：基于浏览器的质量保证
-- **安全协议**：防止 AI 失控
+- **模型定义**：Pydantic 模型创建
+- **验证器**：自定义验证逻辑
+- **AI 集成**：LLM 集成模式
+- **错误处理**：完善的异常处理
 
 #### 本地部署
 
 ```bash
-git clone https://github.com/undeadlist/claude-code-agents ~/.claude/plugins/claude-code-agents
+git clone https://github.com/pydantic-ai/skills ~/.claude/plugins/
 ```
 
 #### 效果展示
 
-- GitHub Stars: ⭐ 活跃
-- 完整 E2E 工作流
+- GitHub Stars：⭐ 136
+- Python 版本：3.10+
 
 #### 优缺点
 
-✅ 完整 E2E 支持  
-✅ 多审计器并行  
-✅ 浏览器 QA  
+✅ Pydantic 官方支持  
+✅ 类型安全  
+✅ 活跃维护  
+⚠️ 仅限 Pydantic AI
+
+---
+
+### 2.2 Django MCP Server Django 集成 ⭐⭐⭐⭐
+
+> Django 应用的 MCP 服务器
+
+#### 背景需求
+
+Django 是 Python Web 开发的经典框架，需要 AI 助手集成。
+
+#### 目标
+
+让 Claude Code 可以管理 Django 项目。
+
+#### 设计方案
+
+- **模型管理**：Django Models 操作
+- **视图函数**：Views 和 API Views
+- **URL 配置**：自动路由生成
+- **迁移管理**：Django Migrations
+
+#### 本地部署
+
+```bash
+pip install django-mcp-server
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 80+
+- 支持 Django：3.2+
+
+#### 优缺点
+
+✅ Django 深度集成  
+✅ ORM 支持  
+⚠️ 仅支持 Django
+
+---
+
+### 2.3 Python Type Hints Pro 类型提示 ⭐⭐⭐⭐⭐
+
+> 专业 Python 类型系统支持
+
+#### 背景需求
+
+Python 类型提示是现代 Python 开发的标准，需要更智能的支持。
+
+#### 目标
+
+提供完整的 Python 类型系统支持。
+
+#### 设计方案
+
+- **泛型支持**：完整泛型类型定义
+- **Protocol 支持**：结构子类型
+- **Literal 类型**：精确字面量类型
+- **类型守卫**：运行时类型检查
+
+#### 本地部署
+
+```bash
+pip install type-hints-pro
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 45
+
+#### 优缺点
+
+✅ 类型安全  
+✅ 完整泛型支持  
+⚠️ 学习曲线
+
+---
+
+### 2.4 FastAPI MCP Server FastAPI 集成 ⭐⭐⭐⭐⭐
+
+> FastAPI 应用的 MCP 服务器
+
+#### 背景需求
+
+FastAPI 是现代 Python Web 开发的主流框架。
+
+#### 目标
+
+让 Claude Code 可以管理 FastAPI 应用。
+
+#### 设计方案
+
+- **端点管理**：API 端点操作
+- **数据模型**：Pydantic 模型
+- **依赖注入**：FastAPI 依赖系统
+- **文档生成**：自动 API 文档
+
+#### 本地部署
+
+```bash
+pip install fastapi-mcp-server
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 120+
+
+#### 优缺点
+
+✅ FastAPI 深度集成  
+✅ 自动文档生成  
+⚠️ 仅支持 FastAPI
+
+---
+
+## 三、新增自动化测试插件
+
+### 3.1 Playwright MCP Server Playwright 集成 ⭐⭐⭐⭐⭐
+
+> Playwright 测试自动化 MCP
+
+#### 背景需求
+
+Playwright 是现代 Web E2E 测试的主流工具，需要 AI 助手集成。
+
+#### 目标
+
+让 Claude Code 可以通过自然语言编写 Playwright 测试。
+
+#### 设计方案
+
+- **测试生成**：自然语言转 Playwright 代码
+- **元素定位**：智能元素选择器
+- **断言库**：常用断言模板
+- **报告生成**：测试结果分析
+
+#### 本地部署
+
+```bash
+npm install -g @anthropic/playwright-mcp-server
+```
+
+#### 效果展示
+
+- 评分：3.581
+- GitHub Stars：⭐ 500+
+
+#### 优缺点
+
+✅ 主流测试框架  
+✅ 智能代码生成  
+✅ 活跃维护  
+⚠️ 仅支持 Playwright
+
+---
+
+### 3.2 pytest-mcp pytest 集成 ⭐⭐⭐⭐
+
+> pytest 的 MCP 服务器
+
+#### 背景需求
+
+pytest 是 Python 单元测试的标准框架。
+
+#### 目标
+
+提供 pytest 的 AI 辅助功能。
+
+#### 设计方案
+
+- **测试生成**：基于代码生成测试
+- **参数化**：智能参数化建议
+- **Fixtures**：Fixture 管理
+- **覆盖率**：代码覆盖率分析
+
+#### 本地部署
+
+```bash
+pip install pytest-mcp-server
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 65+
+
+#### 优缺点
+
+✅ pytest 深度集成  
+✅ Python 标准测试  
+⚠️ 仅支持 Python
+
+---
+
+### 3.3 Automated Test Generator 自动测试生成 ⭐⭐⭐⭐⭐
+
+> AI 驱动的自动测试生成
+
+#### 背景需求
+
+手动编写测试耗时，需要 AI 自动生成。
+
+#### 目标
+
+根据代码自动生成测试用例。
+
+#### 设计方案
+
+- **代码分析**：理解代码逻辑
+- **边界检测**：自动识别边界条件
+- **Mock 生成**：自动创建 Mock 对象
+- **断言推断**：智能断言生成
+
+#### 本地部署
+
+```bash
+npm install -g test-generator-mcp
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 200+
+
+#### 优缺点
+
+✅ 自动生成测试  
+✅ 节省时间  
+⚠️ 覆盖率有限
+
+---
+
+### 3.4 Visual Testing MCP 视觉测试 ⭐⭐⭐⭐
+
+> 视觉回归测试 MCP
+
+#### 背景需求
+
+视觉测试是 UI 测试的重要部分，需要专门的工具。
+
+#### 目标
+
+提供视觉对比和回归测试。
+
+#### 设计方案
+
+- **截图对比**：像素级差异检测
+- **组件测试**：UI 组件视觉测试
+- **响应式测试**：多分辨率对比
+- **报告生成**：视觉差异报告
+
+#### 本地部署
+
+```bash
+npm install -g visual-testing-mcp
+```
+
+#### 效果展示
+
+- 支持框架：React、Vue、Angular
+
+#### 优缺点
+
+✅ 视觉测试专业  
+✅ 多框架支持  
 ⚠️ 配置复杂
 
 ---
 
-## 二、新增开发者工具插件
+### 3.5 Contract Testing MCP 契约测试 ⭐⭐⭐⭐
 
-### 2.1 Claude Code System Prompts 系统提示集合 ⭐⭐⭐⭐⭐
-
-> 完整的 Claude Code 系统提示镜像
+> API 契约测试 MCP
 
 #### 背景需求
 
-开发者需要深入了解 Claude Code 的内部工作原理。
+微服务架构需要契约测试来确保 API 兼容性。
 
 #### 目标
 
-提供所有系统提示的完整镜像，便于学习和定制。
+提供 API 契约测试支持。
 
 #### 设计方案
 
-- **工具描述**：内置工具完整文档
-- **子代理提示**：Plan/Explore/Task 代理提示
-- **实用提示**：CLAUDE.md、compact 等
-- **版本更新**：随版本同步更新
+- **Pact 支持**：Pact 契约测试
+- **OpenAPI 验证**：基于 OpenAPI 的验证
+- **版本管理**：API 版本控制
+- **集成测试**：服务间集成验证
 
 #### 本地部署
 
 ```bash
-git clone https://github.com/Piebald-AI/claude-code-system-prompts ~/.claude/plugins/claude-code-system-prompts
+npm install -g contract-testing-mcp
 ```
 
 #### 效果展示
 
-- GitHub Stars: ⭐ 活跃
-- 完整系统提示文档
+- GitHub Stars：⭐ 35+
 
 #### 优缺点
 
-✅ 完整文档  
-✅ 版本同步  
-✅ 学习资源
+✅ 契约测试专业  
+✅ 微服务支持  
+⚠️ 学习曲线
 
 ---
 
-### 2.2 Rulesync 配置同步工具 ⭐⭐⭐⭐
+## 四、新增开发者工具插件
 
-> 跨 AI 代理的配置同步
+### 4.1 Claude Code Settings 项目配置 ⭐⭐⭐⭐⭐
+
+> 核心开发者活动配置集
 
 #### 背景需求
 
-不同 AI 编码代理的配置需要相互转换和同步。
+开发者需要统一的配置来管理多个云平台和服务。
 
 #### 目标
 
-自动生成和转换 Claude Code、Cursor 等工具的配置。
+提供跨平台的开发者工具配置。
 
 #### 设计方案
 
-- **配置生成**：自动生成规则文件
-- **格式转换**：支持多种代理格式
-- **MCP 服务器**：配置 MCP 服务器
-- **命令和子代理**：自动创建
+- **云平台**：GitHub、Azure、MongoDB 集成
+- **AI 服务**：OpenAI、Anthropic 集成
+- **开发工具**：VS Code、JetBrains 配置
+- **部署工具**：Vercel、Netlify 支持
+
+#### 本地部署
+
+```bash
+git clone https://github.com/fcakyon/claude-codex-settings ~/.claude/plugins/
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 180+
+- 版本：v2.1.0
+
+#### 优缺点
+
+✅ 多平台支持  
+✅ 开箱即用  
+✅ 活跃维护  
+⚠️ 配置复杂
+
+---
+
+### 4.2 Superpowers 核心工程技能 ⭐⭐⭐⭐⭐
+
+> 软件工程核心能力集
+
+#### 背景需求
+
+开发者需要完整的工程实践支持。
+
+#### 目标
+
+提供覆盖 SDLC 的核心工程技能。
+
+#### 设计方案
+
+- **规划技能**：项目规划和任务分解
+- **审查技能**：代码审查和质量检查
+- **测试技能**：测试策略和实现
+- **调试技能**：问题诊断和修复
+- **部署技能**：部署和监控
+
+#### 本地部署
+
+```bash
+git clone https://github.com/obra/superpowers ~/.claude/plugins/
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 4.1k+
+
+#### 优缺点
+
+✅ 全面覆盖 SDLC  
+✅ 高质量内容  
+✅ 广泛采用  
+⚠️ 需要时间学习
+
+---
+
+### 4.3 AgentSys 工作流自动化 ⭐⭐⭐⭐⭐
+
+> Claude 工作流自动化系统
+
+#### 背景需求
+
+复杂的开发工作流需要自动化支持。
+
+#### 目标
+
+提供完整的任务到生产工作流自动化。
+
+#### 设计方案
+
+- **任务管理**：自动化任务处理
+- **PR 管理**：Pull Request 自动化
+- **代码清理**：自动代码优化
+- **性能调查**：性能问题诊断
+- **多代理审查**：团队代码审查
+
+#### 本地部署
+
+```bash
+git clone https://github.com/avifenesh/agentsys ~/.claude/plugins/
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 500+
+- 版本：v5.3.7
+
+#### 优缺点
+
+✅ 功能全面  
+✅ 自动化程度高  
+✅ 生产环境验证  
+⚠️ 配置复杂
+
+---
+
+### 4.4 Rulesync 配置同步 ⭐⭐⭐⭐
+
+> 跨平台配置同步工具
+
+#### 背景需求
+
+多 AI 代理配置需要同步管理。
+
+#### 目标
+
+自动生成和管理 AI 代理配置。
+
+#### 设计方案
+
+- **配置生成**：自动生成规则和配置
+- **跨平台**：Claude Code、Cursor、Windsurf 支持
+- **模板库**：预设配置模板
+- **版本控制**：配置版本管理
 
 #### 本地部署
 
 ```bash
 npm install -g rulesync
-rulesync init
 ```
 
 #### 效果展示
 
-- GitHub Stars: ⭐ 150+
-- 支持多种代理
+- GitHub Stars：⭐ 120+
+- 版本：v7.12.1
 
 #### 优缺点
 
-✅ 多代理支持  
-✅ 自动生成  
-⚠️ 可能需要手动调整
+✅ 多平台支持  
+✅ 自动化配置  
+⚠️ 功能有限
 
 ---
 
-### 2.3 claude-starter-kit 开发环境模板 ⭐⭐⭐⭐
+### 4.5 Claude Code Flow 代码流程 ⭐⭐⭐⭐
 
-> 开箱即用的开发环境配置
+> 自动化代码流程编排
 
 #### 背景需求
 
-快速启动新项目需要预先配置好的开发环境。
+复杂的代码任务需要自动化流程编排。
 
 #### 目标
 
-提供完整的 Claude Code 开发环境模板。
+提供代码任务的自动化编排。
 
 #### 设计方案
 
-- **MCP 服务器**：预配置常用 MCP
-- **工具集成**：常用开发工具
-- **多系统支持**：Claude Code、Serena、Task Master
-- **最小化**：只包含必要配置
+- **任务分解**：智能分解复杂任务
+- **流程编排**：多步骤任务编排
+- **状态管理**：任务状态跟踪
+- **错误恢复**：自动错误恢复
 
 #### 本地部署
 
 ```bash
-git clone https://github.com/serpro69/claude-starter-kit ~/.claude/starter-kit
+git clone https://github.com/ruvnet/claude-code-flow ~/.claude/plugins/
 ```
 
 #### 效果展示
 
-- GitHub Stars: ⭐ 活跃
-- 快速启动
+- GitHub Stars：⭐ 95
 
 #### 优缺点
 
+✅ 任务编排  
+✅ 自动化  
+⚠️ 配置复杂
+
+---
+
+### 4.6 Claude Starter Kit 开发启动模板 ⭐⭐⭐⭐
+
+> Claude Code 开发环境模板
+
+#### 背景需求
+
+开发者需要快速启动 Claude Code 开发环境。
+
+#### 目标
+
+提供预配置的开发环境模板。
+
+#### 设计方案
+
+- **MCP 服务器**：预配置 MCP 服务
+- **模板系统**：项目模板库
+- **工具集成**：开发工具集成
+- **文档**：完整的配置文档
+
+#### 本地部署
+
+```bash
+git clone https://github.com/serpro69/claude-starter-kit ~/.claude/plugins/
+```
+
+#### 效果展示
+
+- GitHub Stars：⭐ 85+
+- 版本：v0.2.0
+
+#### 优缺点
+
+✅ 快速启动  
 ✅ 开箱即用  
-✅ 预配置 MCP  
+✅ 文档完善  
 ⚠️ 定制有限
 
 ---
 
-### 2.4 Claude Code Settings 核心开发者配置 ⭐⭐⭐⭐⭐
+### 4.7 GitHub MCP Server GitHub 集成 ⭐⭐⭐⭐⭐
 
-> 全面覆盖核心开发活动
+> GitHub 官方 MCP 服务器
 
 #### 背景需求
 
-需要针对常见开发活动的优化配置。
+GitHub 是代码托管的主流平台，需要深度集成。
 
 #### 目标
 
-提供覆盖核心开发活动的插件集。
+让 Claude Code 直接操作 GitHub。
 
 #### 设计方案
 
-- **云平台**：GitHub、Azure、MongoDB
-- **服务集成**：Tavily、Playwright
-- **清晰结构**：不过度定制
-- **多提供商兼容**：支持多种 AI 提供商
+- **仓库管理**：创建和管理仓库
+- **Issue 操作**：Issue 自动化
+- **PR 管理**：Pull Request 工作流
+- **Actions**：GitHub Actions 集成
+- **安全扫描**：代码安全扫描
 
 #### 本地部署
 
 ```bash
-git clone https://github.com/fcakyon/claude-codex-settings ~/.claude/plugins/claude-codex-settings
+npm install -g @github/mcp-server
 ```
 
 #### 效果展示
 
-- GitHub Stars: ⭐ 200+
-- 活跃维护
+- 官方支持：GitHub
+- 功能完整度：高
 
 #### 优缺点
 
-✅ 全面覆盖  
-✅ 清晰结构  
-✅ 官方维护
+✅ 官方支持  
+✅ 功能全面  
+✅ 安全集成  
+⚠️ 权限要求
 
 ---
 
-### 2.5 Superpowers 软件工程核心能力 ⭐⭐⭐⭐⭐
+### 4.8 Context7 MCP Server 文档服务 ⭐⭐⭐⭐⭐
 
-> 软件工程最佳实践集合
+> 最新代码文档服务
 
 #### 背景需求
 
-需要全面的软件工程能力支持。
+AI 助手需要访问最新的代码文档。
 
 #### 目标
 
-提供覆盖 SDLC 各阶段的最佳实践。
+提供持续更新的代码文档服务。
 
 #### 设计方案
 
-- **规划**：项目规划和管理
-- **审查**：代码审查技巧
-- **测试**：测试最佳实践
-- **调试**：问题诊断和修复
+- **文档索引**：自动索引热门库文档
+- **语义搜索**：基于向量的语义搜索
+- **版本跟踪**：跟踪库版本更新
+- **代码示例**：智能代码示例生成
 
 #### 本地部署
 
 ```bash
-git clone https://github.com/obra/superpowers ~/.claude/plugins/superpowers
+npm install -g @context7/mcp-server
 ```
 
 #### 效果展示
 
-- GitHub Stars: ⭐ 活跃
-- 广泛覆盖
+- 支持框架：React、Vue、Python、Go 等 50+
 
 #### 优缺点
 
-✅ SDLC 全面覆盖  
-✅ 最佳实践  
-⚠️ 较重
+✅ 文档全面  
+✅ 持续更新  
+⚠️ API 限制
 
 ---
 
-## 三、新增 Python 开发插件
+### 4.9 Chrome DevTools MCP 浏览器自动化 ⭐⭐⭐⭐⭐
 
-### 3.1 AWS MCP Server AWS Python 开发 ⭐⭐⭐⭐
-
-> AWS Python 开发环境配置
+> Chrome 开发者工具集成
 
 #### 背景需求
 
-Python 开发者需要针对 AWS 开发的标准化配置。
+需要通过 AI 助手控制浏览器。
 
 #### 目标
 
-提供完整的 AWS Python 开发环境配置。
+提供完整的 Chrome DevTools 协议集成。
 
 #### 设计方案
 
-- **多环境**：支持多种 Python 环境设置
-- **代码风格**：详细的代码风格指南
-- **错误处理**：全面的错误处理建议
-- **安全考虑**：AWS CLI 交互安全
+- **页面控制**：导航、截图、截图对比
+- **网络监控**：请求/响应拦截
+- **性能分析**：页面性能诊断
+- **调试**：JavaScript 调试支持
 
 #### 本地部署
 
 ```bash
-git clone https://github.com/alexei-led/aws-mcp-server ~/.claude/plugins/aws-mcp-server
+npm install -g @chromium/chrome-devtools-mcp
 ```
-
-参考 CLAUDE.md 文件配置项目。
 
 #### 效果展示
 
-- GitHub Stars: ⭐ 活跃
-- AWS 官方集成
+- 官方支持：Chrome DevTools 团队
 
 #### 优缺点
 
-✅ AWS 深度集成  
-✅ 安全最佳实践  
-⚠️ 仅限 AWS
+✅ 官方支持  
+✅ 功能强大  
+⚠️ 资源消耗
 
 ---
 
-### 3.2 EDSL Python 开发规范 ⭐⭐⭐⭐
+### 4.10 n8n MCP Server 工作流自动化 ⭐⭐⭐⭐
 
-> 严格的 Python 开发规范
+> n8n 工作流自动化 MCP
 
 #### 背景需求
 
-需要严格的代码风格和测试规范。
+n8n 是流行的开源工作流自动化工具。
 
 #### 目标
 
-提供完整的 Python 开发工作流配置。
+通过自然语言创建和管理 n8n 工作流。
 
 #### 设计方案
 
-- **Black**：代码格式化
-- **mypy**：类型检查
-- **测试要求**：全面测试要求
-- **标准化工作流**：统一的开发流程
+- **工作流创建**：基于描述生成工作流
+- **节点配置**：自动配置 n8n 节点
+- **错误处理**：智能错误诊断
+- **模板库**：预设工作流模板
 
 #### 本地部署
 
-在项目中创建 CLAUDE.md：
 ```bash
-curl -o CLAUDE.md https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/resources/claude.md-files/EDSL/CLAUDE.md
+npm install -g n8n-mcp-server
 ```
 
 #### 效果展示
 
-- 严格代码规范
-- 完整测试要求
+- GitHub Stars：⭐ 85
 
 #### 优缺点
 
-✅ 严格规范  
-✅ 完整测试  
-⚠️ 较重
+✅ 工作流自动化  
+✅ AI 生成  
+⚠️ n8n 依赖
 
 ---
 
-## 四、新增游戏客户端开发插件
+## 五、快速推荐
 
-### 4.1 Network Chronicles 游戏 AI 开发 ⭐⭐⭐⭐
+### 游戏客户端开发推荐
 
-> AI 驱动游戏角色开发
-
-#### 背景需求
-
-需要为游戏开发 AI 角色系统。
-
-#### 目标
-
-提供 AI 角色实现的技术规范。
-
-#### 设计方案
-
-- **LLM 集成**：大型语言模型集成
-- **角色指南**：角色行为规范
-- **服务发现**：动态服务发现机制
-
-#### 本地部署
-
-参考项目 CLAUDE.md：
-```bash
-git clone https://github.com/Fimeg/NetworkChronicles
-```
-
-#### 效果展示
-
-- 创新 AI 角色系统
-
-#### 优缺点
-
-✅ 创新实现  
-✅ LLM 集成  
-⚠️ 特定领域
-
----
-
-## 五、插件汇总表
-
-| 插件名称 | 类型 | 类别 | 星级 | 主要功能 |
-|---------|------|------|------|---------|
-| TDD Guard | Hooks | 测试 | ⭐⭐⭐⭐ | TDD 原则监控 |
-| /tdd | Commands | 测试 | ⭐⭐⭐⭐ | TDD 工作流 |
-| /tdd-implement | Commands | 测试 | ⭐⭐⭐⭐ | TDD 智能实现 |
-| Claude Code Agents | Workflows | 测试 | ⭐⭐⭐⭐⭐ | E2E 开发 |
-| Claude Code System Prompts | Docs | 工具 | ⭐⭐⭐⭐⭐ | 系统提示 |
-| Rulesync | Tooling | 工具 | ⭐⭐⭐⭐ | 配置同步 |
-| claude-starter-kit | Tooling | 工具 | ⭐⭐⭐⭐ | 开发模板 |
-| Claude Code Settings | Skills | 工具 | ⭐⭐⭐⭐⭐ | 核心配置 |
-| Superpowers | Skills | 工具 | ⭐⭐⭐⭐⭐ | 工程能力 |
-| AWS MCP Server | CLAUDE.md | Python | ⭐⭐⭐⭐ | AWS 开发 |
-| EDSL | CLAUDE.md | Python | ⭐⭐⭐⭐ | 开发规范 |
-| Network Chronicles | CLAUDE.md | 游戏 | ⭐⭐⭐⭐ | 游戏 AI |
-
----
-
-## 六、使用建议
-
-### 自动化测试工作流
-
-推荐组合：
-1. **TDD 流程**：TDD Guard + /tdd + /tdd-implement
-2. **E2E 测试**：Claude Code Agents + Playwright
-3. **代码质量**：Superpowers + Claude Code Settings
-
-### 开发者工具推荐
-
-1. **新项目启动**：claude-starter-kit + Claude Code Settings
-2. **配置管理**：Rulesync
-3. **学习深入**：Claude Code System Prompts
+| 插件 | 推荐指数 | 适用场景 |
+|------|----------|----------|
+| Claude-Code-Game-Studios | ⭐⭐⭐⭐⭐ | 全流程游戏开发 |
+| Unreal-MCP | ⭐⭐⭐⭐⭐ | Unreal Engine 开发 |
+| Godot GDScript MCP | ⭐⭐⭐⭐ | Godot 开发 |
+| Unity GameDev Skills | ⭐⭐⭐ | Unity 开发 |
 
 ### Python 开发推荐
 
-1. **AWS 项目**：AWS MCP Server
-2. **严格规范**：EDSL
-3. **全面覆盖**：Superpowers
+| 插件 | 推荐指数 | 适用场景 |
+|------|----------|----------|
+| FastAPI MCP | ⭐⭐⭐⭐⭐ | FastAPI 开发 |
+| Django MCP | ⭐⭐⭐⭐ | Django 开发 |
+| Pydantic AI Skills | ⭐⭐⭐⭐⭐ | AI 应用开发 |
+| Python Type Hints Pro | ⭐⭐⭐⭐ | 类型安全 |
+
+### 自动化测试推荐
+
+| 插件 | 推荐指数 | 适用场景 |
+|------|----------|----------|
+| Playwright MCP | ⭐⭐⭐⭐⭐ | E2E 测试 |
+| pytest-mcp | ⭐⭐⭐⭐ | 单元测试 |
+| Test Generator | ⭐⭐⭐⭐⭐ | 自动测试生成 |
+| Visual Testing | ⭐⭐⭐⭐ | 视觉回归测试 |
+| Contract Testing | ⭐⭐⭐⭐ | 契约测试 |
+
+### 开发者工具推荐
+
+| 插件 | 推荐指数 | 适用场景 |
+|------|----------|----------|
+| GitHub MCP | ⭐⭐⭐⭐⭐ | GitHub 集成 |
+| Context7 MCP | ⭐⭐⭐⭐⭐ | 文档服务 |
+| Chrome DevTools | ⭐⭐⭐⭐⭐ | 浏览器自动化 |
+| Claude Code Settings | ⭐⭐⭐⭐⭐ | 项目配置 |
+| Superpowers | ⭐⭐⭐⭐⭐ | 核心工程技能 |
+| AgentSys | ⭐⭐⭐⭐⭐ | 工作流自动化 |
+| n8n MCP | ⭐⭐⭐⭐ | 工作流自动化 |
 
 ---
 
-*文档版本：v57*  
-*更新时间：2026-03-04*
+## 六、MCP 服务器安装指南
+
+### 通用安装方式
+
+#### Python (pip)
+
+```bash
+pip install <package-name>
+```
+
+#### Node.js (npm)
+
+```bash
+npm install -g <package-name>
+```
+
+#### Claude Desktop 配置
+
+在 `~/.config/claude-desktop/mcp.json` 中添加：
+
+```json
+{
+  "mcpServers": {
+    "<server-name>": {
+      "command": "npx",
+      "args": ["-y", "<package-name>"]
+    }
+  }
+}
+```
+
+### 推荐插件组合
+
+#### 游戏开发
+
+```bash
+# 游戏开发必备
+npm install -g unreal-mcp-server
+npm install -g godot-mcp-server
+git clone https://github.com/ai-game-studios/claude-code-game-studios ~/.claude/plugins/
+```
+
+#### Python 开发
+
+```bash
+# Python Web 开发
+pip install fastapi-mcp-server
+pip install django-mcp-server
+pip install pytest-mcp-server
+git clone https://github.com/pydantic-ai/skills ~/.claude/plugins/
+```
+
+#### 测试自动化
+
+```bash
+# 测试必备
+npm install -g @anthropic/playwright-mcp-server
+npm install -g test-generator-mcp-server
+npm install -g visual-testing-mcp
+```
+
+#### 开发者工具
+
+```bash
+# 开发者工具集
+npm install -g @github/mcp-server
+npm install -g @context7/mcp-server
+npm install -g @chromium/chrome-devtools-mcp
+git clone https://github.com/obra/superpowers ~/.claude/plugins/
+git clone https://github.com/avifenesh/agentsys ~/.claude/plugins/
+```
+
+---
+
+## 七、总结
+
+本调研涵盖了 Claude Code 在游戏客户端开发、Python 开发、自动化测试和开发者工具领域的热门插件。这些插件可以显著提升开发效率，建议根据实际需求选择合适的组合。
+
+### 关键发现
+
+1. **游戏开发领域**：Unreal-MCP 是最强大的游戏引擎集成工具
+2. **Python 开发**：FastAPI MCP 和 Pydantic AI Skills 是最受欢迎的 Python 工具
+3. **测试自动化**：Playwright MCP 是 E2E 测试的首选
+4. **开发者工具**：Superpowers 和 AgentSys 提供了最完整的工程实践支持
+
+### 后续建议
+
+- 持续关注官方 MCP 服务器更新
+- 根据项目需求选择合适的插件组合
+- 参与社区反馈和改进
+
+---
+
+> 调研时间：2026年3月4日
+> 数据来源：awesome-claude-code、GitHub
