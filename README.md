@@ -18,7 +18,9 @@
 | [agentsys](./agentsys/README.md) | 模块化编排系统 | ✅ |
 | [superpowers](./superpowers/README.md) | 核心工程技能集 | ✅ |
 | [trailofbits-skills](./trailofbits-skills/README.md) | 安全审计技能 | ✅ |
-| [supplement-2026-03-04-v39](./supplement-2026-03-04-v39/) | 补充调研 v39 | 🆕 |
+| [supplement-2026-03-04-v39](./supplement-2026-03-04-v39/) | 补充调研 v39 | ✅ |
+| [supplement-2026-03-04-v40](./supplement-2026-03-04-v40/) | 补充调研 v40 - 游戏/Python/测试/开发工具 | ✅ |
+| [supplement-2026-03-04-v41](./supplement-2026-03-04-v41/) | 补充调研 v41 - 深度调研官方+社区技能 | 🆕 |
 
 ---
 
