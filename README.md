@@ -49,10 +49,11 @@
 | [supplement-2026-03-04-v61](./supplement-2026-03-04-v61/) | 补充调研 v61 - 游戏/Python/测试/开发者工具热门插件完整调研 | ✅ |
 | [supplement-2026-03-04-v62](./supplement-2026-03-04-v62/) | 补充调研 v62 - 新增热门插件深度分析 (8616+仓库索引/DevOps/项目管理) | 🆕最新 |
 | [supplement-2026-03-04-v63](./supplement-2026-03-04-v63/) | 补充调研 v63 - 游戏/Python/测试/开发者工具完整调研 | ✅ |
-| [supplement-2026-03-04-v64](./supplement-2026-03-04-v64/) | 补充调研 v64 - 游戏/Python/测试/开发者工具热门插件完整调研 | 🆕最新 |
+| [supplement-2026-03-04-v64](./supplement-2026-03-04-v64/) | 补充调研 v64 - 游戏/Python/测试/开发者工具热门插件完整调研 | ✅ |
 | [context7-mcp-server](./context7-mcp-server.md) | Context7 MCP 服务器，50+ 框架支持 | ✅ |
 | [claudeforge](./claudeforge.md) | CLAUDE.md 生成和维护工具 | ✅ |
 | [skyll](./skyll.md) | AI 技能自主发现学习工具 | ✅ |
+| [supplement-2026-03-04-v65](./supplement-2026-03-04-v65/) | 补充调研 v65 - 游戏/Python/测试/开发者工具热门插件完整调研 | 🆕最新 |
 
 ---
 
