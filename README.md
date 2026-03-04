@@ -18,6 +18,13 @@
 | [agentsys](./agentsys/README.md) | 模块化编排系统 | ✅ |
 | [superpowers](./superpowers/README.md) | 核心工程技能集 | ✅ |
 | [trailofbits-skills](./trailofbits-skills/README.md) | 安全审计技能 | ✅ |
+| [fastapi-development](./fastapi-development.md) | FastAPI 开发技能 | ✅ |
+| [git-mcp-server](./git-mcp-server.md) | Git MCP 服务器 (官方) | ✅ |
+| [memory-mcp-server](./memory-mcp-server.md) | Memory MCP 服务器 (官方) | ✅ |
+| [filesystem-mcp-server](./filesystem-mcp-server.md) | Filesystem MCP 服务器 (官方) | ✅ |
+| [adb-skill](./adb-skill.md) | ADB 设备操作技能 | ✅ |
+| [godot-development](./godot-development.md) | Godot 游戏开发技能 | ✅ |
+| [sequential-thinking-mcp](./sequential-thinking-mcp.md) | 顺序思考 MCP (官方) | ✅ |
 | [supplement-2026-03-04-v39](./supplement-2026-03-04-v39/) | 补充调研 v39 | ✅ |
 | [supplement-2026-03-04-v40](./supplement-2026-03-04-v40/) | 补充调研 v40 - 游戏/Python/测试/开发工具 | ✅ |
 | [supplement-2026-03-04-v42](./supplement-2026-03-04-v42/) | 补充调研 v42 - 游戏/Python/测试/开发工具 | ✅ |
