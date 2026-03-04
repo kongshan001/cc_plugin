@@ -53,10 +53,16 @@
 | [context7-mcp-server](./context7-mcp-server.md) | Context7 MCP 服务器，50+ 框架支持 | ✅ |
 | [claudeforge](./claudeforge.md) | CLAUDE.md 生成和维护工具 | ✅ |
 | [skyll](./skyll.md) | AI 技能自主发现学习工具 | ✅ |
+| [sudocode](./sudocode.md) | 轻量级代理编排工具，Git 原生规范管理 | 🆕 |
+| [parry](./parry.md) | 提示注入扫描器，多层安全防护 | 🆕 |
+| [dippy](./dippy.md) | Bash 命令过滤器，减少权限疲劳 | 🆕 |
 | [supplement-2026-03-04-v65](./supplement-2026-03-04-v65/) | 补充调研 v65 - 游戏/Python/测试/开发者工具热门插件完整调研 | ✅ |
-| [supplement-2026-03-04-v66](./supplement-2026-03-04-v66/) | 补充调研 v66 - 游戏/Python/测试/开发者工具深度调研续篇 | 🆕最新 |
+| [supplement-2026-03-04-v67](./supplement-2026-03-04-v67/) | 补充调研 v67 - 游戏/Python/测试/开发者工具热门插件最新调研 (Sudocode/Parry/Dippy) | 🆕最新 |
+| [supplement-2026-03-04-v66](./supplement-2026-03-04-v66/) | 补充调研 v66 - 游戏/Python/测试/开发者工具深度调研续篇 | ✅ |
 
 ---
+
+## 📝 新增插件文档
 
 ## 📝 文档规范
 
