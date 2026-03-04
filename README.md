@@ -30,6 +30,7 @@
 | [supplement-2026-03-04-v49](./supplement-2026-03-04-v49/) | 补充调研 v49 - Unreal-MCP/FastAPI-MCP/MCPJam/Snyk 安全扫描 | 🆕 |
 | [supplement-2026-03-04-v50](./supplement-2026-03-04-v50/) | 补充调研 v50 - 游戏/Python/测试/开发者工具完整调研 | ✅ |
 | [supplement-2026-03-04-v51](./supplement-2026-03-04-v51/) | 补充调研 v51 - 游戏/Python/测试/开发者工具热门插件完整调研 | ✨最新 |
+| [supplement-2026-03-04-v17-game-py-test-dev](./supplement-2026-03-04-v17-game-py-test-dev/) | 补充调研 v17 - 游戏客户端开发、Python开发、自动化测试、开发者工具 | 🆕 |
 
 ---
 
