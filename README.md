@@ -22,7 +22,8 @@
 | [supplement-2026-03-04-v40](./supplement-2026-03-04-v40/) | 补充调研 v40 - 游戏/Python/测试/开发工具 | ✅ |
 | [supplement-2026-03-04-v42](./supplement-2026-03-04-v42/) | 补充调研 v42 - 游戏/Python/测试/开发工具 | ✅ |
 | [supplement-2026-03-04-v43](./supplement-2026-03-04-v43/) | 补充调研 v43 - 深度调研游戏/Python/测试/开发工具 | ✅ |
-| [supplement-2026-03-04-v44](./supplement-2026-03-04-v44/) | 补充调研 v44 - 游戏/Python/测试/开发工具热门插件 | 🆕 |
+| [supplement-2026-03-04-v44](./supplement-2026-03-04-v44/) | 补充调研 v44 - 游戏/Python/测试/开发工具热门插件 | ✅ |
+| [supplement-2026-03-04-v45](./supplement-2026-03-04-v45/) | 补充调研 v45 - 新增热门插件科学研究/安全/开发者工具 | 🆕 |
 
 ---
 
