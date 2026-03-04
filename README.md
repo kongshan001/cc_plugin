@@ -30,9 +30,22 @@
 - [补充调研-第十七期](./supplement-2026-03-04-v17/README.md) (2026-03-04 完整调研更新)
 - [补充调研-第十八期](./supplement-2026-03-04-v18/README.md) (2026-03-04 Unity-MCP + Game Studios 深度调研)
 - [补充调研-第十九期](./supplement-2026-03-04-v19/README.md) (2026-03-04 Python开发/游戏客户端测试/MCP服务器调研)
-- [补充调研-第二十期](./supplement-2026-03-04-v20/README.md) (2026-03-04 游戏客户端开发/Python开发/自动化测试/开发者工具) ✨最新
-- [补充调研-第十八期](./supplement-2026-03-04-v18/README.md) (2026-03-04 Unity-MCP + Game Studios 深度调研)
-- [补充调研-第十九期](./supplement-2026-03-04-v19/README.md) (2026-03-04 Python开发/游戏客户端测试/MCP服务器调研) ✨最新
+- [补充调研-第二十期](./supplement-2026-03-04-v20/README.md) (2026-03-04 热门插件补充调研)
+- [补充调研-第二十一期](./supplement-2026-03-04-v21/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第二十二期](./supplement-2026-03-04-v22/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第二十三期](./supplement-2026-03-04-v23/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第二十四期](./supplement-2026-03-04-v24/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第二十五期](./supplement-2026-03-04-v25/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第二十六期](./supplement-2026-03-04-v26/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第二十七期](./supplement-2026-03-04-v27/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第二十八期](./supplement-2026-03-04-v28/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第二十九期](./supplement-2026-03-04-v29/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第三十期](./supplement-2026-03-04-v30/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第三十一期](./supplement-2026-03-04-v31/README.md) (2026-03-04 游戏/Python/测试/开发者工具调研)
+- [补充调研-第三十二期](./supplement-2026-03-04-v32/README.md) (2026-03-04 游戏/Python/测试/开发者工具补充调研)
+- [补充调研-第三十三期](./supplement-2026-03-04-v33/README.md) (2026-03-04 Claude Code 热门插件调研)
+- [补充调研-第三十四期](./supplement-2026-03-04-v34/README.md) (2026-03-04 Claude Code 热门插件调研)
+- [补充调研-第三十五期](./supplement-2026-03-04-v35/README.md) (2026-03-04 游戏客户端/Python/自动化测试/开发者工具调研) ✨最新
 
 ---
 

@@ -1,4 +1,4 @@
-# Claude Code 插件调研补充文档 v20
+# Claude Code 插件调研补充文档 v21
 
 > 调研日期: 2026-03-04
 > 调研方向: 游戏客户端开发 / Python 开发 / 游戏客户端自动化测试 / 其他开发者工具
@@ -17,13 +17,13 @@
 
 ## 1. 游戏客户端开发
 
-### 1.1 Claude Code Game Studios ⭐⭐⭐⭐⭐ (新增)
+### 1.1 Claude Code Game Studios ⭐⭐⭐⭐⭐
 
 | 项目 | 说明 |
 |-----|------|
 | **GitHub** | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) |
 | **Star** | ⭐ 26 |
-| **更新** | 2026-03-01 (3天前) |
+| **更新** | 2026-03-01 |
 | **特点** | 48个AI代理 + 36个工作流技能 + 完整协调系统 |
 
 #### 核心能力
@@ -80,24 +80,17 @@ git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git ~/.claude/sk
 - 快速原型开发
 - 自动化 PR 创建
 
-#### 安装
-
-```bash
-pip install lazy-bird
-```
-
 ---
 
-### 1.3 Unity 开发技能汇总
+### 1.3 Unity AI Workflow (2026 新增) ⭐⭐⭐⭐
 
-| 技能 | GitHub | Star | 特点 |
-|-----|--------|------|------|
-| **cc-plugin-unity-gamedev** | tjboudreaux/cc-plugin-unity-gamedev | ⭐1 | 21个专业技能 |
-| **OH-Unity-GameDev-Skills** | OstrichHermit/OH-Unity-GameDev-Skills | ⭐6 | Unity基础+DoTween |
-| **unity-ai-workflow** | David-GD13/unity-ai-workflow | ⭐4 | Unity 6.2+ AI工作流 |
-| **mcp-unity** | - | - | Unity MCP 服务器集成 |
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [David-GD13/unity-ai-workflow](https://github.com/David-GD13/unity-ai-workflow) |
+| **Star** | ⭐ 4 |
+| **特点** | Unity 6.2+ AI-first 开发工作流 |
 
-#### Unity AI Workflow 核心特性
+#### 核心特性
 
 ```markdown
 ### Dev Modes (三种开发模式)
@@ -110,15 +103,41 @@ pip install lazy-bird
 ### Game Feel 哲学
 - 每项功能使用 /implement-feature 完整构建
 - AI 询问 VFX、SFX、相机反馈和触觉
+- 迭代打磨，不是单独阶段
+
+### 技术架构
+- TCREI Prompting: Task-Context-References-Evaluate-Iterate
+- 验证系统: [VERIFIED]/[SYNTHESIZED]/[UNVERIFIED]
 ```
 
 ---
 
-### 1.4 Godot 开发
+### 1.4 Network Chronicles (AI 游戏角色) ⭐⭐⭐
 
-#### lazy-bird Godot 支持
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [Fimeg/NetworkChronicles](https://github.com/Fimeg/NetworkChronicles) |
+| **特点** | AI 驱动游戏角色实现方案 |
 
-通过 lazy-bird 内置的 Godot 框架预设，可以：
+#### 核心功能
+
+- **LLM 集成**: 大语言模型驱动 NPC 行为
+- **角色指南**: 详细的 AI 角色设计规范
+- **服务发现**: 动态服务发现机制
+
+#### 适用场景
+
+- 开放世界游戏 NPC
+- AI 驱动对话系统
+- 游戏内智能实体
+
+---
+
+### 1.5 Godot 开发支持
+
+#### lazy-bird Godot 预设
+
+通过 lazy-bird 内置的 Godot 框架预设：
 
 - GDScript 代码生成
 - 场景管理辅助
@@ -129,25 +148,24 @@ pip install lazy-bird
 
 | 项目 | 说明 |
 |-----|------|
-| **GitHub** | 社区维护的 Godot 技能 |
-| **特点** | 开源游戏引擎开发支持 |
+| **特点** | 社区维护的 Godot 技能 |
 
 ---
 
-### 1.5 Web/H5 游戏开发
+### 1.6 Web/H5 游戏开发
 
-#### 引擎选择
+#### 引擎选择决策树
 
 ```
 什么类型的游戏?
 │
 ├── 2D 游戏
-│   ├── 完整引擎功能 → Phaser 4
-│   └── 原始渲染能力 → PixiJS 8
+│   ├── 需要完整引擎功能? → Phaser 4
+│   └── 需要原始渲染能力? → PixiJS 8
 │
 ├── 3D 游戏
-│   ├── 完整引擎(物理XR) → Babylon.js 7
-│   └── 专注渲染 → Three.js
+│   ├── 需要完整引擎(物理、XR)? → Babylon.js 7
+│   └── 专注渲染? → Three.js
 │
 └── 自定义 → Canvas/WebGL
 ```
@@ -160,6 +178,17 @@ pip install lazy-bird
 | Firefox | ✅ v131+ |
 | Safari | ✅ 18.0+ |
 | **全球支持率** | **~73%** |
+
+---
+
+### 1.7 游戏开发技能汇总
+
+| 技能 | GitHub | Star | 特点 |
+|-----|--------|------|------|
+| Claude-Code-Game-Studios | Donchitos | ⭐26 | 48代理全栈覆盖 |
+| lazy-bird | yusufkaraaslan | ⭐210 | Godot + 自动化 |
+| unity-ai-workflow | David-GD13 | ⭐4 | Unity 6.2+ |
+| Network Chronicles | Fimeg | - | AI 游戏角色 |
 
 ---
 
@@ -275,17 +304,28 @@ pip install lazy-bird
 
 ---
 
-### 2.6 Python 开发技能汇总
+### 2.6 cchooks (Python Hook SDK) ⭐⭐⭐⭐
 
-| 技能 | GitHub | 功能 |
-|-----|--------|------|
-| **python-pro** | - | Python 3.12+ 全栈指南 |
-| **python-patterns** | - | 开发原则和决策 |
-| **python-fastapi-development** | - | FastAPI 后端开发 |
-| **python-testing-patterns** | - | pytest/测试策略 |
-| **async-python-patterns** | - | asyncio 异步编程 |
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [GowayLee/cchooks](https://github.com/GowayLee/cchooks) |
+| **语言** | Python |
 
-#### uv - Python 包管理器 (2025最快)
+#### 核心功能
+
+- **轻量级 SDK**: 简洁的 API 设计
+- **好文档**: 易于上手
+- **Hook 集成**: 简化 Hook 配置流程
+- **JSON 抽象**: 简化 JSON 配置文件处理
+
+---
+
+### 2.7 uv - Python 包管理器 (2025最快) ⭐⭐⭐⭐⭐
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [astral-sh/uv](https://github.com/astral-sh/uv) |
+| **特点** | 10-100x faster than pip |
 
 ```bash
 # 安装
@@ -295,7 +335,24 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv init my-project
 uv venv
 uv pip install -r requirements.txt
+
+# 快速运行
+uv run script.py
+uv run pytest
 ```
+
+---
+
+### 2.8 Python Skills 汇总
+
+| 技能 | 核心能力 | 适用场景 |
+|--------|---------|---------|
+| **Serena** | 语义代码检索 | 重构、代码理解 |
+| **PAL MCP Server** | 多模型协作 | AI 模型管理 |
+| **claude-arsenal** | 39+技能 | 全栈开发 |
+| **koder** | 智能编程 | 日常开发 |
+| **cchooks** | Hook SDK | 自定义工作流 |
+| **uv** | 极速包管理 | 项目初始化 |
 
 ---
 
@@ -352,10 +409,6 @@ git clone https://github.com/lackeyjb/playwright-skill.git ~/.claude/skills/play
 - 游戏客户端 UI 自动化
 - 快速测试脚本生成
 
-#### 文档
-
-https://terryso.github.io/blog/yaml-playwright-testing-revolution
-
 ---
 
 ### 3.3 playwright-bot-bypass ⭐⭐⭐
@@ -372,19 +425,28 @@ https://terryso.github.io/blog/yaml-playwright-testing-revolution
 - **CAPTCHA 处理**: 自动处理验证码
 - **隐身浏览**: 模拟真实用户行为
 
-#### 适用场景
-
-- 游戏客户端自动化测试
-- 游戏数据采集
-- 绕过反作弊检测（仅限合法测试）
-
 #### ⚠️ 注意
 
 仅用于合法测试目的，遵守网站服务条款。
 
 ---
 
-### 3.4 Unity Test Framework
+### 3.4 Cursor Tools (Stagehand) ⭐⭐⭐⭐
+
+| 项目 |说明 |
+|-----|------|
+| **GitHub** | [eastlondoner/cursor-tools](https://github.com/eastlondoner/cursor-tools) |
+| **特点** | 浏览器自动化功能 (Stagehand) |
+
+#### 核心功能
+
+- **多模型支持**: 灵活切换 AI 模型
+- **Stagehand 浏览器自动化**: 强大的 Web 自动化
+- **多命令选项**: 灵活的扩展配置
+
+---
+
+### 3.5 Unity Test Framework
 
 #### 游戏客户端测试方案
 
@@ -406,9 +468,9 @@ https://terryso.github.io/blog/yaml-playwright-testing-revolution
 
 ---
 
-### 3.5 移动端游戏测试
+### 3.6 移动端游戏测试
 
-#### Android UI 测试 (android_ui_verification)
+#### Android UI 测试
 
 ```bash
 # 设备校准
@@ -431,6 +493,28 @@ adb shell screencap -p /sdcard/screen.png
 |-----|------|
 | **GitHub** | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) |
 | **Star** | ⭐ 557 |
+
+---
+
+### 3.7 TDD 测试命令
+
+| 命令 | 来源 | 功能 |
+|-----|------|------|
+| **/tdd** | zscott/pane | TDD 开发流程 |
+| **/tdd-implement** | jerseycheese/Narraitor | TDD 实现 |
+| **/repro-issue** | rzykov/metabase | 可复现测试用例 |
+
+---
+
+### 3.8 测试技能汇总
+
+| 技能 | Star | 特点 |
+|------|------|------|
+| **playwright-skill** | ⭐1,844 | 模型调用式E2E |
+| **claude-code-playwright-mcp-test** | ⭐164 | YAML驱动 |
+| **playwright-bot-bypass** | ⭐127 | 反检测绕过 |
+| **Cursor Tools** | - | Stagehand自动化 |
+| **Unity Test Framework** | - | 单元/集成测试 |
 
 ---
 
@@ -507,7 +591,57 @@ adb shell screencap -p /sdcard/screen.png
 
 ---
 
-### 4.5 Trail of Bits Security Skills
+### 4.5 Claude Code Agents ⭐⭐⭐⭐
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [undeadlist/claude-code-agents](https://github.com/undeadlist/claude-code-agents) |
+| **特点** | E2E 开发工作流 |
+
+#### 核心功能
+
+- **多个审计代理并行**: 全面代码审查
+- **微检查点协议**: 自动化修复循环
+- **浏览器 QA**: 基于浏览器的质量保证
+- **严格协议**: 防止 AI 失控
+
+---
+
+### 4.6 Ralph for Claude Code ⭐⭐⭐⭐
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) |
+| **特点** | 自主 AI 开发框架 |
+
+#### 核心功能
+
+- **智能退出检测**: 自动判断任务完成
+- **速率限制**: 防止 API 滥用
+- **断路器模式**: 避免无限循环
+- **安全护栏**: 保护系统资源
+- **tmux 集成**: 实时监控
+- **75+ 测试**: 全面测试覆盖
+
+---
+
+### 4.7 Superpowers ⭐⭐⭐⭐⭐
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [obra/superpowers](https://github.com/obra/superpowers) |
+| **作者** | Jesse Vincent |
+| **特点** | 核心工程技能集 |
+
+#### 核心功能
+
+- **SDLC 全覆盖**: 规划、审查、测试、调试
+- **最佳实践**: 工程实践精华
+- **良好组织**: 易于使用和扩展
+
+---
+
+### 4.8 Trail of Bits Security Skills
 
 | 项目 | 说明 |
 |-----|------|
@@ -523,7 +657,7 @@ adb shell screencap -p /sdcard/screen.png
 
 ---
 
-### 4.6 Claude Code Pro
+### 4.9 Claude Code Pro
 
 | 项目 | 说明 |
 |-----|------|
@@ -538,7 +672,7 @@ adb shell screencap -p /sdcard/screen.png
 
 ---
 
-### 4.7 Antigravity Awesome Skills ⭐⭐⭐⭐⭐
+### 4.10 Antigravity Awesome Skills ⭐⭐⭐⭐⭐
 
 | 项目 | 说明 |
 |-----|------|
@@ -564,6 +698,53 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skil
 
 ---
 
+### 4.11 cc-tools (Go 实现) ⭐⭐⭐⭐
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [Veraticus/cc-tools](https://github.com/Veraticus/cc-tools) |
+| **语言** | Go |
+
+#### 核心功能
+
+- **高性能**: Go 语言实现
+- **智能 linting**: 代码质量检查
+- **测试支持**: 集成测试工具
+- **状态行生成**: 最小开销
+
+---
+
+### 4.12 Learn Claude Code ⭐⭐⭐⭐
+
+| 项目 | 说明 |
+|-----|------|
+| **GitHub** | [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) |
+| **语言** | Python |
+| **特点** | AI 编码代理设计学习资源 |
+
+#### 核心功能
+
+- **代理设计分析**: 深入理解 AI 代理原理
+- **最小化实现**: 仅用几百行 Python 构建
+- **完整组件**: Skills、子代理、待办列表
+
+---
+
+### 4.13 开发者工具汇总
+
+| 技能 | Star | 特点 |
+|------|------|------|
+| **Antigravity Awesome Skills** | 900+ | 最大技能库 |
+| **GitMCP** | ⭐7,691 | 防止代码幻觉 |
+| **DevDocs** | ⭐2,037 | 文档聚合 |
+| **cc-devops-skills** | - | DevOps 工具链 |
+| **AgentSys** | - | 工作流自动化 |
+| **Claude Code Agents** | - | E2E 开发 |
+| **Superpowers** | - | 核心工程技能 |
+| **cc-tools** | - | Go 高性能工具 |
+
+---
+
 ## 5. 热门技能推荐汇总
 
 ### 5.1 游戏客户端开发推荐
@@ -572,8 +753,8 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skil
 |------|------|------|------|
 | 1 | Claude-Code-Game-Studios | ⭐26 | 48代理全栈覆盖 |
 | 2 | lazy-bird | ⭐210 | Godot + 自动化 |
-| 3 | cc-plugin-unity-gamedev | ⭐1 | 21技能专业栈 |
-| 4 | unity-ai-workflow | ⭐4 | Unity 6.2+ |
+| 3 | unity-ai-workflow | ⭐4 | Unity 6.2+ |
+| 4 | Network Chronicles | - | AI 游戏角色 |
 
 ### 5.2 Python 开发推荐
 
@@ -583,6 +764,7 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skil
 | 2 | PAL MCP Server | ⭐11,180 | 多模型协作 |
 | 3 | claude-arsenal | ⭐9 | 39+技能 |
 | 4 | koder | ⭐80 | 智能编程助手 |
+| 5 | uv | - | 极速包管理 |
 
 ### 5.3 游戏客户端自动化测试推荐
 
@@ -592,6 +774,7 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skil
 | 2 | claude-code-playwright-mcp-test | ⭐164 | YAML驱动 |
 | 3 | playwright-bot-bypass | ⭐127 | 反检测绕过 |
 | 4 | Unity Test Framework | - | 单元/集成测试 |
+| 5 | Cursor Tools (Stagehand) | - | 浏览器自动化 |
 
 ### 5.4 通用开发者工具推荐
 
@@ -602,6 +785,7 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skil
 | 3 | DevDocs | ⭐2,037 | 文档聚合 |
 | 4 | cc-devops-skills | - | DevOps 工具链 |
 | 5 | AgentSys | - | 工作流自动化 |
+| 6 | Superpowers | - | 核心工程技能 |
 
 ### 5.5 技能选择决策树
 
@@ -610,25 +794,28 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skil
 ├─ Unity → Claude-Code-Game-Studios
 ├─ Godot → lazy-bird
 ├─ Web/H5 → playwright-skill
-└─ 通用 → Antigravity Skills
+└─ AI角色 → Network Chronicles
 
 Python 开发?
 ├─ 代码检索 → Serena
 ├─ 多模型 → PAL MCP Server
 ├─ 快速开发 → koder
+├─ 包管理 → uv
 └─ 全栈 → claude-arsenal
 
 自动化测试?
 ├─ 浏览器 → playwright-skill
 ├─ 游戏客户端 → Unity Test Framework
 ├─ 移动端 → ADB/uiautomator
-└─ YAML驱动 → claude-code-playwright-mcp-test
+├─ YAML驱动 → claude-code-playwright-mcp-test
+└─ TDD → /tdd-implement
 
 开发者效率?
 ├─ 全栈 → Antigravity Skills
 ├─ DevOps → cc-devops-skills
 ├─ 安全 → trailofbits-skills
-└─ 质量 → claude-codepro
+├─ 质量 → claude-codepro
+└─ 工作流 → AgentSys
 ```
 
 ---
@@ -667,6 +854,7 @@ cp -r 技能名 ~/.claude/skills/
 | **游戏开发** | ⬆️ 上升 | Claude-Code-Game-Studios 全栈覆盖 |
 | **多模型协作** | ⬆️ 上升 | PAL MCP, Serena 主导 |
 | **技能聚合** | ⬆️ 上升 | Antigravity 900+ 技能 |
+| **Python 工具链** | ⬆️ 上升 | uv 主导性能优化 |
 
 ### 技术栈分布
 
@@ -686,6 +874,16 @@ cp -r 技能名 ~/.claude/skills/
 
 ---
 
+## 📎 相关资源
+
+- [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
+- [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
+- [Antigravity Awesome Skills](https://github.com/sickn33/antigravity-awesome-skills)
+- [Claude Code Handbook](https://nikiforovall.blog/claude-code-rules/)
+- [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
+
+---
+
 *持续更新中，欢迎提交 PR 补充更多技能*
 
-*文档版本: v20 (2026-03-04)*
+*文档版本: v21 (2026-03-04)*
