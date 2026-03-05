@@ -126,6 +126,11 @@
 | [mcp-universe](./mcp-universe.md) | AI 代理开发和测试框架，⭐ 566 | 🆕 |
 | [mcphub-nvim](./mcphub-nvim.md) | Neovim MCP 客户端，⭐ 1,739 | 🆕 |
 | [claude-code-game-studios-v2](./claude-code-game-studios-v2.md) | 48 AI 代理游戏开发工作室，⭐ 30 | 🆕 |
+| [alttester-mcp](./alttester-mcp.md) | Unity/Unreal 游戏自动化测试 MCP | 🆕 |
+| [21st-dev-magic-mcp](./21st-dev-magic-mcp.md) | AI UI 组件生成工具 | 🆕 |
+| [anthropic-sdk-python](./anthropic-sdk-python.md) | Claude 官方 Python SDK | 🆕 |
+| [chromedevtools-mcp](./chromedevtools-mcp.md) | Chrome 开发者工具 MCP | 🆕 |
+| [supplement-2026-03-05-v101](./supplement-2026-03-05-v101/) | 补充调研 v101 - 游戏客户端/Python/自动化测试/开发者工具最新热门插件完整调研 | 🆕最新 |
 
 ---
 
