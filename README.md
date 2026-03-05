@@ -70,6 +70,8 @@
 | [supplement-2026-03-05-v77](./supplement-2026-03-05-v77/) | 补充调研 v77 - 游戏客户端/Python/自动化测试/开发者工具最新热门插件完整调研 | 🆕最新 |
 | [supplement-2026-03-05-v78](./supplement-2026-03-05-v78/) | 补充调研 v78 - 游戏客户端/Python/自动化测试/开发者工具热门插件完整调研 | 🆕最新 |
 | [supplement-2026-03-05-v79](./supplement-2026-03-05-v79/) | 补充调研 v79 - 游戏客户端/Python/自动化测试/开发者工具最新热门插件完整调研 | 🆕最新 |
+| [git-context-controller](./git-context-controller.md) | Git 风格上下文管理框架 | 🆕 |
+| [supplement-2026-03-05-v81](./supplement-2026-03-05-v81/) | 补充调研 v81 - 游戏客户端/Python/自动化测试/开发者工具最新热门插件完整调研 | 🆕最新 |
 | [supplement-2026-03-05-v80](./supplement-2026-03-05-v80/) | 补充调研 v80 - 官方插件深度分析 (PR Review/Security/Frontend/Feature Dev) | 🆕最新 |
 | [pr-review-toolkit](./pr-review-toolkit.md) | 官方 PR 审查工具包，6 专业代理 | 🆕 |
 | [security-guidance](./security-guidance.md) | 官方安全提醒钩子，9 种安全模式 | 🆕 |
