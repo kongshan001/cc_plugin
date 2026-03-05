@@ -110,6 +110,15 @@
 | [ios-simulator-skill](./ios-simulator-skill.md) | iOS 模拟器技能，⭐ 565 | 🆕最新 |
 | [rule2hook](./rule2hook.md) | 自然语言规则转 Hooks | 🆕最新 |
 | [supplement-2026-03-05-v93](./supplement-2026-03-05-v93/) | 补充调研 v93 - 游戏/Python/测试/开发者工具最新热门插件 | 🆕最新 |
+| [supplement-2026-03-05-v94](./supplement-2026-03-05-v94/) | 补充调研 v94 - 游戏/Python/测试/开发者工具热门插件完整调研 | 🆕最新 |
+| [mcp-inspector](./mcp-inspector.md) | 官方 MCP 服务器可视化测试工具，⭐ 8,900 | 🆕 |
+| [fast-agent](./fast-agent.md) | MCP 代理和工作流定义框架，⭐ 3,694 | 🆕 |
+| [vibetest-use](./vibetest-use.md) | 自动化 QA 测试工具，⭐ 771 | 🆕 |
+| [mcp-for-security](./mcp-for-security.md) | 安全测试 MCP 工具集合，⭐ 559 | 🆕 |
+| [skunit](./skunit.md) | AI 单元测试框架，⭐ 171 | 🆕 |
+| [mcp-universe](./mcp-universe.md) | AI 代理开发和测试框架，⭐ 566 | 🆕 |
+| [mcphub-nvim](./mcphub-nvim.md) | Neovim MCP 客户端，⭐ 1,739 | 🆕 |
+| [claude-code-game-studios-v2](./claude-code-game-studios-v2.md) | 48 AI 代理游戏开发工作室，⭐ 30 | 🆕 |
 
 ---
 
