@@ -104,6 +104,12 @@
 | [claude-esp](./claude-esp.md) | Claude Code 隐藏输出流调试工具 | 🆕 |
 | [local-testing-agent](./local-testing-agent.md) | 多语言测试自动化 MCP | 🆕 |
 | [unibrowse](./unibrowse.md) | 高级浏览器自动化插件 | 🆕 |
+| [fastmcp](./fastmcp.md) | Pythonic MCP 框架，⭐ 23,383 | 🆕最新 |
+| [playwright-skill](./playwright-skill.md) | Playwright 自动化测试技能，⭐ 1,864 | 🆕最新 |
+| [unreal-mcp](./unreal-mcp.md) | Unreal Engine 5 MCP 服务器，⭐ 1,504 | 🆕最新 |
+| [ios-simulator-skill](./ios-simulator-skill.md) | iOS 模拟器技能，⭐ 565 | 🆕最新 |
+| [rule2hook](./rule2hook.md) | 自然语言规则转 Hooks | 🆕最新 |
+| [supplement-2026-03-05-v93](./supplement-2026-03-05-v93/) | 补充调研 v93 - 游戏/Python/测试/开发者工具最新热门插件 | 🆕最新 |
 
 ---
 
