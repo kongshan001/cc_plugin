@@ -8,16 +8,46 @@
 ## 📋 调研概述
 
 本次调研继续深入分析 Claude Code 热门插件，聚焦以下四个方向：
-1. **游戏客户端开发** - Unity、Unreal、Godot 游戏引擎 MCP 集成
-2. **Python 开发** - Python MCP 服务器、项目开发工具
+1. **游戏客户端开发** - Unity、Unreal、Godot 游戏引擎集成
+2. **Python 开发** - Python 项目模板、Django/Flask 开发
 3. **游戏客户端自动化测试** - 浏览器自动化、游戏测试工具
-4. **其他开发者工具** - 自动化工作流、代码管理、工程工具
+4. **其他开发者工具** - 调试工具、协作平台、工程工作流
 
 ---
 
 ## 🎮 一、游戏客户端开发相关插件
 
-### 1.1 mcp-unity (CoderGamester/mcp-unity)
+### 1.1 IvanMurzak/Unity-MCP
+
+| 项目 | 详情 |
+|------|------|
+| **Stars** | ⭐ 1,181 |
+| **Forks** | 123 |
+| **Language** | C# |
+| **更新** | 2026-03-04 |
+
+**描述**: AI-powered bridge connecting LLMs and advanced AI agents to the Unity Editor via the Model Context Protocol (MCP). Chat with AI to generate code, debug errors, and automate game development tasks directly within your project.
+
+**核心功能**:
+- 场景操作与对象控制
+- 资源管理和导入
+- 脚本编辑和生成
+- 构建自动化
+- 调试和错误修复
+- 游戏对象操作
+
+**部署方式**:
+```bash
+# 方式1: NuGet包安装
+dotnet add package Unity.MCP
+
+# 方式2: 源码构建
+git clone https://github.com/IvanMurzak/Unity-MCP.git
+```
+
+---
+
+### 1.2 CoderGamester/mcp-unity
 
 | 项目 | 详情 |
 |------|------|
@@ -38,683 +68,576 @@
 **部署方式**:
 ```bash
 npm install -g mcp-unity
-
-# Claude Code 配置
-{
-  "mcpServers": {
-    "unity": {
-      "command": "npx",
-      "args": ["-y", "mcp-unity"]
-    }
-  }
-}
 ```
 
 ---
 
-### 1.2 Unity-MCP (IvanMurzak/Unity-MCP)
+### 1.3 codex精/unreal-mcp
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 1,174 |
-| **Forks** | 123 |
-| **Language** | C# |
-| **更新** | 2026-03-04 |
-
-**描述**: AI-powered bridge connecting LLMs to Unity Editor via MCP.
-
-**核心功能**:
-- 完整的 Unity API 访问
-- 场景图操作
-- 组件管理
-- 蓝图/脚本生成
-
----
-
-### 1.3 mcp-unreal (remiphilippe/mcp-unreal)
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 200+ |
-| **Forks** | - |
+| **Stars** | ⭐ 245 |
+| **Forks** | 28 |
 | **Language** | Python |
-| **更新** | 2026-02-23 |
+| **更新** | 2026-03-03 |
 
-**描述**: MCP server that gives AI coding agents (Claude Code, Cursor, etc.) full control over Unreal Engine 5.7 projects.
+**描述**: Unreal Engine MCP server。
 
 **核心功能**:
-- 头无构建和测试
-- Blueprint 编辑
-- Actor 操作
-- 程序化网格生成
-- UE API 文档查询
+- Unreal Engine 场景操作
+- 资源管理
+- 脚本生成
+- 蓝图操作
 
 **部署方式**:
 ```bash
-pip install mcp-unreal
+pip install unreal-mcp
 ```
 
 ---
 
-### 1.4 radial-hks/MCP-Unreal-Server
+### 1.4 HermeticOrmus/LibreGameDev-Claude-Code
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 80+ |
-| **Forks** | - |
-| **Language** | Python |
-| **更新** | 2026-01-29 |
+| **Stars** | ⭐ 1 |
+| **Forks** | 0 |
+| **Language** | Shell |
+| **更新** | 2026-03-03 |
 
-**描述**: MCP Server implementation for interacting with Unreal Engine instances through remote Python execution.
+**描述**: 20 Claude Code plugins for game development across Godot, Unity, and Unreal.
 
-**核心功能**:
-- 远程 Unreal Engine 控制
-- Python 执行集成
-- 自动化构建流程
+**20个插件列表**:
+1. ai-game-behavior - AI游戏行为
+2. animation-systems - 动画系统
+3. asset-pipelines - 资源管道
+4. audio-systems - 音频系统
+5. game-architecture - 游戏架构
+6. godot-development - Godot开发
+7. input-systems - 输入系统
+8. level-design - 关卡设计
+9. localization - 本地化
+10. monetization-ethics - 商业化与伦理
+11. multiplayer-networking - 多人联网
+12. performance-optimization - 性能优化
+13. physics-simulation - 物理模拟
+14. playtesting - 内测
+15. procedural-generation - 程序化生成
+16. save-systems - 存档系统
+17. shader-programming - 着色器编程
+18. ui-game-design - UI游戏设计
+19. unity-development - Unity开发
+20. unreal-engine - Unreal引擎
+
+**部署方式**:
+```bash
+git clone https://github.com/HermeticOrmus/LibreGameDev-Claude-Code ~/.claude/plugins/
+```
 
 ---
 
-### 1.5 py-mcp-unreal (hannesdelbeke/py-mcp-unreal)
+### 1.5 willibrandon/pixel-plugin
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 50+ |
-| **Forks** | - |
-| **Language** | Python |
-| **更新** | 2026-02-25 |
-
-**描述**: MCP to let your AI run python code in Unreal.
-
-**核心功能**:
-- Unreal 内 Python 执行
-- 自动化脚本运行
-- 数据交换
-
----
-
-### 1.6 mcp_godot_rag (weekitmo/mcp_godot_rag)
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 40+ |
-| **Forks** | - |
-| **Language** | Python |
-| **更新** | 2026-02-07 |
-
-**描述**: This MCP server is used to provide Godot documentation to the Godot RAG model.
-
-**核心功能**:
-- Godot 文档 RAG
-- API 查询
-- 代码补全
-
----
-
-### 1.7 MCP-Godot-sdk (SleeeepyZhou/MCP-Godot-sdk)
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 30+ |
+| **Stars** | ⭐ 56 |
 | **Forks** | - |
 | **Language** | - |
-| **更新** | 2025-07-28 |
+| **更新** | 2026-03-02 |
 
-**描述**: Used for rapid development of MCP applications in Godot.
+**描述**: Claude Code plugin for creating pixel art with Aseprite through natural language. Supports animation, retro palettes, dithering, and game engine export.
+
+**核心功能**:
+- Aseprite像素画创建
+- 动画支持
+- 复古调色板
+- 抖动效果
+- 游戏引擎导出
+
+---
+
+### 1.6 nategarelik/game-dev-supercharger
+
+| 项目 | 详情 |
+|------|------|
+| **Stars** | ⭐ 1 |
+| **Forks** | - |
+| **Language** | - |
+| **更新** | 2026-03-01 |
+
+**描述**: Universal Claude Code MCP plugin for professional 2D/3D Unity game development with multi-agent expert panel.
 
 ---
 
 ## 🐍 二、Python 开发相关插件
 
-### 2.1 mcp-python-interpreter (yzfly/mcp-python-interpreter)
+### 2.1 giuseppe-trisciuoglio/developer-kit (Python 部分)
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 800+ |
-| **Forks** | - |
+| **Stars** | ⭐ 133 |
+| **Forks** | 9 |
 | **Language** | Python |
-| **更新** | 2026-02-05 |
+| **更新** | 2026-03-04 |
 
-**描述**: MCP Python Interpreter: run python code. Python-mcp-server, mcp-python-server, Code Executor.
+**描述**: Claude Code 模块化插件系统，提供可重用的 skills、agents 和 commands。
 
-**核心功能**:
-- 动态 Python 代码执行
-- 沙箱环境
-- 数据处理
-- 快速原型开发
+**Python 开发相关插件**:
+- **developer-kit-python** - Python 开发工具包
+  - FastAPI/Django 支持
+  - 数据处理
+  - 自动化脚本
+  - 测试辅助
+
+- **developer-kit-ai** - AI 开发工具包
+  - LangChain 集成
+  - LLM 调用封装
+  - RAG 实现
 
 **部署方式**:
 ```bash
-pip install mcp-python-interpreter
+git clone https://github.com/giuseppe-trisciuoglio/developer-kit ~/.claude/plugins/
 ```
 
 ---
 
-### 2.2 dedalus-mcp-python (dedalus-labs/dedalus-mcp-python)
+### 2.2 elusznik/mcp-server-code-execution-mode
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 600+ |
+| **Stars** | ⭐ 318 |
 | **Forks** | - |
 | **Language** | Python |
-| **更新** | 2026-03-03 |
+| **更新** | 2026-02-28 |
 
-**描述**: A simple and performant Model Context Protocol framework for Python.
+**描述**: An MCP server that executes Python code in isolated rootless containers with optional MCP server proxying. Implementation of Anthropic's and Cloudflare's ideas for reducing MCP tool definitions context bloat.
 
 **核心功能**:
-- 高性能 MCP 框架
-- Python 原生支持
-- 快速开发 MCP 服务
+- 隔离容器中执行 Python 代码
+- 减少 MCP 工具定义上下文膨胀
+- 安全沙箱执行
+- MCP 服务器代理
+
+**部署方式**:
+```bash
+pip install mcp-server-code-execution-mode
+```
 
 ---
 
-### 2.3 claude-code-skills (Ricko12vPL/claude-code-skills)
+### 2.3 Panniantong/Agent-Reach
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 500+ |
+| **Stars** | ⭐ 5,589 |
+| **Forks** | - |
+| **Language** | - |
+| **更新** | 2026-03-05 |
+
+**描述**: Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.
+
+---
+
+### 2.4 harshkedia177/axon
+
+| 项目 | 详情 |
+|------|------|
+| **Stars** | ⭐ 466 |
 | **Forks** | - |
 | **Language** | Python |
 | **更新** | 2026-03-01 |
 
-**描述**: Claude Code Skills - Python, Software Engineering, ML, Quantitative Finance.
+**描述**: Graph-powered code intelligence engine — indexes codebases into a knowledge graph, exposed via MCP tools for AI agents and a CLI for developers.
 
 **核心功能**:
-- Python 开发技能
-- 机器学习技能
-- 量化金融技能
-- 软件工程技能
+- 代码索引为知识图谱
+- MCP 工具暴露
+- 代码理解
+- 语义搜索
 
 ---
 
-### 2.4 hdresearch/mcp-python
+### 2.5 roboti zcforce/sugar
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 100+ |
+| **Stars** | ⭐ 54 |
 | **Forks** | - |
 | **Language** | Python |
-| **更新** | 2026-02-26 |
+| **更新** | 2026-02-20 |
 
-**描述**: A python repl for MCP.
-
-**核心功能**:
-- Python REPL 集成
-- 交互式代码执行
-- 调试支持
-
----
-
-### 2.5 SamMorrowDrums/mcp-python-starter
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 80+ |
-| **Forks** | - |
-| **Language** | Python |
-| **更新** | 2026-03-04 |
-
-**描述**: A starter MCP server in Python.
+**描述**: Sugar - The autonomous layer for AI coding agents.
 
 **核心功能**:
-- MCP 服务器模板
-- 快速启动
-- 最佳实践
-
----
-
-### 2.6 mssql-mcp-python (lorenzouriel/mssql-mcp-python)
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 70+ |
-| **Forks** | - |
-| **Language** | Python |
-| **更新** | 2026-03-03 |
-
-**描述**: MCP that provides controlled and secure SQL Server database access for LLM applications.
-
-**核心功能**:
-- SQL Server 集成
-- 安全查询
-- 数据库操作
-
----
-
-### 2.7 cohere-ai/north-mcp-python-sdk
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 50+ |
-| **Forks** | - |
-| **Language** | Python |
-| **更新** | 2026-03-04 |
-
-**描述**: An SDK for creating MCP Servers with north.
-
-**核心功能**:
-- MCP SDK
-- North 框架集成
-- 快速构建 MCP
+- AI 编码代理自主层
+- 工作流自动化
+- 代码生成
 
 ---
 
 ## 🧪 三、游戏客户端自动化测试相关插件
 
-### 3.1 playwright-mcp
+### 3.1 terryso/claude-code-playwright-mcp-test
 
 | 项目 | 详情 |
 |------|------|
-| **评分** | ⭐ 3.581 |
-| **Language** | TypeScript |
+| **Stars** | ⭐ 164 |
+| **Forks** | 16 |
+| **Language** | JavaScript |
+| **更新** | 2026-03-03 |
 
-**描述**: Playwright MCP 服务器，浏览器自动化测试工具。
+**描述**: A YAML-based Playwright MCP automation testing framework designed for Claude Code.
 
 **核心功能**:
-- 浏览器自动化
-- UI 测试
-- 截图和录像
-- 性能监控
-- 游戏客户端测试
+- YAML 驱动的测试用例定义
+- Playwright 浏览器自动化
+- MCP 协议集成
+- 自动化测试工作流
+- 测试套件管理
+
+**项目结构**:
+```
+├── steps/          # 测试步骤定义
+├── test-cases/     # 测试用例
+├── test-suites/    # 测试套件
+├── data-examples/  # 测试数据示例
+└── docs/           # 文档
+```
 
 **部署方式**:
 ```bash
-npm install -g @anthropic-ai/playwright-mcp
+git clone https://github.com/terryso/claude-code-playwright-mcp-test ~/.claude/plugins/
+cd ~/.claude/plugins/claude-code-playwright-mcp-test
+npm install
 ```
 
 ---
 
-### 3.2 mcp-test-automation-poc (QAkarotto/mcp-test-automation-poc)
+### 3.2 sackio/unibrowse
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 50+ |
+| **Stars** | ⭐ 4 |
+| **Forks** | 0 |
+| **Language** | JavaScript |
+| **更新** | 2026-01-30 |
+
+**描述**: 🤨 Advanced browser automation plugin for Claude Code with 5 specialized sub-agents, 57+ macros, and intelligent delegation for web scraping, form filling, e-commerce automation, and QA testing.
+
+**核心功能**:
+- 5 个专业子代理
+- 57+ 宏命令
+- 智能委托
+- 网页抓取
+- 表单填写
+- 电商自动化
+- QA 测试
+
+**部署方式**:
+```bash
+git clone https://github.com/sackio/unibrowse ~/.claude/plugins/
+```
+
+---
+
+### 3.3 marcelkurvers/local-testing-agent
+
+| 项目 | 详情 |
+|------|------|
+| **Stars** | ⭐ 0 |
+| **Forks** | 0 |
+| **Language** | Python |
+| **更新** | 2025-12-12 |
+
+**描述**: Multi-language testing automation MCP server for Claude Code and AI assistants. Supports Python, JS/TS, Go, Rust, Java, and Ruby with automated test discovery and execution.
+
+**核心功能**:
+- 多语言测试自动化
+- 支持 Python, JS/TS, Go, Rust, Java, Ruby
+- 自动测试发现
+- 测试执行
+
+---
+
+### 3.4 Twisted66/ai-testing-mcp
+
+| 项目 | 详情 |
+|------|------|
+| **Stars** | ⭐ 6 |
 | **Forks** | - |
 | **Language** | - |
-| **更新** | 2025-08-05 |
+| **更新** | 2026-02-15 |
 
-**描述**: MCP test automation proof of concept.
-
-**核心功能**:
-- 自动化测试框架
-- 测试用例生成
-- 报告生成
+**描述**: AI-powered testing automation MCP server for Claude Code - TestSprite alternative.
 
 ---
 
-### 3.3 Webapp Testing
-
-**描述**: Tests local web applications using Playwright。
-
-**核心功能**:
-- 本地 Web 应用测试
-- 前端功能验证
-- UI 行为调试
-- 截图功能
-
----
-
-### 3.4 browserwing
+### 3.5 nfodor/mcp-chromium-arm64
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 100+ |
-| **Language** | JavaScript |
-| **更新** | 2026-03-05 |
-
-**描述**: BrowserWing turns your browser actions into MCP commands or Claude Skill, allowing AI agents to control browsers efficiently and reliably.
-
-**核心功能**:
-- 浏览器操作 MCP
-- 高效控制
-- 自动化工作流
-
----
-
-### 3.5 dev-browser (SawyerHood/dev-browser)
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 200+ |
+| **Stars** | ⭐ 4 |
+| **Forks** | - |
 | **Language** | - |
-| **更新** | 2026-03-05 |
+| **更新** | 2026-02-10 |
 
-**描述**: A Claude Skill to give your agent the ability to use a web browser.
-
-**核心功能**:
-- 浏览器控制
-- 自动化测试
-- 网页交互
+**描述**: 🚀 ARM64 Browser Automation for Claude Code - SaaS testing on 80 Raspberry Pi budget. The first solution that works where Playwright/Puppeteer fail on ARM64. Autonomous testing without human debugging.
 
 ---
 
 ## 🛠️ 四、其他开发者工具
 
-### 4.1 awesome-claude-skills (ComposioHQ/awesome-claude-skills)
+### 4.1 Jeffallan/claude-skills
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 40,814 |
-| **Language** | Python |
+| **Stars** | ⭐ 4,872 |
+| **Forks** | - |
+| **Language** | - |
 | **更新** | 2026-03-05 |
 
-**描述**: A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows.
+**描述**: 66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.
 
-**核心功能**:
-- 40k+ Stars 超级集合
-- 技能库索引
-- 工作流模板
+**66个专业技能分类**:
+- 前端开发技能
+- 后端开发技能
+- 数据库技能
+- DevOps 技能
+- 测试技能
+- 安全技能
+
+**部署方式**:
+```bash
+git clone https://github.com/Jeffallan/claude-skills ~/.claude/plugins/
+```
 
 ---
 
-### 4.2 claude-scientific-skills (K-Dense-AI/claude-scientific-skills)
+### 4.2 alirezarezvani/claude-code-skill-factory
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 12,905 |
-| **Language** | Python |
-| **更新** | 2026-03-05 |
+| **Stars** | ⭐ 561 |
+| **Forks** | - |
+| **Language** | - |
+| **更新** | 2026-03-04 |
 
-**描述**: A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing.
+**描述**: Claude Code Skill Factory — A powerful open-source toolkit for building and deploying production-ready Claude Skills, Code Agents, custom Slash Commands, and LLM Prompts at scale.
 
 **核心功能**:
-- 科学研究技能
-- 工程分析
-- 金融分析
-- 写作辅助
+- Claude Skills 构建工具
+- 部署生产就绪的技能
+- 自定义斜杠命令
+- LLM 提示词管理
 
 ---
 
-### 4.3 n8n-mcp (czlonkowski/n8n-mcp)
+### 4.3 Aaronontheweb/dotnet-skills
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 14,341 |
-| **Language** | TypeScript |
-| **更新** | 2026-03-05 |
+| **Stars** | ⭐ 462 |
+| **Forks** | - |
+| **Language** | - |
+| **更新** | 2026-03-02 |
 
-**描述**: n8n workflow automation with MCP.
+**描述**: Claude Code skills and sub-agents for .NET Developers.
 
 **核心功能**:
-- 工作流自动化
-- n8n 集成
-- 节点连接
+- .NET 开发技能
+- C# 专家代理
+- ASP.NET Core 支持
+- Entity Framework 集成
 
 ---
 
-### 4.4 pal-mcp-server (BeehiveInnovations/pal-mcp-server)
+### 4.4 conorluddy/ios-simulator-skill
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 11,189 |
-| **Language** | Python |
-| **更新** | 2026-03-05 |
+| **Stars** | ⭐ 568 |
+| **Forks** | - |
+| **Language** | - |
+| **更新** | 2026-03-03 |
 
-**描述**: PAL (Personal AI Librarian) MCP Server.
+**描述**: An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget.
 
 **核心功能**:
-- 个人 AI 助理
-- 知识管理
-- 文档处理
+- iOS 模拟器集成
+- 应用构建
+- 运行和交互
+- 上下文优化
 
 ---
 
-### 4.5 claude-code-toolkit (rohitg00/awesome-claude-code-toolkit)
+### 4.5 muchiny/mcp-ssh-bridge
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 638 |
-| **Language** | JavaScript |
-| **更新** | 2026-03-05 |
+| **Stars** | ⭐ 0 |
+| **Forks** | - |
+| **Language** | Rust |
+| **更新** | 2026-03-04 |
 
-**描述**: The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+15,000 via SkillKit), 42 commands, 120 plugins, 19 hooks, 15 rules, 7 templates, 6 MCP configs.
+**描述**: MCP server for secure SSH remote management — 197 tools for DevOps, Docker, Kubernetes, databases, systemd, and more. Built in Rust.
 
 **核心功能**:
-- 135 代理
-- 35 技能
-- 42 命令
-- 120 插件
+- 197 个 DevOps 工具
+- Docker 管理
+- Kubernetes 管理
+- 数据库操作
+- systemd 管理
+- SSH 远程管理
 
 ---
 
-### 4.6 antigravity-awesome-skills (sickn33/antigravity-awesome-skills)
+### 4.6 Paffin/opsmate
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 19,933 |
-| **Language** | Python |
-| **更新** | 2026-03-05 |
+| **Stars** | ⭐ 0 |
+| **Forks** | - |
+| **Language** | - |
+| **更新** | 2026-03-04 |
 
-**描述**: 超大规模代理技能集合，978+ 技能跨 10+ AI 助手。
+**描述**: One command to give Claude Code full understanding of your infrastructure. 30 DevOps tools. Zero copy-paste. Single binary.
 
 **核心功能**:
-- 978+ 技能
-- 10+ AI 助手支持
-- 跨平台集成
+- 30 个 DevOps 工具
+- 单一二进制
+- 基础设施理解
 
 ---
 
-### 4.7 Skill_Seekers (yusufkaraaslan/Skill_Seekers)
+### 4.7 Ashfaqbs/software-dev-ai-claude-toolkit
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 10,213 |
-| **Language** | Python |
-| **更新** | 2026-03-05 |
+| **Stars** | ⭐ 8 |
+| **Forks** | - |
+| **Language** | - |
+| **更新** | 2026-03-01 |
 
-**描述**: A comprehensive skill library for Claude Code.
+**描述**: Production-ready Claude Code configuration for backend/full-stack developers. 9 rules, 8 commands, 5 agents, 13 skills, hooks, and MCP servers for Java/Spring Boot, Python/FastAPI, JS/React, PostgreSQL, MongoDB, Redis, Kafka, Docker, K8s, and AI/ML.
 
-**核心功能**:
-- 多领域技能
-- 自动化工作流
-- 开发工具集
+**技术栈覆盖**:
+- Java/Spring Boot
+- Python/FastAPI
+- JS/React
+- PostgreSQL, MongoDB, Redis, Kafka
+- Docker, K8s
+- AI/ML
 
 ---
 
-### 4.8 marketingskills (coreyhaines31/marketingskills)
+### 4.8 ryanwaite/openssf-skill
 
 | 项目 | 详情 |
 |------|------|
-| **Stars** | ⭐ 11,028 |
-| **Language** | JavaScript |
-| **更新** | 2026-03-05 |
+| **Stars** | ⭐ 4 |
+| **Forks** | - |
+| **Language** | - |
+| **更新** | 2026-02-25 |
 
-**描述**: Marketing skills for Claude Code.
-
-**核心功能**:
-- 营销自动化
-- 内容生成
-- 社交媒体管理
-
----
-
-### 4.9 claude-code-infrastructure-showcase (diet103/claude-code-infrastructure-showcase)
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 9,151 |
-| **Language** | Shell |
-| **更新** | 2026-03-05 |
-
-**描述**: Infrastructure as Code showcase for Claude Code.
+**描述**: A comprehensive Claude Code/Copilot skill that helps developers build secure applications following OpenSSF (Open Source Security Foundation) best practices.
 
 **核心功能**:
-- IaC 模板
-- 基础设施自动化
-- 云资源管理
+- OpenSSF 最佳实践
+- 安全应用构建
+- 安全审计
 
 ---
 
-### 4.10 Claudeception (blader/Claudeception)
+## 📊 热门插件排名汇总
 
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 1,920 |
-| **Language** | Shell |
-| **更新** | 2026-03-05 |
+### 游戏开发方向 TOP 5
+| 排名 | 插件 | Stars |
+|------|------|-------|
+| 1 | CoderGamester/mcp-unity | ⭐ 1,382 |
+| 2 | IvanMurzak/Unity-MCP | ⭐ 1,181 |
+| 3 | codex精/unreal-mcp | ⭐ 245 |
+| 4 | willibrandon/pixel-plugin | ⭐ 56 |
+| 5 | HermeticOrmus/LibreGameDev-Claude-Code | ⭐ 1 |
 
-**描述**: Claude Code within Claude Code - nested AI execution.
+### Python 开发方向 TOP 5
+| 排名 | 插件 | Stars |
+|------|------|-------|
+| 1 | elusznik/mcp-server-code-execution-mode | ⭐ 318 |
+| 2 | harshkedia177/axon | ⭐ 466 |
+| 3 | giuseppe-trisciuoglio/developer-kit | ⭐ 133 |
+| 4 | roboticforce/sugar | ⭐ 54 |
 
-**核心功能**:
-- 嵌套 AI 执行
-- 多代理协作
-- 任务分解
+### 自动化测试方向 TOP 5
+| 排名 | 插件 | Stars |
+|------|------|-------|
+| 1 | terryso/claude-code-playwright-mcp-test | ⭐ 164 |
+| 2 | sackio/unibrowse | ⭐ 4 |
+| 3 | Twisted66/ai-testing-mcp | ⭐ 6 |
+| 4 | nfodor/mcp-chromium-arm64 | ⭐ 4 |
 
----
-
-### 4.11 claude-esp (phiat/claude-esp)
-
-**描述**: Go-based TUI streaming Claude Code's hidden output.
-
-**核心功能**:
-- 隐藏输出流
-- 多会话监控
-- 内容过滤
-- 调试支持
-
----
-
-### 4.12 claude-tmux (nielsgroen/claude-tmux)
-
-**描述**: Manage Claude Code within tmux.
-
-**核心功能**:
-- tmux 集成
-- 会话管理
-- 状态监控
-- 快速切换
+### 开发者工具方向 TOP 5
+| 排名 | 插件 | Stars |
+|------|------|-------|
+| 1 | Jeffallan/claude-skills | ⭐ 4,872 |
+| 2 | alirezarezvani/claude-code-skill-factory | ⭐ 561 |
+| 3 | conorluddy/ios-simulator-skill | ⭐ 568 |
+| 4 | Aaronontheweb/dotnet-skills | ⭐ 462 |
+| 5 | Ashfaqbs/software-dev-ai-claude-toolkit | ⭐ 8 |
 
 ---
 
-### 4.13 parry (vaporif/parry)
-
-**描述**: Prompt injection scanner for Claude Code hooks.
-
-**核心功能**:
-- 注入攻击检测
-- 敏感信息扫描
-- 数据泄露防护
-
----
-
-### 4.14 Dippy (ldayton/Dippy)
-
-**描述**: Auto-approve safe bash commands using AST-based parsing.
-
-**核心功能**:
-- AST 解析
-- 自动批准安全命令
-- 危险操作提示
-
----
-
-### 4.15 mcp-ssh-manager
-
-**描述**: SSH 远程管理工具。
-
-**核心功能**:
-- 37 工具
-- 远程连接
-- 服务器管理
-
----
-
-### 4.16 superpowers
-
-| 项目 | 详情 |
-|------|------|
-| **Stars** | ⭐ 4.1k+ |
-
-**描述**: 核心工程技能集，SDLC 全流程覆盖。
-
-**核心功能**:
-- 规划、审查、测试、调试
-- Git 工作流
-- 代码质量
-- 文档生成
-
----
-
-## 📊 五、热门插件汇总表
-
-| 插件名称 | 方向 | Stars | 功能描述 |
-|----------|------|-------|----------|
-| awesome-claude-skills | 综合 | ⭐ 40,814 | 超大技能集合 |
-| claude-scientific-skills | 科学研究 | ⭐ 12,905 | 科研分析技能 |
-| n8n-mcp | 开发者工具 | ⭐ 14,341 | 工作流自动化 |
-| pal-mcp-server | 开发者工具 | ⭐ 11,189 | AI 知识管理 |
-| mcp-unity | 游戏开发 | ⭐ 1,382 | Unity MCP 集成 |
-| Unity-MCP | 游戏开发 | ⭐ 1,174 | Unity AI 桥接 |
-| marketingskills | 营销 | ⭐ 11,028 | 营销自动化 |
-| Skill_Seekers | 综合 | ⭐ 10,213 | 多领域技能 |
-| claude-code-infrastructure-showcase | DevOps | ⭐ 9,151 | IaC 模板 |
-| mcp-python-interpreter | Python | ⭐ 800+ | Python 代码执行 |
-| mcp-unreal | 游戏开发 | ⭐ 200+ | Unreal MCP |
-| superpowers | 开发者工具 | ⭐ 4.1k+ | 核心工程技能 |
-| dev-browser | 测试 | ⭐ 200+ | 浏览器控制 |
-| pydantic-ai-skills | Python | ⭐ 136 | Pydantic 开发 |
-| playwright-mcp | 测试 | 3.581 | 浏览器自动化 |
-
----
-
-## 🎯 六、推荐插件
+## 🔧 部署建议
 
 ### 游戏开发推荐
-1. **mcp-unity** - Unity 官方推荐集成 (1.3k+ Stars)
-2. **Unity-MCP** - 完整 Unity API 访问 (1.1k+ Stars)
-3. **mcp-unreal** - Unreal Engine 5.7 完整控制
+```bash
+# Unity 开发
+git clone https://github.com/CoderGamester/mcp-unity ~/.claude/plugins/
+
+# Unreal 开发
+pip install unreal-mcp
+
+# 完整游戏开发套件
+git clone https://github.com/HermeticOrmus/LibreGameDev-Claude-Code ~/.claude/plugins/
+```
 
 ### Python 开发推荐
-1. **mcp-python-interpreter** - Python 代码执行器
-2. **dedalus-mcp-python** - 高性能 MCP 框架
-3. **claude-code-skills** - Python/ML/金融技能
+```bash
+# Python 代码执行
+pip install mcp-server-code-execution-mode
 
-### 测试推荐
-1. **playwright-mcp** - 浏览器自动化测试
-2. **dev-browser** - Claude 浏览器控制技能
-3. **browserwing** - 浏览器操作 MCP
+# 开发者工具包
+git clone https://github.com/giuseppe-trisciuoglio/developer-kit ~/.claude/plugins/
+```
+
+### 自动化测试推荐
+```bash
+# Playwright 测试框架
+git clone https://github.com/terryso/claude-code-playwright-mcp-test ~/.claude/plugins/
+
+# 浏览器自动化
+git clone https://github.com/sackio/unibrowse ~/.claude/plugins/
+```
 
 ### 开发者工具推荐
-1. **awesome-claude-skills** - 40k+ Stars 超级集合
-2. **n8n-mcp** - 工作流自动化 (14k+ Stars)
-3. **superpowers** - 核心工程技能集 (4.1k+ Stars)
-4. **antigravity-awesome-skills** - 978+ 超大技能集合
+```bash
+# 全栈开发技能
+git clone https://github.com/Jeffallan/claude-skills ~/.claude/plugins/
+
+# iOS 开发
+git clone https://github.com/conorluddy/ios-simulator-skill ~/.claude/plugins/
+```
 
 ---
 
 ## 📝 总结
 
-Claude Code 插件生态持续繁荣，本次调研发现以下趋势：
+本次调研发现以下趋势：
 
-1. **游戏开发**: 
-   - Unity MCP 最为成熟 (1.3k+ Stars)
-   - Unreal MCP 快速发展
-   - Godot MCP 开始出现
-
-2. **Python**: 
-   - mcp-python-interpreter 受关注
-   - MCP Python SDK 框架涌现
-   - 数据库集成 MCP 增加
-
-3. **测试**: 
-   - Playwright 集成是主流选择
-   - 浏览器控制技能多样化
-   - 自动化测试 MCP 出现
-
-4. **开发者工具**: 
-   - awesome-claude-skills 达到 40k+ Stars
-   - n8n-mcp 工作流集成 (14k+ Stars)
-   - 专业化技能集合增多
+1. **游戏开发 MCP 生态成熟** - Unity MCP 拥有超过 1000 Stars，Unreal MCP 也在快速发展
+2. **Python 开发关注安全和隔离** - mcp-server-code-execution-mode 提供沙箱执行能力
+3. **自动化测试趋向 YAML 驱动** - claude-code-playwright-mcp-test 采用声明式测试定义
+4. **开发者工具向全栈覆盖** - developer-kit 提供 Java, Python, TypeScript, PHP 等多语言支持
 
 ---
 
-## 🔗 相关链接
-
-- [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
-- [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
-- [mcp-unity](https://github.com/CoderGamester/mcp-unity)
-- [mcp-unreal](https://github.com/remiphilippe/mcp-unreal)
-- [mcp-python-interpreter](https://github.com/yzfly/mcp-python-interpreter)
-
----
-
-*文档生成时间: 2026-03-05*
+*调研完成日期: 2026-03-05*
