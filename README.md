@@ -111,6 +111,10 @@
 | [rule2hook](./rule2hook.md) | 自然语言规则转 Hooks | 🆕最新 |
 | [supplement-2026-03-05-v93](./supplement-2026-03-05-v93/) | 补充调研 v93 - 游戏/Python/测试/开发者工具最新热门插件 | 🆕最新 |
 | [supplement-2026-03-05-v94](./supplement-2026-03-05-v94/) | 补充调研 v94 - 游戏/Python/测试/开发者工具热门插件完整调研 | 🆕最新 |
+| [supplement-2026-03-05-v95](./supplement-2026-03-05-v95/) | 补充调研 v95 - Claude-Starter-Kit/Claude-Tmux/Claude-ESP 最新调研 | 🆕最新 |
+| [claude-tmux](./claude-tmux.md) | Claude Code tmux 会话管理工具 | 🆕 |
+| [claude-esp](./claude-esp.md) | Claude Code 隐藏输出流调试工具 | 🆕 |
+| [claude-starter-kit](./claude-starter-kit.md) | 全栈开发启动模板 | 🆕 |
 | [mcp-inspector](./mcp-inspector.md) | 官方 MCP 服务器可视化测试工具，⭐ 8,900 | 🆕 |
 | [fast-agent](./fast-agent.md) | MCP 代理和工作流定义框架，⭐ 3,694 | 🆕 |
 | [vibetest-use](./vibetest-use.md) | 自动化 QA 测试工具，⭐ 771 | 🆕 |
