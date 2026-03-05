@@ -86,6 +86,12 @@
 | [claude-hub](./claude-hub.md) | GitHub Webhook 集成 | 🆕最新 |
 | [pypict-claude-skill](./pypict-claude-skill.md) | PICT 成对测试用例生成 | 🆕最新 |
 | [supplement-2026-03-05-v83](./supplement-2026-03-05-v83/) | 补充调研 v83 - 游戏客户端/Python/自动化测试/开发者工具热门插件补充调研 | 🆕最新 |
+| [mcp-unity](./mcp-unity.md) | 主流 Unity MCP 集成方案，⭐ 1,382 | 🆕 |
+| [developer-kit](./developer-kit.md) | 全栈开发工具包，133 Stars | 🆕 |
+| [mcp-ssh-manager](./mcp-ssh-manager.md) | SSH 远程管理工具，37 工具 | 🆕 |
+| [auto-review-claude-mcp](./auto-review-claude-mcp.md) | Unity PR 自动化审查 | 🆕 |
+| [agents-claude-code](./agents-claude-code.md) | 100 超专业 AI 代理 | 🆕 |
+| [supplement-2026-03-05-v84](./supplement-2026-03-05-v84/) | 补充调研 v84 - 游戏客户端/Python/自动化测试/开发者工具完整调研 | 🆕最新 |
 
 ---
 
