@@ -77,6 +77,10 @@
 | [security-guidance](./security-guidance.md) | 官方安全提醒钩子，9 种安全模式 | 🆕 |
 | [frontend-design-plugin](./frontend-design-plugin.md) | 官方前端设计插件 | 🆕 |
 | [feature-dev-plugin](./feature-dev-plugin.md) | 官方功能开发工作流，7 阶段 | 🆕 |
+| [claude-scientific-skills](./claude-scientific-skills.md) | 科学研究技能集，研究/分析/金融/写作 | 🆕 |
+| [unity-mcp](./unity-mcp.md) | Unity MCP 服务器，游戏引擎自动化 | 🆕 |
+| [cc-devops-skills](./cc-devops-skills.md) | DevOps 工程师技能集，IaC 自动化 | 🆕 |
+| [supplement-2026-03-05-v82](./supplement-2026-03-05-v82/) | 补充调研 v82 - 游戏客户端/Python/自动化测试/开发者工具最新热门插件完整调研 | 🆕最新 |
 
 ---
 
