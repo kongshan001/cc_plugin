@@ -93,6 +93,11 @@
 | [agents-claude-code](./agents-claude-code.md) | 100 超专业 AI 代理 | 🆕 |
 | [supplement-2026-03-05-v84](./supplement-2026-03-05-v84/) | 补充调研 v84 - 游戏客户端/Python/自动化测试/开发者工具完整调研 | 🆕最新 |
 | [supplement-2026-03-05-v85](./supplement-2026-03-05-v85/) | 补充调研 v85 - 游戏客户端/Python/自动化测试/开发者工具热门插件完整调研 | 🆕最新 |
+| [supplement-2026-03-05-v86](./supplement-2026-03-05-v86/) | 补充调研 v86 - 游戏客户端/Python/自动化测试/开发者工具热门插件深度调研 | 🆕最新 |
+| [claude-tmux](./claude-tmux.md) | Claude Code tmux 会话管理工具 | 🆕 |
+| [claude-esp](./claude-esp.md) | Claude Code 隐藏输出流调试工具 | 🆕 |
+| [local-testing-agent](./local-testing-agent.md) | 多语言测试自动化 MCP | 🆕 |
+| [unibrowse](./unibrowse.md) | 高级浏览器自动化插件 | 🆕 |
 
 ---
 
