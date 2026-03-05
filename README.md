@@ -81,6 +81,11 @@
 | [unity-mcp](./unity-mcp.md) | Unity MCP 服务器，游戏引擎自动化 | 🆕 |
 | [cc-devops-skills](./cc-devops-skills.md) | DevOps 工程师技能集，IaC 自动化 | 🆕 |
 | [supplement-2026-03-05-v82](./supplement-2026-03-05-v82/) | 补充调研 v82 - 游戏客户端/Python/自动化测试/开发者工具最新热门插件完整调研 | 🆕最新 |
+| [antigravity-awesome-skills](./antigravity-awesome-skills.md) | 超大规模代理技能集合，978+ 技能跨 10+ AI 助手 | 🆕最新 |
+| [claude-code-pm](./claude-code-pm.md) | 全面项目管理框架 | 🆕最新 |
+| [claude-hub](./claude-hub.md) | GitHub Webhook 集成 | 🆕最新 |
+| [pypict-claude-skill](./pypict-claude-skill.md) | PICT 成对测试用例生成 | 🆕最新 |
+| [supplement-2026-03-05-v83](./supplement-2026-03-05-v83/) | 补充调研 v83 - 游戏客户端/Python/自动化测试/开发者工具热门插件补充调研 | 🆕最新 |
 
 ---
 
