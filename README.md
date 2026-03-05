@@ -99,6 +99,7 @@
 | [supplement-2026-03-05-v89](./supplement-2026-03-05-v89/) | 补充调研 v89 - Claude Code 热门插件最新调研 | 🆕最新 |
 | [supplement-2026-03-05-v90](./supplement-2026-03-05-v90/) | 补充调研 v90 - 游戏客户端/Python/自动化测试/开发者工具完整调研 | 🆕最新 |
 | [supplement-2026-03-05-v91](./supplement-2026-03-05-v91/) | 补充调研 v91 - 游戏客户端/Python/自动化测试/开发者工具热门插件最新调研 | 🆕最新 |
+| [supplement-2026-03-05-v92](./supplement-2026-03-05-v92/) | 补充调研 v92 - 游戏客户端/Python/自动化测试/开发者工具热门插件最新调研 | 🆕最新 |
 | [claude-tmux](./claude-tmux.md) | Claude Code tmux 会话管理工具 | 🆕 |
 | [claude-esp](./claude-esp.md) | Claude Code 隐藏输出流调试工具 | 🆕 |
 | [local-testing-agent](./local-testing-agent.md) | 多语言测试自动化 MCP | 🆕 |
